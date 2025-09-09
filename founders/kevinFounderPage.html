@@ -19,7 +19,7 @@
     
     .hero-section {
       position: relative;
-      background-color: rgba(0, 0, 0, 0.7);
+      background: linear-gradient(180deg, #1C5685 0%, #1C2285 50%, #4B1C85 100%);
       overflow: hidden;
     }
     
@@ -30,10 +30,11 @@
       width: 100%;
       height: 100%;
       background-image: url('../logo/logo.png');
-      background-size: cover;
+      background-size: 60%;
       background-position: center;
-      opacity: 0.2;
-      filter: blur(2px);
+      background-repeat: no-repeat;
+      opacity: 0.4;
+      filter: blur(0.5px);
       z-index: -1;
     }
     
@@ -41,7 +42,8 @@
       position: relative;
       z-index: 10;
       backdrop-filter: blur(5px);
-      background-color: rgba(0, 0, 0, 0.3);
+      background: linear-gradient(135deg, rgba(31, 41, 55, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
+      border: 4px solid #052178;
       border-radius: 1rem;
       padding: 2rem;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -237,7 +239,7 @@
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-900 scrollbar-hide min-h-screen flex flex-col">
+<body class="text-gray-900 scrollbar-hide min-h-screen flex flex-col" style="background: linear-gradient(180deg, #E0E7FF 0%, #F3E8FF 100%);">
 
   <!-- Back Arrow -->
   <a href="../team.html" class="back-arrow bg-white p-3 rounded-full shadow-lg hover:shadow-xl">
@@ -247,7 +249,7 @@
   </a>
 
   <!-- Navbar -->
-  <header class="sticky top-0 flex items-center justify-between px-6 py-4 bg-black bg-opacity-95 shadow-lg z-50 backdrop-blur-sm">
+  <header class="sticky top-0 flex items-center justify-between px-6 py-4 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-opacity-95 shadow-lg z-50 backdrop-blur-sm">
     <!-- Logo -->
     <div class="flex-shrink-0">
       <a href="../index.html" aria-label="Go to homepage" class="transition transform hover:scale-105">
@@ -261,7 +263,7 @@
       <a href="../about.html" class="nav-link hover:text-blue-400 transition-colors">About</a>
       <a href="../team.html" class="nav-link hover:text-blue-400 transition-colors">Team</a>
       <a href="#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
-      <a href="#join" class="nav-link hover:text-blue-400 transition-colors">Join Us</a>
+      <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" target="_blank" class="nav-link hover:text-blue-400 transition-colors">Join Us</a>
     </nav>
   </header>
 
