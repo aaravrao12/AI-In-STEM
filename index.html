@@ -395,23 +395,24 @@
           </div>
           <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 gradient-text">Global Impact</h3>
           <div class="grid grid-cols-2 gap-4 text-center mb-4">
-            <div>
-              <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-600">100+</div>
-              <div class="text-sm sm:text-base lg:text-lg text-gray-600">Workshops Hosted</div>
+            <!-- Workshops  -->
+            <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-600">
+              <span class="count-up" data-target="100" data-suffix="+">0</span>
             </div>
-            <div>
-              <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-purple-600">5000+</div>
-              <div class="text-sm sm:text-base lg:text-lg text-gray-600">Students Reached</div>
+
+            <!-- Students Reached -->
+            <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-purple-600">
+              <span class="count-up" data-target="5000" data-suffix="+">0</span>
             </div>
-          </div>
-          <div class="grid grid-cols-2 gap-4 text-center">
-            <div>
-              <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-600">20+</div>
-              <div class="text-sm sm:text-base lg:text-lg text-gray-600">Cities Impacted</div>
+
+            <!-- Cities Impacted -->
+            <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-600">
+              <span class="count-up" data-target="20" data-suffix="+">0</span>
             </div>
-            <div>
-              <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-purple-600">80+</div>
-              <div class="text-sm sm:text-base lg:text-lg text-gray-600">Volunteers</div>
+
+            <!-- Volunteers -->
+            <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-purple-600">
+              <span class="count-up" data-target="80" data-suffix="+">0</span>
             </div>
           </div>
         </div>
@@ -561,9 +562,43 @@
       menuOverlay.classList.remove("active");
     });
   });
+  const counters = document.querySelectorAll('.count-up');
+let hasCounted = false;
+
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && !hasCounted) {
+      hasCounted = true;
+
+      counters.forEach((el) => {
+        const target = parseInt(el.dataset.target, 10) || 0;
+        const suffix = el.dataset.suffix || '';
+        const duration = 1600;
+        const start = performance.now();
+
+        function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+        function tick(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const value = Math.floor(easeOutCubic(progress) * target);
+          el.textContent = value + (progress >= 1 ? suffix : '');
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+
+        requestAnimationFrame(tick);
+      });
+
+      countObserver.disconnect();
+    }
+  });
+}, { threshold: 0.3 });
+
+const impactSection = document.getElementById('global-impact');
+if (impactSection) countObserver.observe(impactSection);
 </script>
 
 </body>
 </html>
+
 
 
