@@ -75,18 +75,6 @@
       width: 100%;
     }
     
-    .card {
-      border-radius: 1rem;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
-    }
-    
     .gradient-text {
       background: linear-gradient(90deg, #3b82f6, #8b5cf6);
       -webkit-background-clip: text;
@@ -116,65 +104,132 @@
     .btn:hover::before {
       left: 100%;
     }
-    
-    .wave-divider {
-      position: relative;
-      height: 150px;
-      overflow: hidden;
-    }
-    
-    @media (max-width: 768px) {
-      .wave-divider {
-        height: 80px;
-      }
-    }
-    
-    .wave {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: cover;
-    }
-    
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-    
-    .scrollbar-hide {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    
+
+    /* Enhanced Team Card Styles */
     .team-card {
       position: relative;
       overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-radius: 1.5rem;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
-    
+
+    .team-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Colorful border system inspired by STEM for Others */
+    .border-green { border-top: 6px solid #10b981; }
+    .border-blue { border-top: 6px solid #3b82f6; }
+    .border-purple { border-top: 6px solid #8b5cf6; }
+    .border-orange { border-top: 6px solid #f59e0b; }
+    .border-pink { border-top: 6px solid #ec4899; }
+    .border-teal { border-top: 6px solid #14b8a6; }
+
     .team-card::before {
       content: '';
       position: absolute;
-      top: -75%;
-      left: -75%;
-      width: 150%;
-      height: 150%;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
       background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-      transform: rotate(45deg);
-      transition: all 1.5s ease;
+      transition: all 0.8s ease;
+      z-index: 1;
     }
     
     .team-card:hover::before {
       left: 100%;
     }
 
-    /* Dark background overlay when mobile menu is open */
+    .team-photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .team-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.2) 50%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .team-card:hover .team-photo::after {
+      opacity: 1;
+    }
+
+    .team-card:hover .team-photo {
+      transform: scale(1.05);
+    }
+
+    /* Role badge styling */
+    .role-badge {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .team-card:hover .role-badge {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    /* Skills tags */
+    .skill-tag {
+      background: rgba(59, 130, 246, 0.1);
+      color: #1e40af;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      background: rgba(59, 130, 246, 0.2);
+      transform: scale(1.05);
+    }
+
+    /* Social links */
+    .social-link {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px) scale(1.1);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    /* Mobile menu styles */
     #menuOverlay {
       position: fixed;
       inset: 0;
       background: rgba(0, 0, 0, 0.7);
       backdrop-filter: blur(4px);
-      z-index: 40; /* behind the menu (z-50) but above content */
+      z-index: 40;
       display: none;
     }
     #menuOverlay.active {
@@ -190,7 +245,6 @@
       transform: translateX(0);
     }
 
-    /* Professional Mobile Menu Styles */
     .mobile-menu-backdrop {
       background: #000000;
       backdrop-filter: blur(20px);
@@ -244,9 +298,47 @@
     .mobile-nav-link:hover .mobile-nav-icon {
       opacity: 1;
     }
+
+    /* Achievement badge */
+    .achievement-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      box-shadow: 0 2px 10px rgba(245, 158, 11, 0.3);
+    }
+
+    /* Loading animation */
+    .loading-shimmer {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: shimmer 2s infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    /* Scroll reveal animation */
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 </head>
-<body class="text-gray-900 scrollbar-hide" style="background: linear-gradient(180deg, #E0E7FF 0%, #F3E8FF 100%);">
+<body class="text-gray-900" style="background: linear-gradient(180deg, #E0E7FF 0%, #F3E8FF 100%);">
 
   <!-- Navbar -->
   <header class="sticky top-0 flex items-center justify-between px-4 sm:px-6 py-4 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-opacity-95 shadow-lg z-50 backdrop-blur-sm">
@@ -351,44 +443,238 @@
     <!-- Content -->
     <div class="hero-content max-w-4xl mx-auto animate__animated animate__fadeIn text-center">
       <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-2 sm:mb-4 leading-tight tracking-tight">Meet the <span class="gradient-text">AI in STEM</span> Team</h1>
+      <p class="text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto">Passionate innovators dedicated to empowering the next generation through AI and STEM education</p>
+    </div>
+  </section>
+
+  <!-- Team Stats Section -->
+  <section class="py-8 bg-white/10 backdrop-blur-sm">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="scroll-reveal">
+          <div class="text-3xl font-bold text-blue-600">2</div>
+          <div class="text-gray-600 font-medium">Co-Founders</div>
+        </div>
+        <div class="scroll-reveal">
+          <div class="text-3xl font-bold text-purple-600">500+</div>
+          <div class="text-gray-600 font-medium">Students Reached</div>
+        </div>
+        <div class="scroll-reveal">
+          <div class="text-3xl font-bold text-green-600">10+</div>
+          <div class="text-gray-600 font-medium">Programs</div>
+        </div>
+        <div class="scroll-reveal">
+          <div class="text-3xl font-bold text-orange-600">5+</div>
+          <div class="text-gray-600 font-medium">States</div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Team Grid -->
   <section class="w-full px-4 sm:px-6 py-12 sm:py-16 lg:py-24" style="background: linear-gradient(180deg, #1C5685 0%, #1C2285 50%, #4B1C85 100%);">
     <div class="max-w-6xl mx-auto">
-      <div class="grid gap-8 sm:gap-10 lg:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
-      <!-- Member 1 -->
-      <a href="founders/aaravFounderPage.html" class="block" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
-          <div class="relative mb-6 sm:mb-8">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/aarav-profile.png" alt="Aarav Rao" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
-          </div>
-          <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Aarav Rao</h3>
-          <p class="text-blue-600 mb-4 font-medium text-center">Co-Founder & State Ambassador</p>
-          <div class="mt-auto flex items-center justify-between">
-            <span class="text-gray-600 text-sm">Plano, TX</span>
-            <span class="btn bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-full text-sm font-medium">View Profile</span>
-          </div>
-        </div>
-      </a>
+      <!-- Founders Section -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Our Founders</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+      </div>
 
-      <!-- Member 2 -->
-      <a href="founders/kevinFounderPage.html" class="block" data-aos="fade-up" data-aos-delay="300">
-        <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
-          <div class="relative mb-6 sm:mb-8">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/kevin-profile.png" alt="Kevin Cui" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10">
-          </div>
-          <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Kevin Cui</h3>
-          <p class="text-blue-600 mb-4 font-medium text-center">Co-Founder & State Ambassador</p>
-          <div class="mt-auto flex items-center justify-between">
-            <span class="text-gray-600 text-sm">Plano, TX</span>
-            <span class="btn bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-full text-sm font-medium">View Profile</span>
+      <div class="grid gap-8 sm:gap-10 lg:gap-12 grid-cols-1 md:grid-cols-2 justify-center mb-16">
+        <!-- Aarav Rao -->
+        <div class="scroll-reveal">
+          <a href="founders/aaravFounderPage.html" class="block">
+            <div class="team-card border-green p-8 h-full flex flex-col relative">
+              <div class="achievement-badge">Co-Founder</div>
+              
+              <div class="relative mb-8 mx-auto">
+                <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-blue-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
+                <div class="team-photo w-32 h-32 lg:w-40 lg:h-40 mx-auto">
+                  <img src="volunteerPhotos/aarav-profile.png" alt="Aarav Rao" class="w-full h-full rounded-full object-cover shadow-lg relative z-10" />
+                </div>
+              </div>
+              
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold mb-2">Aarav Rao</h3>
+                <div class="role-badge mb-4">Co-Founder & State Ambassador</div>
+                <p class="text-gray-600 mb-4">Leading AI education initiatives across Texas and building partnerships with educational institutions.</p>
+                
+                <!-- Skills -->
+                <div class="flex flex-wrap gap-2 justify-center mb-4">
+                  <span class="skill-tag">AI/ML</span>
+                  <span class="skill-tag">Leadership</span>
+                  <span class="skill-tag">Education</span>
+                  <span class="skill-tag">Strategy</span>
+                </div>
+              </div>
+              
+              <div class="mt-auto">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-gray-600 text-sm flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    Plano, TX
+                  </span>
+                  
+                  <!-- Social Links -->
+                  <div class="flex space-x-2">
+                    <a href="#" class="social-link" title="LinkedIn">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <span class="btn bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-6 py-3 rounded-full font-medium w-full text-center block">View Full Profile</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Kevin Cui -->
+        <div class="scroll-reveal">
+          <a href="founders/kevinFounderPage.html" class="block">
+            <div class="team-card border-blue p-8 h-full flex flex-col relative">
+              <div class="achievement-badge">Co-Founder</div>
+              
+              <div class="relative mb-8 mx-auto">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
+                <div class="team-photo w-32 h-32 lg:w-40 lg:h-40 mx-auto">
+                  <img src="volunteerPhotos/kevin-profile.png" alt="Kevin Cui" class="w-full h-full rounded-full object-cover shadow-lg relative z-10">
+                </div>
+              </div>
+              
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold mb-2">Kevin Cui</h3>
+                <div class="role-badge mb-4">Co-Founder & State Ambassador</div>
+                <p class="text-gray-600 mb-4">Developing innovative curriculum and technology solutions to make AI education accessible to all students.</p>
+                
+                <!-- Skills -->
+                <div class="flex flex-wrap gap-2 justify-center mb-4">
+                  <span class="skill-tag">Programming</span>
+                  <span class="skill-tag">Curriculum</span>
+                  <span class="skill-tag">Innovation</span>
+                  <span class="skill-tag">Technology</span>
+                </div>
+              </div>
+              
+              <div class="mt-auto">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-gray-600 text-sm flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    Plano, TX
+                  </span>
+                  
+                  <!-- Social Links -->
+                  <div class="flex space-x-2">
+                    <a href="#" class="social-link" title="LinkedIn">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Email">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <span class="btn bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-3 rounded-full font-medium w-full text-center block">View Full Profile</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Future Team Members Section -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Growing Our Team</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+        <p class="text-gray-200 mt-4 max-w-2xl mx-auto">We're actively expanding our team with passionate educators, developers, and AI enthusiasts. Join us in shaping the future of STEM education.</p>
+      </div>
+
+      <!-- Placeholder cards for future team members -->
+      <div class="grid gap-8 sm:gap-10 lg:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
+        <!-- Future Team Member Placeholder 1 -->
+        <div class="scroll-reveal">
+          <div class="team-card border-purple p-8 h-full flex flex-col relative opacity-75">
+            <div class="relative mb-8 mx-auto">
+              <div class="w-32 h-32 lg:w-40 lg:h-40 mx-auto bg-gradient-to-br from-purple-200 to-purple-300 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold mb-2">Join Our Team</h3>
+              <div class="role-badge mb-4">Multiple Positions Available</div>
+              <p class="text-gray-600 mb-4">We're looking for passionate individuals to help expand our mission and reach more students across the country.</p>
+            </div>
+            
+            <div class="mt-auto">
+              <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" target="_blank" class="btn bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-full font-medium w-full text-center block">Apply Now</a>
+            </div>
           </div>
         </div>
-      </a>  
+
+        <!-- Future Team Member Placeholder 2 -->
+        <div class="scroll-reveal">
+          <div class="team-card border-orange p-8 h-full flex flex-col relative opacity-75">
+            <div class="relative mb-8 mx-auto">
+              <div class="w-32 h-32 lg:w-40 lg:h-40 mx-auto bg-gradient-to-br from-orange-200 to-orange-300 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold mb-2">Curriculum Developer</h3>
+              <div class="role-badge mb-4">Education Specialist</div>
+              <p class="text-gray-600 mb-4">Help us create engaging AI and STEM curriculum that inspires and educates students of all backgrounds.</p>
+            </div>
+            
+            <div class="mt-auto">
+              <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" target="_blank" class="btn bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-full font-medium w-full text-center block">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Team Member Placeholder 3 -->
+        <div class="scroll-reveal">
+          <div class="team-card border-teal p-8 h-full flex flex-col relative opacity-75">
+            <div class="relative mb-8 mx-auto">
+              <div class="w-32 h-32 lg:w-40 lg:h-40 mx-auto bg-gradient-to-br from-teal-200 to-teal-300 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold mb-2">Tech Lead</h3>
+              <div class="role-badge mb-4">Software Developer</div>
+              <p class="text-gray-600 mb-4">Lead the development of innovative educational technology platforms and AI-powered learning tools.</p>
+            </div>
+            
+            <div class="mt-auto">
+              <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" target="_blank" class="btn bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white px-6 py-3 rounded-full font-medium w-full text-center block">Get Involved</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -396,122 +682,203 @@
   <!-- Join the Team Section -->
   <section class="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
     <div class="max-w-4xl mx-auto text-center px-4 sm:px-6">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">Join Our <span class="gradient-text">Team</span></h2>
-      <div class="w-24 h-1 bg-blue-600 mx-auto mb-8 sm:mb-12 rounded-full" data-aos="fade-up" data-aos-delay="100"></div>
+      <div class="scroll-reveal">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Join Our <span class="gradient-text">Mission</span></h2>
+        <div class="w-24 h-1 bg-blue-600 mx-auto mb-8 sm:mb-12 rounded-full"></div>
+      </div>
       
-      <p class="mb-4 sm:mb-6 text-gray-700 text-base sm:text-lg" data-aos="fade-up" data-aos-delay="200">
-        Passionate about AI and STEM education? We're always looking for dedicated individuals to help us expand our mission and reach more students.
-      </p>
-      <p class="mb-8 sm:mb-10 text-gray-600 italic text-sm sm:text-base" data-aos="fade-up" data-aos-delay="300">
-        Together, we can inspire the next generation of innovators and problem-solvers.
-      </p>
+      <div class="scroll-reveal">
+        <p class="mb-4 sm:mb-6 text-gray-700 text-base sm:text-lg">
+          Passionate about AI and STEM education? We're always looking for dedicated individuals to help us expand our mission and reach more students.
+        </p>
+        <p class="mb-8 sm:mb-10 text-gray-600 italic text-sm sm:text-base">
+          Together, we can inspire the next generation of innovators and problem-solvers.
+        </p>
+      </div>
       
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12" data-aos="fade-up" data-aos-delay="400">
-        <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition h-full flex flex-col">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+        <div class="scroll-reveal bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition h-full flex flex-col">
           <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 19 7.5 19s3.332-.523 4.5-1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.523 18.246 19 16.5 19c-1.746 0-3.332-.523-4.5-1.253" />
             </svg>
           </div>
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Chapter President</h3>
-          <p class="text-gray-600 text-sm sm:text-base flex-grow"><a href="https://docs.google.com/document/d/1VsumIwSdx6AXI9KNa8VMbJWdqk2ay15vnf8paRkLlsI/edit?tab=t.0#heading=h.5zkw6zft8u9x" target="_blank" class="text-blue-600 hover:text-blue-800 underline">AI in STEM Chapter Establishment Guide</a></p>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center">Educators</h3>
+          <p class="text-gray-600 text-sm sm:text-base text-center flex-grow">Help develop curriculum and teach AI concepts to students nationwide.</p>
         </div>
         
-        <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition h-full flex flex-col">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        <div class="scroll-reveal bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition h-full flex flex-col">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
           </div>
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Curriculum Developer</h3>
-          <p class="text-gray-600 text-sm sm:text-base flex-grow"><a href="https://docs.google.com/document/d/1Hen5bncTvFN-vK8o353bQ_Ci2t9LG7BkuhBO7AQe0yk/edit?tab=t.0#heading=h.5zkw6zft8u9x" target="_blank" class="text-blue-600 hover:text-blue-800 underline">AI in STEM Curriculum Development Guide</a></p>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center">Developers</h3>
+          <p class="text-gray-600 text-sm sm:text-base text-center flex-grow">Build innovative platforms and tools that make learning accessible and engaging.</p>
         </div>
         
-        <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition h-full flex flex-col">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="scroll-reveal bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition h-full flex flex-col">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
           </div>
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Outreach Manager</h3>
-          <p class="text-gray-600 text-sm sm:text-base flex-grow"><a href="https://docs.google.com/document/d/1ASYay8D6hLI9c0_TZ6Pbv2i8oVa8m2GcR97072r-kcI/edit?tab=t.0#heading=h.7i8pdlgojqk2" target="_blank" class="text-blue-600 hover:text-blue-800 underline">AI in STEM Outreach Guide</a></p>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center">Volunteers</h3>
+          <p class="text-gray-600 text-sm sm:text-base text-center flex-grow">Support our programs through mentoring, event coordination, and outreach.</p>
         </div>
       </div>
       
-      <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" 
-         target="_blank" 
-         class="btn bg-white text-blue-600 hover:bg-blue-100 px-8 sm:px-10 py-4 sm:py-5 font-bold rounded-full shadow-lg transform transition hover:scale-105 text-center text-lg" style="border: 2px solid #052178;" data-aos="fade-up" data-aos-delay="500">
-        Join Our Slack
-      </a>
+      <div class="scroll-reveal">
+        <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" 
+           target="_blank"
+           class="btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center">
+          <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+          </svg>
+          Join Our Team Today
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-white py-12 sm:py-16">
+  <footer class="bg-gray-900 text-white py-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center mb-8 sm:mb-10">
-        <img src="logo/logo.png" alt="AI in Stem Logo" class="h-12 sm:h-16 mb-4 sm:mb-6 md:mb-0" />
-        <div class="flex space-x-4 sm:space-x-6">
-          <a href="https://www.instagram.com/ai.in.stem/" target="_blank" class="text-gray-400 hover:text-white transition">
-            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/company/ai-in-stem/" target="_blank" class="text-gray-400 hover:text-white transition">
-            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path>
-            </svg>
-          </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ai.instemlearning@gmail.com" target="_blank" class="text-gray-400 hover:text-white transition">
-            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <img src="logo/logo.png" alt="AI in STEM" class="h-12 w-auto mb-4">
+          <p class="text-gray-400">Empowering the next generation through AI and STEM education.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+            <li><a href="team.html" class="text-gray-400 hover:text-white transition-colors">Team</a></li>
+            <li><a href="about.html#partners" class="text-gray-400 hover:text-white transition-colors">Partners</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+          <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" 
+             target="_blank"
+             class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors inline-block">
+            Join Our Slack
           </a>
         </div>
       </div>
-      <div class="border-t border-gray-800 pt-6 sm:pt-8 text-center">
-        <p class="text-base sm:text-lg">&copy; 2025 AI in Stem. All rights reserved.</p>
-        <p class="text-xs sm:text-sm text-gray-500 mt-2">AI in Stem is a 501(c)(3) nonprofit organization. Donations are tax-deductible.</p>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">&copy; 2024 AI in STEM. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- AOS Animation Library -->
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+    // Initialize AOS
     AOS.init({
       duration: 800,
+      easing: 'ease-in-out',
       once: true,
       offset: 100
     });
 
-    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-    const closeMobileMenu = document.getElementById("closeMobileMenu");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const menuOverlay = document.getElementById("menuOverlay");
-    const mobileMenuLinks = document.querySelectorAll(".mobile-nav-link");
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
 
-    mobileMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.add("open");
-      menuOverlay.classList.add("active");
-    });
+    function openMobileMenu() {
+      mobileMenu.classList.add('open');
+      menuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
 
-    closeMobileMenu.addEventListener("click", () => {
-      mobileMenu.classList.remove("open");
-      menuOverlay.classList.remove("active");
-    });
+    function closeMobileMenuFunc() {
+      mobileMenu.classList.remove('open');
+      menuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
 
-    menuOverlay.addEventListener("click", () => {
-      mobileMenu.classList.remove("open");
-      menuOverlay.classList.remove("active");
-    });
+    mobileMenuBtn.addEventListener('click', openMobileMenu);
+    closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+    menuOverlay.addEventListener('click', closeMobileMenuFunc);
 
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.remove("open");
-        menuOverlay.classList.remove("active");
+    // Scroll reveal animation
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.scroll-reveal');
+      
+      reveals.forEach(reveal => {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveal.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < windowHeight - elementVisible) {
+          reveal.classList.add('revealed');
+        }
       });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Initial check
+
+    // Enhanced hover effects for team cards
+    document.querySelectorAll('.team-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-12px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add loading animation to images
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('load', function() {
+        this.style.opacity = '1';
+      });
+      
+      if (!img.complete) {
+        img.style.opacity = '0';
+        img.style.transition = 'opacity 0.3s ease';
+      }
+    });
+
+    // Intersection Observer for better performance
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => {
+      observer.observe(el);
     });
   </script>
 </body>
 </html>
+
