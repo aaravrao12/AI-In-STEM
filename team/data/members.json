@@ -1,0 +1,56 @@
+{
+  "kevin-cui": {
+    "firstName": "Kevin",
+    "lastName": "Cui",
+    "name": "Kevin Cui",
+    "title": "Co-Founder & State Ambassador",
+    "roleDescription": "As a founder, I work with my partner to oversee and direct all aspects of the organization, namely chapter establishment, curriculum development, and outreach/growth initiatives.",
+    "about": "Hey, I'm Kevin Cui, a sophomore at Jasper High School in Texas and the co-founder of AI in STEM. I'm extremely passionate about technology, especially AI, machine learning, and robotics, while also being deeply committed to making education freely accessible to all, regardless of circumstances. Through AI in STEM, I'm able to bring these passions together by building chapters across the nation and developing a free, detailed yet student-friendly online curriculum to empower STEM-interested youth.",
+    "imageFile": "kevin-profile.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/kevin-cui-a975a1375/",
+    "githubUrl": "https://github.com/KevinCui1",
+    "skills": [
+      {
+        "title": "Robotics & Engineering",
+        "iconPath": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+      },
+      {
+        "title": "Volunteering & Empowerment",
+        "iconPath": "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+      },
+      {
+        "title": "Mathematics & Education",
+        "iconPath": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+      }
+    ],
+    "quote": "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice, and most of all, love of what you are doing.",
+    "quoteAuthor": "Pelé"
+  },
+  "aarav-rao": {
+    "firstName": "Aarav",
+    "lastName": "Rao",
+    "name": "Aarav Rao",
+    "title": "Co-Founder & State Ambassador",
+    "roleDescription": "As a founder, I work with my partner to oversee and direct all aspects of the organization, namely chapter establishment, curriculum development, and outreach/growth initiatives.",
+    "about": "Hey everybody, My name's Aarav Rao. I'm currently a sophomore at Jasper High School in Texas and the other co-founder of AI in STEM. I’m really into technology, especially AI and machine learning, but I also care a lot about using tech in a way that’s good for the planet and making education something everyone can access. Through AI in STEM, I get to combine these interests by creating chapters across the country and building a free, easy-to-use online curriculum that helps students learn about STEM without feeling left behind.",
+    "imageFile": "aarav-profile.png",
+    "linkedinUrl": "https://www.linkedin.com/in/aarav-rao-44b06025a/",
+    "githubUrl": "https://github.com/aaravrao12",
+    "skills": [
+      {
+        "title": "Machine Learning",
+        "iconPath": "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z M13 10V3L4 14h7v7l9-11h-7z"
+      },
+      {
+        "title": "Sustainability Research",
+        "iconPath": "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+      },
+      {
+        "title": "Podcasting",
+        "iconPath": "M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+      }
+    ],
+    "quote": "Technology is best when it brings people together.",
+    "quoteAuthor": "Matt Mullenweg"
+  }
+}
