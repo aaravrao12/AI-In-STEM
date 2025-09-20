@@ -52,6 +52,8 @@
     .nav-link {
       position: relative;
       transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
     }
     
     .nav-link::after {
@@ -59,14 +61,20 @@
       position: absolute;
       width: 0;
       height: 2px;
-      bottom: -4px;
-      left: 0;
-      background-color: #3b82f6;
-      transition: width 0.3s ease;
+      bottom: 0;
+      left: 50%;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
     }
     
     .nav-link:hover::after {
-      width: 100%;
+      width: 80%;
+    }
+    
+    .nav-link:hover {
+      background: rgba(59, 130, 246, 0.1);
+      transform: translateY(-2px);
     }
     
     .card {
@@ -257,6 +265,83 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+
+    /* Dark background overlay when mobile menu is open */
+    #menuOverlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(4px);
+      z-index: 40; /* behind the menu (z-50) but above content */
+      display: none;
+    }
+    #menuOverlay.active {
+      display: block;
+    }
+    
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    /* Professional Mobile Menu Styles */
+    .mobile-menu-backdrop {
+      background: #000000;
+      backdrop-filter: blur(20px);
+      border-left: 1px solid rgba(59, 130, 246, 0.2);
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .mobile-nav-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      margin: 0.25rem 0;
+      border-radius: 0.75rem;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      background: transparent;
+    }
+
+    .mobile-nav-link:hover {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+      border-color: rgba(59, 130, 246, 0.3);
+      transform: translateX(8px);
+    }
+
+    .mobile-nav-link::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 0;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      border-radius: 0 2px 2px 0;
+      transition: height 0.3s ease;
+    }
+
+    .mobile-nav-link:hover::before {
+      height: 60%;
+    }
+
+    .mobile-nav-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-nav-link:hover .mobile-nav-icon {
+      opacity: 1;
+    }
   </style>
 </head>
 <body class="text-gray-900 scrollbar-hide min-h-screen flex flex-col" style="background: linear-gradient(180deg, #E0E7FF 0%, #F3E8FF 100%);">
@@ -289,24 +374,107 @@
       </svg>
     </a>
 
-    <!-- Navbar -->
-    <header class="sticky top-0 flex items-center justify-between px-6 py-4 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-opacity-95 shadow-lg z-50 backdrop-blur-sm">
+    <!-- Enhanced Navbar -->
+    <header class="sticky top-0 flex items-center justify-between px-4 sm:px-6 py-4 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-opacity-95 shadow-xl z-50 backdrop-blur-md border-b border-blue-500/20">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="../index.html" aria-label="Go to homepage" class="transition transform hover:scale-105">
-          <img src="../logo/logo.png" alt="AI in Stem Logo" class="h-20 w-auto object-contain" />
+        <a href="../index.html" aria-label="Go to AI in STEM homepage" class="transition transform hover:scale-105 focus:scale-105">
+          <img src="../logo/logo.png" alt="AI in STEM Logo - Empowering Youth Through Technology" class="h-16 sm:h-20 w-auto object-contain" />
         </a>
       </div>
 
-      <!-- Nav links -->
-      <nav class="flex space-x-8 text-white text-lg font-medium">
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex space-x-8 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
         <a href="../index.html" class="nav-link hover:text-blue-400 transition-colors">Home</a>
-        <a href="../about.html" class="nav-link hover:text-blue-400 transition-colors">About</a>
-        <a href="../team.html" class="nav-link hover:text-blue-400 transition-colors">Team</a>
-        <a href="#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
-        <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" target="_blank" class="nav-link hover:text-blue-400 transition-colors">Join Us</a>
+        <a href="../about.html" class="nav-link hover:text-blue-400 transition-colors">About Us</a>
+        <a href="../team.html" class="nav-link hover:text-blue-400 transition-colors" aria-current="page">Our Team</a>
+        <a href="../about.html#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
+        <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" target="_blank" rel="noopener noreferrer" class="nav-link hover:text-blue-400 transition-colors">Join Our Community</a>
       </nav>
+
+      <!-- Mobile menu button -->
+      <button id="mobileMenuBtn" class="lg:hidden text-white p-2 rounded-md hover:bg-gray-800 transition-colors focus:bg-gray-800" aria-label="Open mobile menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </header>
+
+    <div id="menuOverlay"></div>
+    <!-- Mobile menu overlay -->
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 h-full w-80 z-50 lg:hidden">
+      <div class="mobile-menu-backdrop flex flex-col h-full">
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-700/30">
+          <div class="flex items-center space-x-3">
+            <img src="../logo/logo.png" alt="AI in Stem" class="h-8 w-auto">
+            <span class="text-white font-semibold text-lg">AI in Stem</span>
+          </div>
+          <button id="closeMobileMenu" class="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-gray-800/50 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Navigation Links -->
+        <nav class="flex-1 px-6 py-8">
+          <div class="space-y-2">
+            <a href="../index.html" class="mobile-nav-link text-white font-medium">
+              <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+              Home
+            </a>
+            
+            <a href="../about.html" class="mobile-nav-link text-white font-medium">
+              <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              About
+            </a>
+            
+            <a href="../team.html" class="mobile-nav-link text-white font-medium">
+              <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+              Team
+            </a>
+            
+            <a href="../about.html#partners" class="mobile-nav-link text-white font-medium">
+              <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+              </svg>
+              Partners
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ai.instemlearning@gmail.com" target="_blank" rel="noopener noreferrer" class="mobile-nav-link text-white font-medium">
+              <svg class="mobile-nav-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              Contact Us
+            </a>
+          </div>
+          
+          <!-- Call to Action -->
+          <div class="mt-12 pt-8 border-t border-gray-700/30">
+            <a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" 
+               target="_blank"
+               class="flex items-center justify-center w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+              </svg>
+              Join Our Team
+            </a>
+          </div>
+        </nav>
+        
+        <!-- Footer -->
+        <div class="p-6 border-t border-gray-700/30">
+          <p class="text-gray-400 text-sm text-center">Building the future of AI, one teen at a time.</p>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero-section relative py-24 px-6 text-white flex items-center justify-center">
@@ -534,6 +702,41 @@
 
     // Load member data when page loads
     loadMemberData();
+
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const closeMobileMenu = document.getElementById("closeMobileMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const menuOverlay = document.getElementById("menuOverlay");
+    const mobileMenuLinks = document.querySelectorAll(".mobile-nav-link");
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("open");
+        menuOverlay.classList.add("active");
+      });
+    }
+
+    if (closeMobileMenu) {
+      closeMobileMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuOverlay.classList.remove("active");
+      });
+    }
+
+    if (menuOverlay) {
+      menuOverlay.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuOverlay.classList.remove("active");
+      });
+    }
+
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuOverlay.classList.remove("active");
+      });
+    });
   </script>
 </body>
 </html>
