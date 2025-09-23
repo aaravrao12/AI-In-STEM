@@ -59,7 +59,7 @@
     "name": "Shanmukha Bommana",
     "title": "Curriculum Developer",
     "roleDescription": "As a curriculum developer, I work on designing & creating student-friendly and detailed educational slideshows, articles and other resources used by chapters across the nation.",
-    "about": "Hi, I'm Shanmukha Bommana, a senior at Aubrey High School in Texas. I'm passionate about AI and its development in the future, looking forward to working with AI and incorporating it more into our daily lives than thought possible. The opportunities and mission of AI in STEM led me to join - for me, AI has always been a passion, and the thought that I can help others learn and use AI really got my attention and was an opportunity I couldn't pass up. Outside of AI in STEM, I'm involved in Debate, Academic Decathlon, and Business Professionals of America.",
+    "about": "Hi, I'm Shanmukha Bommana, a senior at Aubrey High School in Texas. I'm passionate about AI and its development in the future, looking forward to working with AI and incorporating it more into our daily lives than thought possible. The opportunities and mission of AI in STEM led me to join, as for me, AI has always been a passion, and the thought that I could help others learn and use AI really got my attention and was an opportunity I couldn't pass up.",
     "imageFile": "Shanmukha-Bommana.png",
     "linkedinUrl": "https://www.linkedin.com/in/shanmukha-b-a58b282ba/",
     "githubUrl": "",
@@ -84,8 +84,8 @@
     "firstName": "Smyan",
     "lastName": "Reddy",
     "name": "Smyan Reddy",
-    "title": "Chapter President & State Ambassador",
-    "roleDescription": "As a Chapter President and State Ambassador, I lead local initiatives and represent our organization at the state level, working to expand AI education and establish new chapters across Georgia.",
+    "title": "State Ambassador & Chapter President",
+    "roleDescription": "As a Chapter President and State Ambassador, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters across Georgia.",
     "about": "I'm Smyan Reddy, an ambitious freshman at Lambert High School in Suwanee, Georgia. I'm passionate about the role of AI in the modern world and how it impacts one major part of life: STEM. The embodiment of the future rests in the palm of AI, and I want to accelerate the impact by educating individuals about how the future could be enunciated through the proper use and development of Artificial Intelligence. I'm an avid golf player, a budding coder and competitive programmer, and I actively pursue my passion for playing the violin.",
     "imageFile": "Smyan-Reddy.png",
     "linkedinUrl": "https://www.linkedin.com/in/smyan-reddy-784b752aa/",
@@ -111,10 +111,10 @@
     "firstName": "Tejus",
     "lastName": "Peri",
     "name": "Tejus Peri",
-    "title": "Chapter President",
-    "roleDescription": "As a Chapter President, I lead local initiatives and work to expand AI education while exploring how artificial intelligence can be applied to real-world challenges in aerospace and innovation.",
+    "title": "State Ambassador, Chapter President & Outreach Manager",
+    "roleDescription": "As a Chapter President and State Ambassador, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters across Georgia. Additionally, in the Georgia chapter, I also work on social media outreach and graphic design, along with being a curriculum developer and mentor!",
     "about": "My name is Tejus Peri, and I am a freshman at Alliance Academy for Innovation. I am passionate about aerospace, research, and innovation, and I hope to one day contribute to groundbreaking advancements in aviation and space exploration. I joined AI in STEM because I wanted to explore how artificial intelligence can be applied to real-world challenges while collaborating with other motivated students. I also play the euphonium and enjoy competing in chess tournaments!",
-    "imageFile": "Tejus-Peri.png",
+    "imageFile": "Tejus-Peri2.png",
     "linkedinUrl": "https://www.linkedin.com/in/tejus-peri-6a17a1370",
     "githubUrl": "",
     "skills": [
@@ -131,7 +131,412 @@
         "emoji": "🏆"
       }
     ],
-    "quote": "The sky is not the limit, it's just the beginning.",
+    "quote": "No retreat, no surrender; that is Spartan law.",
+    "quoteAuthor": "King Leonidas"
+  },
+  "samdeesh-thukral": {
+    "firstName": "Samdeesh",
+    "lastName": "Thukral",
+    "name": "Samdeesh Thukral",
+    "title": "Outreach Manager & Curriculum Developer",
+    "roleDescription": "As an Outreach Manager and Curriculum Developer, I work on expanding our reach through strategic partnerships and community engagement while also creating comprehensive educational resources and curriculum materials to support STEM education initiatives.",
+    "about": "Hi! My name is Samdeesh Thukral and I am currently a freshman in Lambert High School. I have a passion for Cybersecurity, and it relates to AI in STEM because AI enhances Cybersecurity, while Cybersecurity protects AI.",
+    "imageFile": "Samdeesh-Thukral.png",
+    "linkedinUrl": "https://www.linkedin.com/in/samdeesh-thukral",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Cybersecurity",
+        "emoji": "🔒"
+      },
+      {
+        "title": "Law & Legal Studies",
+        "emoji": "⚖️"
+      },
+      {
+        "title": "Football",
+        "emoji": "🏈"
+      }
+    ],
+    "quote": "Those who cannot remember the past are condemned to repeat it",
+    "quoteAuthor": "George Santayana"
+  },
+  "sai-vikhyath-belda": {
+    "firstName": "Sai Vikhyath",
+    "lastName": "Belda",
+    "name": "Sai Vikhyath Belda",
+    "title": "Chapter President & Outreach Manager",
+    "roleDescription": "As a Chapter President and Outreach Manager, I lead local initiatives and oversee community engagement efforts, building partnerships while organizing and advertising events to expand AI in STEM's reach and impact within Suwanee.",
+    "about": "My name is Sai Vikhyath Belda, but I go by Vicky. I go to Lambert High School, my current year is 9th. I'm passionate about being an entrepreneur when I grow up as well as learning how AI is really evolving and how it will benefit us for the better. I also like to advertise business, organization etc. This relates to the impact I want to make at AI In STEM by me being helpful as an outreach manager.",
+    "imageFile": "Vicky-Belda.png",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Badminton",
+        "emoji": "🏸"
+      },
+      {
+        "title": "Business & Entrepreneurship",
+        "emoji": "💼"
+      },
+      {
+        "title": "Aerospace",
+        "emoji": "🚀"
+      }
+    ],
+    "quote": "If you had a goal, and actually believe you can do it, your halfway there.",
     "quoteAuthor": "Anonymous"
+  },
+  "aditya-pradhan": {
+    "firstName": "Aditya",
+    "lastName": "Pradhan",
+    "name": "Aditya Pradhan",
+    "title": "Chapter President, State Ambassador & Outreach Manager",
+    "roleDescription": "As a Chapter President, State Ambassador, and Outreach Manager, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters while also focusing on outreach and community engagement strategies.",
+    "about": "My name is Aditya Pradhan, and I'm a senior at Richard Montgomery High School. I'm passionate about using analytical thinking and technology to solve messy, real-world problems. As president of my school's Finance Club and an IB student researching defense economics, I've learned to combine quantitative models with careful ethical thinking. At AI in STEM I want to build interpretable AI tools that help non-specialists access data-driven answers for example, lightweight models that help small research teams analyze experimental results, or explainable systems that help policymakers understand trade-offs in resource allocation.",
+    "imageFile": "Aditya-Pradhan.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/aditya-pradhan-836771325/",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Finance & Economics",
+        "emoji": "💰"
+      },
+      {
+        "title": "Youth Leadership & Tutoring",
+        "emoji": "📚"
+      },
+      {
+        "title": "Community Volunteering",
+        "emoji": "🌾"
+      }
+    ],
+    "quote": "If you want a thing done well, do it yourself",
+    "quoteAuthor": "Napoleon"
+  },
+  "ashvik-talluru": {
+    "firstName": "Ashvik",
+    "lastName": "Talluru",
+    "name": "Ashvik Talluru",
+    "title": "Outreach Manager & Curriculum Developer",
+    "roleDescription": "As an Outreach Manager and Curriculum Developer, I work on expanding our reach through strategic partnerships and community engagement while also creating comprehensive educational resources and curriculum materials to support STEM education initiatives.",
+    "about": "My name is Ashvik Talluru, and I am a Freshman at Lambert High School. I really love learning about AI and how it affects day to day activities. This affects AI in STEM because I like researching about AI, and I already have prior knowledge about how AI affects certain parts in life. I also love watching football and learning about history in my free time.",
+    "imageFile": "Ashvik-Talluru.png",
+    "linkedinUrl": "https://www.linkedin.com/in/ashvik-talluru-471550383/",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "AI Research",
+        "emoji": "🔬"
+      },
+      {
+        "title": "Academic Bowl",
+        "emoji": "🧠"
+      },
+      {
+        "title": "Technology & Innovation",
+        "emoji": "💻"
+      }
+    ],
+    "quote": "I remember that I was never able to get along at school. I was at the foot of the class.",
+    "quoteAuthor": "Thomas Edison"
+  },
+  "leyang-zeng": {
+    "firstName": "Leyang",
+    "lastName": "Zeng",
+    "name": "Leyang Zeng",
+    "title": "State Ambassador, Outreach Manager & Curriculum Developer",
+    "roleDescription": "As a State Ambassador, Outreach Manager, and Curriculum Developer, I represent AI in STEM at the state level while expanding our reach through strategic partnerships and community engagement, and creating comprehensive educational resources and curriculum materials to support STEM education initiatives.",
+    "about": "Hello my name is Leyang Zeng. I am a sophomore at Jasper High School. I am passionate about machine learning, math, computer science, and art. I hope to impact AI in STEM through leading curriculum development courses and inviting more people to join the organization!",
+    "imageFile": "Leyang-Zeng.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/leyang-zeng-117660356",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Machine Learning & Math",
+        "emoji": "🧮"
+      },
+      {
+        "title": "USACO Programming",
+        "emoji": "💻"
+      },
+      {
+        "title": "LLM Research",
+        "emoji": "🔬"
+      }
+    ],
+    "quote": "I am not bound to win, but I am bound to be true. I am not bound to succeed, but I am bound to live up to what light I have.",
+    "quoteAuthor": "Abraham Lincoln"
+  },
+  "shashank-golajana": {
+    "firstName": "Shashank",
+    "lastName": "Golajana",
+    "name": "Shashank Golajana",
+    "title": "Chapter President & State Ambassador",
+    "roleDescription": "As a Chapter President and State Ambassador, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters across Arizona.",
+    "about": "I'm Shashank Golajana, a student from Tolleson with a passion for AI, entrepreneurship, and business. Outside of academics, I enjoy playing soccer and I used to play for clubs. I enjoy bringing teamwork into everything I do. Through AI in STEM, I love teaching others and organizing workshops that make technology accessible and exciting.",
+    "imageFile": "Shashank-Golajana.webp",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Soccer",
+        "emoji": "⚽"
+      },
+      {
+        "title": "Entrepreneurship",
+        "emoji": "💼"
+      },
+      {
+        "title": "AI",
+        "emoji": "🤖"
+      }
+    ],
+    "quote": "If you want a thing done well, do it yourself",
+    "quoteAuthor": "Napoleon"
+  },
+  "karthick-ponkali": {
+    "firstName": "Karthick",
+    "lastName": "Ponkali",
+    "name": "Karthick Ponkali",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "My name is Karthick Ponkali. I am a sophomore from Arizona studying in Mountain Ridge High School. I really like to code, make music, and educate! I volunteer at AI in STEM in order to educate the world on AI and the truths about it!",
+    "imageFile": "Karthick-Ponkali.jpeg",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Website Development",
+        "emoji": "💻"
+      },
+      {
+        "title": "Music Production",
+        "emoji": "🎵"
+      },
+      {
+        "title": "ML Engineering",
+        "emoji": "🤖"
+      }
+    ],
+    "quote": "You don't lose if you get knocked down; you lose if you stay down",
+    "quoteAuthor": "Muhammad Ali"
+  },
+  "kenny-sutinatikul": {
+    "firstName": "Kenny",
+    "lastName": "Sutinatikul",
+    "name": "Kenny Sutinatikul",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "I'm Kenny Sutinatikul, a sophomore at Basis Scottsdale with a passion for engineering, AI, and motorsports. I practice Muay Thai, sim-racing, and badminton aside from academics. As a chapter president in AI in STEM, I look forward to teaching and inspiring others who have a desire to explore technology.",
+    "imageFile": "Kenny-Sutinatikul.jpg",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Badminton Coaching",
+        "emoji": "🏸"
+      },
+      {
+        "title": "Math Club Leadership",
+        "emoji": "📐"
+      },
+      {
+        "title": "UNICEF Volunteer",
+        "emoji": "🌍"
+      }
+    ],
+    "quote": "If you do not expect the unexpected, you will not find it; for it is hard to be sought out and difficult.",
+    "quoteAuthor": "Heraclitus"
+  },
+  "shreyas-choudhury": {
+    "firstName": "Shreyas",
+    "lastName": "Choudhury",
+    "name": "Shreyas Choudhury",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Texas, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "Hi! I am Shreyas and I am currently a Junior at Argyle High School. I am passionate about Robotics and Data Science with its implementation in the field of business. Aside from school, I like drones, playing football and hanging out with my friends! Fun fact about me is that I have visited over 12 countries.",
+    "imageFile": "Shreyas-Choudhury.png",
+    "linkedinUrl": "https://www.linkedin.com/in/shreyaschoudhury/",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Robotics VP",
+        "emoji": "🤖"
+      },
+      {
+        "title": "Data Science & Analysis",
+        "emoji": "📊"
+      },
+      {
+        "title": "STEMSeeds President",
+        "emoji": "🌱"
+      }
+    ],
+    "quote": "If you are going through hell, keep going.",
+    "quoteAuthor": "Winston Churchill"
+  },
+  "karthikeya-yeruva": {
+    "firstName": "Karthikeya",
+    "lastName": "Yeruva",
+    "name": "Karthikeya Yeruva",
+    "title": "Chapter President & State Ambassador",
+    "roleDescription": "As a Chapter President and State Ambassador, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters across Florida.",
+    "about": "My name is Karthikeya, a sophomore at Steinbrenner High School. I love coding and computers, and as an ambassador/president, I want to help others explore AI in STEM and see how technology can make a real difference. I hope to inspire others to use technology creatively and make a positive impact through STEM projects.",
+    "imageFile": "Karthikeya-Yeruva.png",
+    "linkedinUrl": "https://www.linkedin.com/in/karthikeya-sai-7bb64931a/",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Computer Science Projects",
+        "emoji": "💻"
+      },
+      {
+        "title": "Hackathons",
+        "emoji": "🏆"
+      },
+      {
+        "title": "Leadership",
+        "emoji": "👨‍💼"
+      }
+    ],
+    "quote": "Only those who will risk going too far can possibly find out how far one can go.",
+    "quoteAuthor": "T.S. Eliot"
+  },
+  "tanmay-joshi": {
+    "firstName": "Tanmay",
+    "lastName": "Joshi",
+    "name": "Tanmay Joshi",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "My name is Tanmay Joshi, and I am a Junior at Basis Phoenix. I am interested in marketing and business, and ways that AI can be applied in the field. Outside of school I like to play basketball, fostering teamwork and collaboration!",
+    "imageFile": "Tanmay-Joshi.jpeg",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Marketing & Business",
+        "emoji": "💼"
+      },
+      {
+        "title": "Basketball",
+        "emoji": "🏀"
+      },
+      {
+        "title": "Teamwork & Leadership",
+        "emoji": "🤝"
+      }
+    ],
+    "quote": "An investment in knowledge pays the best interest.",
+    "quoteAuthor": "Benjamin Franklin"
+  },
+  "sai-rohan-pasumarthi": {
+    "firstName": "Sai Rohan",
+    "lastName": "Pasumarthi",
+    "name": "Sai Rohan Pasumarthi",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Argyle, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "My name is Rohan Pasumarthi, and I am currently a Junior in high school. I am passionate about artificial intelligence and computer science, and I hope to use these fields to make STEM more accessible by creating tools that solve real-world problems and inspire others to explore technology. I want to make a lasting impact at AI in STEM by combining innovation with creativity to push the boundaries of what students can achieve.",
+    "imageFile": "Sai-Rohan-Pasumarthi.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/rohan-pasumarthi-ab14822a7/",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Student Platform Development",
+        "emoji": "💻"
+      },
+      {
+        "title": "CS Competitions",
+        "emoji": "🏆"
+      },
+      {
+        "title": "Independent Research",
+        "emoji": "🔬"
+      }
+    ],
+    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+    "quoteAuthor": "Eleanor Roosevelt"
+  },
+  "siddhant-mahajan": {
+    "firstName": "Siddhant",
+    "lastName": "Mahajan",
+    "name": "Siddhant Mahajan",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "My name is Siddhant Mahajan, and I am a sophomore at BASIS Scottsdale. I am passionate about making artificial intelligence more accessible and understandable for anyone who has interest in STEM. Through AI in STEM, I hope to inspire and help others develop skills in technology and innovation. A fun fact about me is that I enjoy combining my love for biology with AI to explore challenges in health and science.",
+    "imageFile": "Siddhant-Mahajan.jpg",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Community Service",
+        "emoji": "🤝"
+      },
+      {
+        "title": "Taekwondo",
+        "emoji": "🥋"
+      },
+      {
+        "title": "Varsity Soccer",
+        "emoji": "⚽"
+      }
+    ],
+    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "quoteAuthor": "Winston Churchill"
+  },
+  "harshal-sharma": {
+    "firstName": "Harshal",
+    "lastName": "Sharma",
+    "name": "Harshal Sharma",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "My name is Harshal Sharma, I am a junior at Basis Phoenix, and I'm passionate about teaching and hosting workshops, centered on teaching youth to be able to use AI in STEM fields and help better their community. A fun fact is that my favorite colors are green and blue.",
+    "imageFile": "Harshal-Sharma.jpeg",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Personal Development",
+        "emoji": "🌟"
+      },
+      {
+        "title": "Volunteering",
+        "emoji": "🤝"
+      },
+      {
+        "title": "Academics",
+        "emoji": "📚"
+      }
+    ],
+    "quote": "Talent without hard work is nothing.",
+    "quoteAuthor": "Cristiano Ronaldo"
+  },
+  "lakshith-tana": {
+    "firstName": "Lakshith",
+    "lastName": "Tana",
+    "name": "Lakshith Tana",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "I'm Lakshith, currently a junior at Basis Phoenix. I like building things that are helpful for others. AI can accomplish this task which is why I'm a part of this organization. I wanna build and teach to the others the power of this tool, and I love making new friends and challenging myself in new situations.",
+    "imageFile": "Lakshith-Tana.jpeg",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Robotics",
+        "emoji": "🤖"
+      },
+      {
+        "title": "Soccer",
+        "emoji": "⚽"
+      },
+      {
+        "title": "Reading Books",
+        "emoji": "📚"
+      }
+    ],
+    "quote": "Do one thing every day that scares you.",
+    "quoteAuthor": "Eleanor Roosevelt"
   }
 }
