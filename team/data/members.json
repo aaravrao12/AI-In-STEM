@@ -12,15 +12,15 @@
     "skills": [
       {
         "title": "Robotics & Engineering",
-        "iconPath": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        "emoji": "🤖"
       },
       {
         "title": "Volunteering & Empowerment",
-        "iconPath": "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+        "emoji": "🤝"
       },
       {
         "title": "Mathematics & Education",
-        "iconPath": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+        "emoji": "📚"
       }
     ],
     "quote": "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice, and most of all, love of what you are doing.",
@@ -39,18 +39,99 @@
     "skills": [
       {
         "title": "Machine Learning",
-        "iconPath": "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z M13 10V3L4 14h7v7l9-11h-7z"
+        "emoji": "🧠"
       },
       {
         "title": "Sustainability Research",
-        "iconPath": "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+        "emoji": "🌱"
       },
       {
         "title": "Podcasting",
-        "iconPath": "M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+        "emoji": "🎙️"
       }
     ],
     "quote": "Technology is best when it brings people together.",
     "quoteAuthor": "Matt Mullenweg"
+  },
+  "shanmukha-bommana": {
+    "firstName": "Shanmukha",
+    "lastName": "Bommana",
+    "name": "Shanmukha Bommana",
+    "title": "Curriculum Developer",
+    "roleDescription": "As a curriculum developer, I work on designing & creating student-friendly and detailed educational slideshows, articles and other resources used by chapters across the nation.",
+    "about": "Hi, I'm Shanmukha Bommana, a senior at Aubrey High School in Texas. I'm passionate about AI and its development in the future, looking forward to working with AI and incorporating it more into our daily lives than thought possible. The opportunities and mission of AI in STEM led me to join - for me, AI has always been a passion, and the thought that I can help others learn and use AI really got my attention and was an opportunity I couldn't pass up. Outside of AI in STEM, I'm involved in Debate, Academic Decathlon, and Business Professionals of America.",
+    "imageFile": "Shanmukha-Bommana.png",
+    "linkedinUrl": "https://www.linkedin.com/in/shanmukha-b-a58b282ba/",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Speech & Debate",
+        "emoji": "💬"
+      },
+      {
+        "title": "Academic Decathlon",
+        "emoji": "🏆"
+      },
+      {
+        "title": "Business Professionals of America",
+        "emoji": "💼"
+      }
+    ],
+    "quote": "The best way to predict the future is to create it.",
+    "quoteAuthor": "Peter Drucker"
+  },
+  "smyan-reddy": {
+    "firstName": "Smyan",
+    "lastName": "Reddy",
+    "name": "Smyan Reddy",
+    "title": "Chapter President & State Ambassador",
+    "roleDescription": "As a Chapter President and State Ambassador, I lead local initiatives and represent our organization at the state level, working to expand AI education and establish new chapters across Georgia.",
+    "about": "I'm Smyan Reddy, an ambitious freshman at Lambert High School in Suwanee, Georgia. I'm passionate about the role of AI in the modern world and how it impacts one major part of life: STEM. The embodiment of the future rests in the palm of AI, and I want to accelerate the impact by educating individuals about how the future could be enunciated through the proper use and development of Artificial Intelligence. I'm an avid golf player, a budding coder and competitive programmer, and I actively pursue my passion for playing the violin.",
+    "imageFile": "Smyan-Reddy.png",
+    "linkedinUrl": "https://www.linkedin.com/in/smyan-reddy-784b752aa/",
+    "githubUrl": "https://github.com/math12345678",
+    "skills": [
+      {
+        "title": "Golfer",
+        "emoji": "⛳"
+      },
+      {
+        "title": "Programming & Development",
+        "emoji": "💻"
+      },
+      {
+        "title": "Violinist & Musician",
+        "emoji": "🎻"
+      }
+    ],
+    "quote": "Do not put to tomorrow what can be done today.",
+    "quoteAuthor": "Sensei Wu"
+  },
+  "tejus-peri": {
+    "firstName": "Tejus",
+    "lastName": "Peri",
+    "name": "Tejus Peri",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to expand AI education while exploring how artificial intelligence can be applied to real-world challenges in aerospace and innovation.",
+    "about": "My name is Tejus Peri, and I am a freshman at Alliance Academy for Innovation. I am passionate about aerospace, research, and innovation, and I hope to one day contribute to groundbreaking advancements in aviation and space exploration. I joined AI in STEM because I wanted to explore how artificial intelligence can be applied to real-world challenges while collaborating with other motivated students. I also play the euphonium and enjoy competing in chess tournaments!",
+    "imageFile": "Tejus-Peri.png",
+    "linkedinUrl": "https://www.linkedin.com/in/tejus-peri-6a17a1370",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Winglet Research",
+        "emoji": "✈️"
+      },
+      {
+        "title": "Growth Internships",
+        "emoji": "📈"
+      },
+      {
+        "title": "STEM Competitions",
+        "emoji": "🏆"
+      }
+    ],
+    "quote": "The sky is not the limit, it's just the beginning.",
+    "quoteAuthor": "Anonymous"
   }
 }
