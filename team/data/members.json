@@ -411,7 +411,7 @@
     "title": "Chapter President",
     "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
     "about": "My name is Tanmay Joshi, and I am a Junior at Basis Phoenix. I am interested in marketing and business, and ways that AI can be applied in the field. Outside of school I like to play basketball, fostering teamwork and collaboration!",
-    "imageFile": "Tanmay-Joshi.jpeg",
+    "imageFile": "Tanmay-Joshi.png",
     "linkedinUrl": "",
     "githubUrl": "",
     "skills": [
@@ -465,7 +465,7 @@
     "title": "Chapter President",
     "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
     "about": "My name is Siddhant Mahajan, and I am a sophomore at BASIS Scottsdale. I am passionate about making artificial intelligence more accessible and understandable for anyone who has interest in STEM. Through AI in STEM, I hope to inspire and help others develop skills in technology and innovation. A fun fact about me is that I enjoy combining my love for biology with AI to explore challenges in health and science.",
-    "imageFile": "Siddhant-Mahajan.jpg",
+    "imageFile": "Siddhant-Mahajan.png",
     "linkedinUrl": "",
     "githubUrl": "",
     "skills": [
@@ -492,7 +492,7 @@
     "title": "Chapter President",
     "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
     "about": "My name is Harshal Sharma, I am a junior at Basis Phoenix, and I'm passionate about teaching and hosting workshops, centered on teaching youth to be able to use AI in STEM fields and help better their community. A fun fact is that my favorite colors are green and blue.",
-    "imageFile": "Harshal-Sharma.jpeg",
+    "imageFile": "Harshal-Sharma.png",
     "linkedinUrl": "",
     "githubUrl": "",
     "skills": [
@@ -619,5 +619,167 @@
     ],
     "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
     "quoteAuthor": "Winston S. Churchill"
+  },
+  "sai-swaroop-das": {
+    "firstName": "Sai Swaroop",
+    "lastName": "Das",
+    "name": "Sai Swaroop Das",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "My name is Sai Swaroop Das, and I am a sophomore at BASIS Scottsdale. I am passionate about how technologies can be integrated in the fields of bioscience and forensics. Through AI in STEM, I want to explore how artificial intelligence can revolutionize scientific research and forensic investigations, making these fields more accessible and impactful for solving real-world problems.",
+    "imageFile": "Sai-Swaroop-Das.png",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Debate",
+        "emoji": "🎤"
+      },
+      {
+        "title": "Biology",
+        "emoji": "🧬"
+      },
+      {
+        "title": "Forensics",
+        "emoji": "🔍"
+      }
+    ],
+    "quote": "Talent without hardwork is nothing",
+    "quoteAuthor": "Cristiano Ronaldo"
+  },
+  "saahas-nalabhotu": {
+    "firstName": "Saahas",
+    "lastName": "Nalabhotu",
+    "name": "Saahas Nalabhotu",
+    "title": "Chapter President, State Ambassador & Curriculum Developer",
+    "roleDescription": "As a Chapter President, State Ambassador, and Curriculum Developer, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters across Georgia while creating comprehensive educational resources and curriculum materials to support STEM education initiatives.",
+    "about": "My name is Saahas Nalabhotu, and I am a junior at Lambert High School in Suwanee, Georgia. I am passionate about business, AI, and computer science, and I want to explore how these interests can create meaningful solutions in STEM. My goal is to use technology and problem-solving to improve communities while also learning the leadership side of business through AI in STEM.",
+    "imageFile": "Saahas-Nalabhotu.jpeg",
+    "linkedinUrl": "https://www.linkedin.com/in/saahas-nalabhotu-6507552a8",
+    "githubUrl": "https://github.com/SaahasN",
+    "skills": [
+      {
+        "title": "AI & Python",
+        "emoji": "🐍"
+      },
+      {
+        "title": "Business & Leadership",
+        "emoji": "💼"
+      },
+      {
+        "title": "Volunteering & Tutoring",
+        "emoji": "📚"
+      }
+    ],
+    "quote": "Mamba mentality is all about focusing on the process and trusting in the hard work when it matters most.",
+    "quoteAuthor": "Kobe Bryant"
+  },
+  "kireeti-gottipati": {
+    "firstName": "Kireeti",
+    "lastName": "Gottipati",
+    "name": "Kireeti Gottipati",
+    "title": "Chapter President & Outreach Manager",
+    "roleDescription": "As a Chapter President and Outreach Manager, I lead local initiatives and oversee community engagement efforts, building partnerships while organizing and advertising events to expand AI in STEM's reach and impact within Arizona.",
+    "about": "My name is Kireeti Gottipati, and I am a sophomore at Mountain Ridge High School in Peoria, Arizona. I'm very interested in AI and its real-life applications, and I want to explore how artificial intelligence can solve practical problems and make technology more accessible to everyone. Through AI in STEM, I hope to bridge the gap between theoretical AI concepts and their practical implementations in our daily lives. A fun fact about me is that I have a 3rd degree black belt in kung fu!",
+    "imageFile": "Kireeti-Gottipati.jpeg",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "DECA/FBLA",
+        "emoji": "💼"
+      },
+      {
+        "title": "National Honor Society",
+        "emoji": "🎓"
+      },
+      {
+        "title": "Kung Fu Martial Arts",
+        "emoji": "🥋"
+      }
+    ],
+    "quote": "The unexamined life is not worth living.",
+    "quoteAuthor": "Socrates"
+  },
+  "bhuvan-potlapalli": {
+    "firstName": "Bhuvan",
+    "lastName": "Potlapalli",
+    "name": "Bhuvan Potlapalli",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "My name is Bhuvan Potlapalli. I am a Junior at BASIS Phoenix. I'm passionate about threading water, and how it can be incorporated with AI technologies! Through AI in STEM, I hope to explore how artificial intelligence can be applied to water management and environmental solutions, making these technologies more accessible to help solve real-world problems.",
+    "imageFile": "Bhuvan-Potlapalli.webp",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Basketball",
+        "emoji": "🏀"
+      },
+      {
+        "title": "Cyber Security",
+        "emoji": "🔒"
+      },
+      {
+        "title": "Machine Learning",
+        "emoji": "🤖"
+      }
+    ],
+    "quote": "You must be the change you wish to see in the world.",
+    "quoteAuthor": "Mahatma Gandhi"
+  },
+  "ram-suhrut-seelamankalugari": {
+    "firstName": "Ram Suhrut",
+    "lastName": "Seelamankalugari",
+    "name": "Ram Suhrut Seelamankalugari",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Texas, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "Hello, I'm Ram Suhrut, a sophomore at Independence High School with a strong commitment to community service. I am fascinated by the potential of artificial intelligence to drive breakthroughs in neurotechnology, particularly in areas that can enhance healthcare outcomes. By combining my passion for technology with an interest in neuroscience, I aim to explore innovative solutions that bridge the gap between data science and medicine through AI in STEM.",
+    "imageFile": "Ram-Suhrut.png",
+    "linkedinUrl": "https://www.linkedin.com/in/ram-suhrut-seelamankalugari-540326337/",
+    "githubUrl": "https://github.com/RamSuhrut10",
+    "skills": [
+      {
+        "title": "Tennis",
+        "emoji": "🎾"
+      },
+      {
+        "title": "Computational Neuroscience Research",
+        "emoji": "🧠"
+      },
+      {
+        "title": "Model United Nations",
+        "emoji": "🌍"
+      }
+    ],
+    "quote": "Continuous effort—not strength or intelligence—is the key to unlocking our potential.",
+    "quoteAuthor": "Winston Churchill"
+  },
+  "supraj-gonur": {
+    "firstName": "Supraj",
+    "lastName": "Gonur",
+    "name": "Supraj Gonur",
+    "title": "State Ambassador, Outreach Manager & Curriculum Developer",
+    "roleDescription": "As a State Ambassador, Outreach Manager, and Curriculum Developer, I represent AI in STEM at the state level while expanding our reach through strategic partnerships and community engagement, and creating comprehensive educational resources and curriculum materials to support STEM education initiatives.",
+    "about": "Hello my name is Supraj Gonur. I am a sophomore at Jasper High School. I am passionate about Math, AI and machine learning, STEM in general, and enjoy volunteering. I will make an impact with AI in STEM by empowering youth and interested individuals about the world of AI in STEM. I hope to help this organization spread globally in the near future!",
+    "imageFile": "Supraj-Gonur.jpeg",
+    "linkedinUrl": "https://www.linkedin.com/in/supraj-gonur-17644a386/",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Education & STEM",
+        "emoji": "📚"
+      },
+      {
+        "title": "Robotics & Business",
+        "emoji": "🤖"
+      },
+      {
+        "title": "Volunteering & Enablement",
+        "emoji": "🤝"
+      }
+    ],
+    "quote": "The only place where success comes before work is in the dictionary.",
+    "quoteAuthor": "Vidal Sassoon"
   }
 }
