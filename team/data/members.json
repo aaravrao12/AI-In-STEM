@@ -538,5 +538,59 @@
     ],
     "quote": "Do one thing every day that scares you.",
     "quoteAuthor": "Eleanor Roosevelt"
+  },
+  "yagiz-soylemez": {
+    "firstName": "Yağız",
+    "lastName": "Söylemez",
+    "name": "Yağız Söylemez",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Turkey, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "I am Yağız, a sophomore at Ankara Atatürk High School. I am into social sciences and read books, make research about social sciences, especially history and religions. I believe in the equality of having access to education, and I truly think that AI is a must to learn nowadays. Therefore, I want to reach out more people in my community, helping them learn how important AI is, along with promoting AI in STEM.",
+    "imageFile": "Yagiz-Soylemez.png",
+    "linkedinUrl": "http://linkedin.com/in/yağız-söylemez",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Reading Novels",
+        "emoji": "📖"
+      },
+      {
+        "title": "Watching Football",
+        "emoji": "⚽"
+      },
+      {
+        "title": "Research Projects",
+        "emoji": "🔬"
+      }
+    ],
+    "quote": "The land that's gained through hard work cannot be traded with money.",
+    "quoteAuthor": "Sultan Abdulhamid II"
+  },
+  "tanveer-dash": {
+    "firstName": "Tanveer",
+    "lastName": "Dash",
+    "name": "Tanveer Dash",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives and work to establish and expand AI in STEM's presence in Arizona, organizing educational workshops and community outreach programs to make AI accessible to all students.",
+    "about": "My name is Tanveer Dash, and I am a junior at Paradise Valley High School. I am passionate about AI and Data Science, and this relates to my interest in AI and how it impacts data. Through AI in STEM, I want to make these technologies more accessible and help others understand their real-world applications. A fun fact about me is that I play soccer.",
+    "imageFile": "Tanveer-Dash.jpg", 
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Soccer",
+        "emoji": "⚽"
+      },
+      {
+        "title": "Coding",
+        "emoji": "💻"
+      },
+      {
+        "title": "Data Analysis",
+        "emoji": "📊"
+      }
+    ],
+    "quote": "My enemies are many, my equals are none.",
+    "quoteAuthor": "Napoleon Bonaparte"
   }
 }
