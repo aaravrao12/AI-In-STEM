@@ -219,6 +219,47 @@
       }
     }
     
+    /* Consistent image positioning for all profile images to match team cards */
+    .profile-image img {
+      object-position: center top;
+    }
+    
+    /* Specific adjustment for Akshith's image to match his team card */
+    img[src*="Akshith-Chepuri"] {
+      object-position: center 0%;
+    }
+
+    img[src*="Tanmay-Joshi"] {
+      object-position: center 5%;
+      transform: scale(1.2);
+    }
+    
+    /* Ensure all team member profile images match their team card positioning */
+    img[alt*="Kevin Cui"],
+    img[alt*="Aarav Rao"],
+    img[alt*="Shanmukha Bommana"],
+    img[alt*="Smyan Reddy"],
+    img[alt*="Tejus Peri"],
+    img[alt*="Samdeesh Thukral"],
+    img[alt*="Sai Vikhyath Belda"],
+    img[alt*="Aditya Pradhan"],
+    img[alt*="Ashvik Talluru"],
+    img[alt*="Leyang Zeng"],
+    img[alt*="Shashank Golajana"],
+    img[alt*="Karthick Ponkali"],
+    img[alt*="Kenny Sutinatikul"],
+    img[alt*="Shreyas Choudhury"],
+    img[alt*="Karthikeya Yeruva"],
+    img[alt*="Tanmay Joshi"],
+    img[alt*="Sai Rohan Pasumarthi"],
+    img[alt*="Siddhant Mahajan"],
+    img[alt*="Harshal Sharma"],
+    img[alt*="Lakshith Tana"],
+    img[alt*="Yağız Söylemez"],
+    img[alt*="Tanveer Dash"] {
+      object-position: center top;
+    }
+    
     .content-card {
       border-radius: 1rem;
       background-color: white;
