@@ -223,11 +223,6 @@
     .profile-image img {
       object-position: center top;
     }
-    
-    /* Specific adjustment for Akshith's image to match his team card */
-    img[src*="Akshith-Chepuri"] {
-      object-position: center 0%;
-    }
 
     img[src*="Tanmay-Joshi"] {
       object-position: center 5%;
@@ -257,6 +252,12 @@
     img[alt*="Yağız Söylemez"],
     img[alt*="Tanveer Dash"] {
       object-position: center top;
+    }
+    
+    /* More specific override for Akshith's image positioning - must come after general rules */
+    .profile-image img[src*="Akshith-Chepuri"] {
+      object-position: 10% 0% !important;
+      transform: rotate(-5deg) !important;
     }
     
     .content-card {
