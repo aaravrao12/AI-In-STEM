@@ -246,8 +246,8 @@
     "firstName": "Leyang",
     "lastName": "Zeng",
     "name": "Leyang Zeng",
-    "title": "State Ambassador, Outreach Manager & Curriculum Developer",
-    "roleDescription": "As a State Ambassador, Outreach Manager, and Curriculum Developer, I represent AI in STEM at the state level while expanding our reach through strategic partnerships and community engagement, and creating comprehensive educational resources and curriculum materials to support STEM education initiatives.",
+    "title": "Chapter President & Curriculum Developer",
+    "roleDescription": "As a Chapter President and Curriculum Developer, I lead my local chapter and create comprehensive educational resources and curriculum materials to support STEM education initiatives.",
     "about": "Hello my name is Leyang Zeng. I am a sophomore at Jasper High School. I am passionate about machine learning, math, computer science, and art. I hope to impact AI in STEM through leading curriculum development courses and inviting more people to join the organization!",
     "imageFile": "Leyang-Zeng.jpg",
     "linkedinUrl": "https://www.linkedin.com/in/leyang-zeng-117660356",
@@ -759,8 +759,8 @@
     "firstName": "Supraj",
     "lastName": "Gonur",
     "name": "Supraj Gonur",
-    "title": "State Ambassador, Outreach Manager & Curriculum Developer",
-    "roleDescription": "As a State Ambassador, Outreach Manager, and Curriculum Developer, I represent AI in STEM at the state level while expanding our reach through strategic partnerships and community engagement, and creating comprehensive educational resources and curriculum materials to support STEM education initiatives.",
+    "title": "Chapter President & Curriculum Developer",
+    "roleDescription": "As a Chapter President and Curriculum Developer, I lead my local chapter and create comprehensive educational resources and curriculum materials to support STEM education initiatives.",
     "about": "Hello my name is Supraj Gonur. I am a sophomore at Jasper High School. I am passionate about Math, AI and machine learning, STEM in general, and enjoy volunteering. I will make an impact with AI in STEM by empowering youth and interested individuals about the world of AI in STEM. I hope to help this organization spread globally in the near future!",
     "imageFile": "Supraj-Gonur.png",
     "linkedinUrl": "https://www.linkedin.com/in/supraj-gonur-17644a386/",
@@ -781,5 +781,44 @@
     ],
     "quote": "The only place where success comes before work is in the dictionary.",
     "quoteAuthor": "Vidal Sassoon"
+  },
+  "surya-sreenivasan": {
+    "firstName": "Surya",
+    "lastName": "Sreenivasan",
+    "name": "Surya Sreenivasan",
+    "title": "Chapter President & Curriculum Developer",
+    "roleDescription": "As Chapter President and Curriculum Developer, I lead my local chapter and work on developing engaging AI and STEM curriculum to make learning accessible and fun for students.",
+    "about": "Hi! I'm Surya Sreenivasan, a junior from Phoenix, Arizona, and I serve as both Chapter President and Curriculum Developer for AI in STEM. My passion lies at the intersection of artificial intelligence, machine learning, and educational technology. I believe that AI has transformative potential across industries, and I'm dedicated to making AI education accessible to high school students everywhere. Through my work with AI in STEM, I focus on creating hands-on learning experiences that demystify complex concepts and inspire the next generation of innovators. When I'm not coding or developing curriculum, you can find me participating in competitive programming contests, exploring the latest developments in neural networks, or mentoring younger students in STEM subjects.",
+    "imageFile": "Surya-Sreenivasan.png",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Artificial Intelligence",
+        "emoji": "🤖"
+      },
+      {
+        "title": "Machine Learning",
+        "emoji": "🧠"
+      },
+      {
+        "title": "Curriculum Development",
+        "emoji": "📚"
+      },
+      {
+        "title": "Leadership",
+        "emoji": "👑"
+      },
+      {
+        "title": "Competitive Programming",
+        "emoji": "💻"
+      },
+      {
+        "title": "Education Technology",
+        "emoji": "🎓"
+      }
+    ],
+    "quote": "The best way to predict the future is to create it.",
+    "quoteAuthor": "Peter Drucker"
   }
 }
