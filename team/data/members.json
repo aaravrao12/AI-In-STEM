@@ -820,5 +820,32 @@
     ],
     "quote": "The best way to predict the future is to create it.",
     "quoteAuthor": "Peter Drucker"
+  },
+  "raghunand-dayanandan": {
+    "firstName": "Raghunand",
+    "lastName": "Dayanandan",
+    "name": "Raghunand Dayanandan",
+    "title": "Chapter President & Curriculum Developer",
+    "roleDescription": "As a Chapter President and Curriculum Developer, I lead local initiatives and create comprehensive educational resources and curriculum materials to support STEM education initiatives.",
+    "about": "My name is Raghunand Dayanandan, and I am a sophomore at Jasper High School. I am passionate about furthering my knowledge as well as others in areas involving STEM. Through AI in STEM, I will achieve my goal as I will be able to impact people across the world by teaching them STEM. I am pursuing learning Machine Learning for LASER, manage Jasper Chess Club as its Secretary, and am helping serve the community as Vice President of my own STEM club Technic Box.",
+    "imageFile": "Raghunand-Dayanandan.png",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Machine Learning & LASER",
+        "emoji": "🧠"
+      },
+      {
+        "title": "Chess Club Leadership",
+        "emoji": "♟️"
+      },
+      {
+        "title": "STEM Education & Outreach",
+        "emoji": "🔬"
+      }
+    ],
+    "quote": "Only a life lived for others, is a life worthwhile",
+    "quoteAuthor": "Albert Einstein"
   }
 }
