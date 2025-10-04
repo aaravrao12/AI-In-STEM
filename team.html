@@ -4,6 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Team - AI in STEM</title>
+  
+  <!-- Preconnect to external domains for faster resource loading -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -61,9 +69,10 @@
     
     .nav-link {
       position: relative;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.3s ease;
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
+      will-change: transform;
     }
     
     .nav-link::after {
@@ -74,8 +83,9 @@
       bottom: 0;
       left: 50%;
       background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
-      transition: all 0.3s ease;
+      transition: width 0.3s ease;
       transform: translateX(-50%);
+      will-change: width;
     }
     
     .nav-link:hover::after {
@@ -84,18 +94,19 @@
     
     .nav-link:hover {
       background: rgba(59, 130, 246, 0.1);
-      transform: translateY(-2px);
+      transform: translateY(-2px) translateZ(0);
     }
     
     .card {
       border-radius: 1rem;
       overflow: hidden;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      will-change: transform;
     }
     
     .card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-10px) translateZ(0);
       box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
     }
     
@@ -107,10 +118,11 @@
     }
     
     .btn {
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease;
       position: relative;
       overflow: hidden;
       z-index: 1;
+      will-change: transform;
     }
     
     .btn::before {
@@ -121,8 +133,9 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: all 0.6s ease;
+      transition: left 0.6s ease;
       z-index: -1;
+      will-change: left;
     }
     
     .btn:hover::before {
@@ -173,7 +186,8 @@
       height: 150%;
       background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
       transform: rotate(45deg);
-      transition: all 1.5s ease;
+      transition: left 1.5s ease;
+      will-change: left;
     }
     
     .team-card:hover::before {
@@ -217,15 +231,16 @@
       padding: 1rem 1.5rem;
       margin: 0.25rem 0;
       border-radius: 0.75rem;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
       border: 1px solid transparent;
       background: transparent;
+      will-change: transform;
     }
 
     .mobile-nav-link:hover {
       background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
       border-color: rgba(59, 130, 246, 0.3);
-      transform: translateX(8px);
+      transform: translateX(8px) translateZ(0);
     }
 
     .mobile-nav-link::before {
@@ -239,6 +254,7 @@
       background: linear-gradient(135deg, #3b82f6, #8b5cf6);
       border-radius: 0 2px 2px 0;
       transition: height 0.3s ease;
+      will-change: height;
     }
 
     .mobile-nav-link:hover::before {
@@ -251,6 +267,7 @@
       margin-right: 12px;
       opacity: 0.7;
       transition: opacity 0.3s ease;
+      will-change: opacity;
     }
 
     .mobile-nav-link:hover .mobile-nav-icon {
@@ -267,9 +284,10 @@
     }
 
     .pagination-btn {
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       position: relative;
       overflow: hidden;
+      will-change: transform;
     }
 
     .pagination-btn::before {
@@ -280,7 +298,8 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: all 0.6s ease;
+      transition: left 0.6s ease;
+      will-change: left;
     }
 
     .pagination-btn:hover::before {
@@ -288,7 +307,7 @@
     }
 
     .pagination-btn:hover {
-      transform: translateY(-2px);
+      transform: translateY(-2px) translateZ(0);
       box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
     }
 
@@ -454,7 +473,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Kevin-Cui.jpg" alt="Kevin Cui" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10">
+            <img src="volunteerPhotos/Kevin-Cui.jpg" alt="Kevin Cui" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy">
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Kevin Cui</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Co-Founder & State Ambassador</p>
@@ -470,7 +489,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Aarav-Rao.png" alt="Aarav Rao" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Aarav-Rao.png" alt="Aarav Rao" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Aarav Rao</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Co-Founder & State Ambassador</p>
@@ -486,7 +505,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Yagiz-Soylemez.png" alt="Yağız Söylemez" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Yagiz-Soylemez.png" alt="Yağız Söylemez" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Yağız Söylemez</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -502,7 +521,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Shanmukha-Bommana.png" alt="Shanmukha Bommana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Shanmukha-Bommana.png" alt="Shanmukha Bommana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shanmukha Bommana</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Curriculum Developer</p>
@@ -518,7 +537,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Tejus-Peri2.png" alt="Tejus Peri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Tejus-Peri2.png" alt="Tejus Peri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Tejus Peri</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">State Ambassador, Chapter President, Outreach Manager & Curriculum Developer</p>
@@ -534,7 +553,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Smyan-Reddy.png" alt="Smyan Reddy" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Smyan-Reddy.png" alt="Smyan Reddy" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Smyan Reddy</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">State Ambassador & Chapter President</p>
@@ -550,7 +569,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Samdeesh-Thukral.png" alt="Samdeesh Thukral" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Samdeesh-Thukral.png" alt="Samdeesh Thukral" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Samdeesh Thukral</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Outreach Manager & Curriculum Developer</p>
@@ -566,7 +585,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Vicky-Belda.png" alt="Sai Vikhyath Belda" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Vicky-Belda.png" alt="Sai Vikhyath Belda" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Sai Vikhyath Belda</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Outreach Manager</p>
@@ -582,7 +601,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Aditya-Pradhan.jpg" alt="Aditya Pradhan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Aditya-Pradhan.jpg" alt="Aditya Pradhan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Aditya Pradhan</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, State Ambassador & Outreach Manager</p>
@@ -598,7 +617,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Supraj-Gonur.png" alt="Supraj Gonur" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Supraj-Gonur.png" alt="Supraj Gonur" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Supraj Gonur</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Curriculum Developer</p>
@@ -614,7 +633,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Leyang-Zeng.jpg" alt="Leyang Zeng" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Leyang-Zeng.jpg" alt="Leyang Zeng" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Leyang Zeng</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Curriculum Developer</p>
@@ -630,7 +649,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Ashvik-Talluru.png" alt="Ashvik Talluru" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Ashvik-Talluru.png" alt="Ashvik Talluru" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Ashvik Talluru</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Outreach Manager & Curriculum Developer</p>
@@ -646,7 +665,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Shashank-Golajana.webp" alt="Shashank Golajana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Shashank-Golajana.webp" alt="Shashank Golajana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shashank Golajana</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & State Ambassador</p>
@@ -662,7 +681,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Karthick-Ponkali.jpeg" alt="Karthick Ponkali" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Karthick-Ponkali.jpeg" alt="Karthick Ponkali" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Karthick Ponkali</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -678,7 +697,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Kenny-Sutinatikul.jpg" alt="Kenny Sutinatikul" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Kenny-Sutinatikul.jpg" alt="Kenny Sutinatikul" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Kenny Sutinatikul</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -694,7 +713,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Shreyas-Choudhury.png" alt="Shreyas Choudhury" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Shreyas-Choudhury.png" alt="Shreyas Choudhury" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shreyas Choudhury</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -710,7 +729,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Karthikeya-Yeruva.png" alt="Karthikeya Yeruva" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Karthikeya-Yeruva.png" alt="Karthikeya Yeruva" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Karthikeya Yeruva</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & State Ambassador</p>
@@ -726,7 +745,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Tanmay-Joshi.png" alt="Tanmay Joshi" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Tanmay-Joshi.png" alt="Tanmay Joshi" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Tanmay Joshi</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -742,7 +761,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Sai-Rohan-Pasumarthi.jpg" alt="Sai Rohan Pasumarthi" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Sai-Rohan-Pasumarthi.jpg" alt="Sai Rohan Pasumarthi" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Sai Rohan Pasumarthi</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -758,7 +777,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Siddhant-Mahajan.png" alt="Siddhant Mahajan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Siddhant-Mahajan.png" alt="Siddhant Mahajan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Siddhant Mahajan</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -774,7 +793,7 @@
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-            <img src="volunteerPhotos/Harshal-Sharma.png" alt="Harshal Sharma" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+            <img src="volunteerPhotos/Harshal-Sharma.png" alt="Harshal Sharma" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Harshal Sharma</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -802,7 +821,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Lakshith-Tana.jpeg" alt="Lakshith Tana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Lakshith-Tana.jpeg" alt="Lakshith Tana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Lakshith Tana</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -818,7 +837,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Tanveer-Dash.jpeg" alt="Tanveer Dash" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Tanveer-Dash.jpeg" alt="Tanveer Dash" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Tanveer Dash</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -834,7 +853,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Akshith-Chepuri.png" alt="Akshith Chepuri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Akshith-Chepuri.png" alt="Akshith Chepuri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Akshith Chepuri</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & State Ambassador</p>
@@ -850,7 +869,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Sai-Swaroop-Das.png" alt="Sai Swaroop Das" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Sai-Swaroop-Das.png" alt="Sai Swaroop Das" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Sai Swaroop Das</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -866,7 +885,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Saahas-Nalabhotu.jpeg" alt="Saahas Nalabhotu" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Saahas-Nalabhotu.jpeg" alt="Saahas Nalabhotu" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Saahas Nalabhotu</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, State Ambassador & Curriculum Developer</p>
@@ -882,7 +901,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Kireeti-Gottipati.jpeg" alt="Kireeti Gottipati" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Kireeti-Gottipati.jpeg" alt="Kireeti Gottipati" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Kireeti Gottipati</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Outreach Manager</p>
@@ -898,7 +917,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Bhuvan-Potlapalli.webp" alt="Bhuvan Potlapalli" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Bhuvan-Potlapalli.webp" alt="Bhuvan Potlapalli" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Bhuvan Potlapalli</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -914,7 +933,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Ram-Suhrut.png" alt="Ram Suhrut Seelamankalugari" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Ram-Suhrut.png" alt="Ram Suhrut Seelamankalugari" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Ram Suhrut Seelamankalugari</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -930,7 +949,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Surya-Sreenivasan.png" alt="Surya Sreenivasan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Surya-Sreenivasan.png" alt="Surya Sreenivasan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Surya Sreenivasan</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Curriculum Developer</p>
@@ -946,7 +965,7 @@
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110 animate-pulse"></div>
-                <img src="volunteerPhotos/Raghunand-Dayanandan.png" alt="Raghunand Dayanandan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" />
+                <img src="volunteerPhotos/Raghunand-Dayanandan.png" alt="Raghunand Dayanandan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Raghunand Dayanandan</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Curriculum Developer</p>
