@@ -1,0 +1,104 @@
+[
+  {
+    "id": "davis-library",
+    "name": "Davis Library",
+    "location": "Plano, Texas",
+    "fullLocation": "Plano, Texas, USA",
+    "image": "../chapterPhotos/Davis-Library.png?v=20251004",
+    "schoolImage": "../chapterPhotos/Davis-Library-Building.png",
+    "address": "7501-B Independence Pkwy, Plano, TX 75025",
+    "established": "2025",
+    "ageGroup": "Ages 8-15",
+    "programs": [
+      "Machine Learning",
+      "Neural Networks", 
+      "NLP & LLMs",
+      "Computer Vision",
+      "AI Applications in Python"
+    ],
+    "leaders": [
+      "Aarav Rao",
+      "Kevin Cui",
+      "Supraj Gonur",
+      "Leyang Zeng",
+      "Raghunand Dayanandan"
+    ],
+    "contact": {
+      "email": "https://mail.google.com/mail/u/0/?fs=1&to=kevinkcui1@gmail.com&tf=cm"
+    }
+  },
+  {
+    "id": "richard-montgomery-hs",
+    "name": "Richard Montgomery High School",
+    "location": "Rockville, Maryland",
+    "fullLocation": "Rockville, Maryland, USA",
+    "image": "../chapterPhotos/Richard-Montgomery-HS.png",
+    "schoolImage": "../chapterPhotos/Richard-Montgomery-HS-Building.png",
+    "address": "250 Richard Montgomery Drive, Rockville, MD 20852",
+    "established": "2025",
+    "ageGroup": "Ages 14-18",
+    "programs": [
+      "Machine Learning",
+      "Neural Networks", 
+      "NLP & LLMs",
+      "Computer Vision",
+      "AI Applications in Python"
+    ],
+    "leaders": [
+      "Aditya Pradhan",
+      "Shreel Belbase"
+    ],
+    "contact": {
+      "email": "https://mail.google.com/mail/u/0/?fs=1&to=aditya.s.pradhan14@gmail.com&tf=cm"
+    }
+  },
+  {
+    "id": "sunrise-mountain-library",
+    "name": "Sunrise Mountain Library",
+    "location": "Peoria, Arizona",
+    "fullLocation": "Peoria, Arizona, USA",
+    "image": "../chapterPhotos/Sunrise-Mountain-Library.png",
+    "schoolImage": "../chapterPhotos/Sunrise-Mountain-Library-Building.png",
+    "address": "21109 N 98th Ave, Peoria, AZ 85382",
+    "established": "2025",
+    "ageGroup": "Ages 8-15",
+    "programs": [
+      "Machine Learning",
+      "Neural Networks", 
+      "NLP & LLMs",
+      "Computer Vision",
+      "AI Applications in Python",
+      "AI in Mechatronics"
+    ],
+    "leaders": [
+      "Karthick Ponkali"
+    ],
+    "contact": {
+      "email": "https://mail.google.com/mail/u/0/?fs=1&to=kardichess@gmail.com&tf=cm"
+    }
+  },
+  {
+    "id": "kinnaman-elementary",
+    "name": "Kinnaman Elementary School",
+    "location": "Aloha, Oregon",
+    "fullLocation": "Aloha, Oregon, USA",
+    "image": "../chapterPhotos/Kinnaman.png",
+    "schoolImage": "../chapterPhotos/Kinnaman-Building.png",
+    "address": "4205 SW 193rd Ave, Aloha, OR 97078",
+    "established": "2025",
+    "ageGroup": "Ages 5-11",
+    "programs": [
+      "Machine Learning",
+      "Neural Networks", 
+      "NLP & LLMs",
+      "Computer Vision",
+      "AI Applications in Python"
+    ],
+    "leaders": [
+      "Achyutan Veeraraghavan"
+    ],
+    "contact": {
+      "email": "https://mail.google.com/mail/u/0/?fs=1&to=achyutanveera@gmail.com&tf=cm"
+    }
+  }
+]
