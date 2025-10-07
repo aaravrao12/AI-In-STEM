@@ -1,0 +1,196 @@
+[
+  {
+    "id": "machine-learning",
+    "title": "Intro to Machine Learning",
+    "level": "Beginner",
+    "duration": "1 Lesson",
+    "description": "Learn the fundamentals of machine learning algorithms, data preprocessing, and model evaluation techniques to build intelligent systems.",
+    "detailedDescription": "This comprehensive introduction to machine learning will take you through the core concepts that power modern AI systems. You'll learn about different types of learning algorithms, how to prepare data for training, and how to evaluate model performance. Perfect for beginners with no prior ML experience.",
+    "color": "green",
+    "icon": "chart-bar",
+    "topics": [
+      "Supervised, Unsupervised, & Reinforcement Learning",
+      "Introduction of Machine Learning Models",
+      "Model Evaluation & Validation",
+      "Dataset Preparation"
+    ],
+    "learningObjectives": [
+      "Understand the three main types of machine learning",
+      "Learn how to prepare and clean datasets",
+      "Build your first machine learning model",
+      "Evaluate model performance using key metrics"
+    ],
+    "prerequisites": [
+      "Basic understanding of mathematics",
+      "No programming experience required"
+    ],
+    "tools": [
+      "Google Colab",
+      "Python (basics covered)",
+      "Scikit-learn",
+      "Pandas"
+    ]
+  },
+  {
+    "id": "neural-networks",
+    "title": "Intro to Neural Networks",
+    "level": "Intermediate",
+    "duration": "2 Lessons",
+    "description": "Understand how neural networks make predictions and learn through training to solve complex pattern recognition problems.",
+    "detailedDescription": "Dive deep into the architecture and training of neural networks. This course covers the mathematical foundations of neural networks, different layer types, and advanced architectures like CNNs and RNNs. You'll build neural networks from scratch and learn optimization techniques.",
+    "color": "orange",
+    "icon": "brain",
+    "topics": [
+      "Neural Network Layers",
+      "Training Neural Networks",
+      "Tuning a Model",
+      "Convolutional & Recurrent Neural Networks"
+    ],
+    "learningObjectives": [
+      "Understand neural network architecture and components",
+      "Learn backpropagation and gradient descent",
+      "Implement different types of neural networks",
+      "Master hyperparameter tuning techniques"
+    ],
+    "prerequisites": [
+      "Intro to Machine Learning",
+      "Basic Python programming",
+      "Linear algebra fundamentals"
+    ],
+    "tools": [
+      "TensorFlow",
+      "Keras",
+      "PyTorch",
+      "NumPy"
+    ]
+  },
+  {
+    "id": "nlp-llms",
+    "title": "Intro to NLP & LLMs",
+    "level": "Beginner",
+    "duration": "1 Lesson",
+    "description": "Explore natural language processing and large language models to understand how computers process human language.",
+    "detailedDescription": "Discover how computers understand and generate human language. This course introduces natural language processing techniques, from basic text preprocessing to advanced transformer architectures. Learn about the technology behind ChatGPT and other large language models.",
+    "color": "green",
+    "icon": "chat",
+    "topics": [
+      "Natural Language Processing",
+      "Large Language Models (LLMs)",
+      "Transformer Architectures",
+      "Text Preprocessing & Tokenization"
+    ],
+    "learningObjectives": [
+      "Understand how computers process text",
+      "Learn about transformer architecture",
+      "Explore the capabilities of LLMs",
+      "Build simple text analysis applications"
+    ],
+    "prerequisites": [
+      "Basic understanding of AI concepts",
+      "No programming experience required"
+    ],
+    "tools": [
+      "Hugging Face Transformers",
+      "OpenAI API",
+      "NLTK",
+      "spaCy"
+    ]
+  },
+  {
+    "id": "computer-vision",
+    "title": "Intro to Computer Vision",
+    "level": "Beginner",
+    "duration": "1 Lesson",
+    "description": "Discover how computers interpret visual data and perform object detection, segmentation, and image classification tasks.",
+    "detailedDescription": "Learn how computers see and understand images. This course covers fundamental computer vision techniques including image processing, object detection, and image classification. You'll work with real-world applications and build your own image recognition systems.",
+    "color": "green",
+    "icon": "eye",
+    "topics": [
+      "Object Detection",
+      "Object Segmentation & Labeling",
+      "Using YOLO",
+      "NIDS-NET Segmentation Pipeline"
+    ],
+    "learningObjectives": [
+      "Understand digital image representation",
+      "Learn object detection algorithms",
+      "Implement image classification models",
+      "Work with computer vision libraries"
+    ],
+    "prerequisites": [
+      "Basic understanding of AI concepts",
+      "Intro to Machine Learning (recommended)"
+    ],
+    "tools": [
+      "OpenCV",
+      "YOLO",
+      "TensorFlow Object Detection API",
+      "PIL/Pillow"
+    ]
+  },
+  {
+    "id": "ai-mechatronics",
+    "title": "AI & Technology in Mechatronics",
+    "level": "Intermediate",
+    "duration": "1 Lesson",
+    "description": "Dive into mechatronics systems that combine intelligent algorithms with mechanical and electrical engineering principles.",
+    "detailedDescription": "Explore the intersection of AI and mechatronics engineering. This course covers intelligent control systems, sensor fusion, and digital twin technology. Learn how AI enables robots and automated systems to adapt and learn from their environment.",
+    "color": "orange",
+    "icon": "cog",
+    "topics": [
+      "Adaptive AI Control",
+      "Sensor Fusion",
+      "Vision in Mechatronics",
+      "Digital Twins"
+    ],
+    "learningObjectives": [
+      "Understand intelligent control systems",
+      "Learn sensor fusion techniques",
+      "Implement computer vision in robotics",
+      "Explore digital twin concepts"
+    ],
+    "prerequisites": [
+      "Intro to Machine Learning",
+      "Basic understanding of robotics",
+      "Physics fundamentals"
+    ],
+    "tools": [
+      "ROS (Robot Operating System)",
+      "Arduino/Raspberry Pi",
+      "MATLAB/Simulink",
+      "CAD Software"
+    ]
+  },
+  {
+    "id": "ai-python",
+    "title": "AI Applications in Python",
+    "level": "Beginner",
+    "duration": "1 Lesson",
+    "description": "Learning to use beginner-friendly & powerful Python libraries to build intelligent systems that can learn and automate complex tasks.",
+    "detailedDescription": "Get hands-on experience with the most popular Python libraries for AI development. This practical course focuses on implementation rather than theory, teaching you to use TensorFlow, Keras, scikit-learn, and PyTorch to build real AI applications.",
+    "color": "green",
+    "icon": "code",
+    "topics": [
+      "TensorFlow",
+      "Keras",
+      "scikit-learn",
+      "PyTorch"
+    ],
+    "learningObjectives": [
+      "Master essential Python AI libraries",
+      "Build complete AI projects",
+      "Learn best practices for AI development",
+      "Deploy AI models in real applications"
+    ],
+    "prerequisites": [
+      "Basic Python programming",
+      "Intro to Machine Learning (recommended)"
+    ],
+    "tools": [
+      "Python",
+      "Jupyter Notebooks",
+      "Google Colab",
+      "Git/GitHub"
+    ]
+  }
+]

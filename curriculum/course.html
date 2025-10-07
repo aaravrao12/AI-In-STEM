@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="page-title">Course Profile - AI in STEM</title>
+  
+  <!-- Preconnect to external domains for faster resource loading -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="../logo/favicon.ico" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    
+    .hero-section {
+      position: relative;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
+      overflow: hidden;
+      min-height: 60vh;
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.15"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient><linearGradient id="b" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%233b82f6" stop-opacity="0.1"/><stop offset="50%" stop-color="%238b5cf6" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ec4899" stop-opacity="0.1"/></linearGradient></defs><circle cx="200" cy="200" r="150" fill="url(%23a)"/><circle cx="800" cy="300" r="200" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/><circle cx="900" cy="800" r="100" fill="url(%23a)"/><rect width="100%" height="100%" fill="url(%23b)"/></svg>') no-repeat center center;
+      background-size: cover;
+      opacity: 0.4;
+      animation: float 25s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(1px);
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 10;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradientShift 3s ease-in-out infinite;
+    }
+    
+    @keyframes gradientShift {
+      0%, 100% { filter: hue-rotate(0deg); }
+      50% { filter: hue-rotate(20deg); }
+    }
+    
+    .nav-link {
+      position: relative;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    .nav-link:hover::after {
+      width: 80%;
+    }
+    
+    .nav-link:hover {
+      background: rgba(59, 130, 246, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    .level-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: white;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .level-beginner {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9));
+    }
+    
+    .level-intermediate {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.9), rgba(217, 119, 6, 0.9));
+    }
+    
+    .level-advanced {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.9), rgba(220, 38, 38, 0.9));
+    }
+    
+    .topic-item {
+      background: rgba(59, 130, 246, 0.05);
+      border: 1px solid rgba(59, 130, 246, 0.1);
+      border-radius: 0.75rem;
+      padding: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .topic-item:hover {
+      background: rgba(59, 130, 246, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+    }
+    
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+      backdrop-filter: blur(20px);
+    }
+    
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+    
+    .loading-spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: #ffffff;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Enhanced Navbar -->
+  <header class="sticky top-0 flex items-center justify-between px-4 sm:px-6 py-4 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-opacity-95 shadow-xl z-50 backdrop-blur-md border-b border-blue-500/20">
+    <!-- Logo and Back Button Container -->
+    <div class="flex items-center space-x-4">
+      <div class="flex-shrink-0">
+        <a href="../index.html" aria-label="Go to AI in STEM homepage" class="transition transform hover:scale-105 focus:scale-105">
+          <img src="../logo/logo.png" alt="AI in STEM Logo" class="h-16 sm:h-20 w-auto object-contain" />
+        </a>
+      </div>
+
+      <!-- Back to Curriculum Button -->
+      <div class="hidden lg:block">
+        <a href="../curriculum.html" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+          ← Back to Curriculum
+        </a>
+      </div>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex space-x-8 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
+      <a href="../index.html" class="nav-link hover:text-blue-400 transition-colors">Home</a>
+      <a href="../about.html" class="nav-link hover:text-blue-400 transition-colors">About</a>
+      <a href="../team.html" class="nav-link hover:text-blue-400 transition-colors">Team</a>
+      <a href="../chapters.html" class="nav-link hover:text-blue-400 transition-colors">Chapters</a>
+      <a href="../curriculum.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
+      <a href="../about.html#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
+      <a href="../team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button id="mobileMenuBtn" class="lg:hidden text-white p-2 rounded-md hover:bg-gray-800 transition-colors focus:bg-gray-800" aria-label="Open mobile menu" aria-expanded="false">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 h-full w-80 z-50 lg:hidden">
+    <div class="flex flex-col h-full p-6">
+      <!-- Header -->
+      <div class="flex items-center justify-between mb-8">
+        <div class="flex items-center space-x-3">
+          <img src="../logo/logo.png" alt="AI in STEM" class="h-8 w-auto">
+          <span class="text-white font-semibold text-lg">AI in STEM</span>
+        </div>
+        <button id="closeMobileMenu" class="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-gray-800/50 transition-colors focus:bg-gray-800/50" aria-label="Close mobile menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Navigation Links -->
+      <nav class="flex-1" role="navigation" aria-label="Mobile navigation">
+        <div class="space-y-4">
+          <a href="../index.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Home</a>
+          <a href="../about.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">About</a>
+          <a href="../team.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Team</a>
+          <a href="../chapters.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Chapters</a>
+          <a href="../curriculum.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Curriculum</a>
+          <a href="../about.html#partners" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Partners</a>
+          <a href="../team.html#join-team" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Join Team</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section relative flex items-center justify-center text-white" role="banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content max-w-4xl mx-auto px-4 sm:px-6 text-center py-16 sm:py-24">
+      <div class="mb-6" data-aos="fade-up">
+        <span id="level-badge" class="level-badge">
+          <span class="loading-spinner mr-2"></span>
+          Loading...
+        </span>
+      </div>
+      <h1 id="course-title" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight gradient-text" data-aos="fade-up" data-aos-delay="200">
+        Loading Course...
+      </h1>
+      <p id="course-description" class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="400">
+        Loading description...
+      </p>
+    </div>
+  </section>
+
+  <!-- Course Content -->
+  <section class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Course Overview -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+          <div class="bg-white rounded-2xl shadow-lg p-8" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Course Overview</h2>
+            <p id="detailed-description" class="text-gray-600 text-lg leading-relaxed mb-8">
+              Loading detailed description...
+            </p>
+            
+            <!-- Learning Objectives -->
+            <div class="mb-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">What You'll Learn</h3>
+              <ul id="learning-objectives" class="space-y-3">
+                <!-- Populated by JavaScript -->
+              </ul>
+            </div>
+            
+            <!-- Articles -->
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Articles</h3>
+              <div id="course-topics" class="w-full">
+                <!-- Populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="bg-white rounded-2xl shadow-lg p-8 sticky top-8" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Course Details</h3>
+            
+            <!-- Prerequisites -->
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Prerequisites</h4>
+              <ul id="prerequisites" class="space-y-2">
+                <!-- Populated by JavaScript -->
+              </ul>
+            </div>
+            
+            <!-- Tools -->
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Tools & Technologies</h4>
+              <div id="tools" class="flex flex-wrap gap-2">
+                <!-- Populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer class="bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 text-white py-16" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <!-- Logo and Mission -->
+        <div class="md:col-span-2">
+          <img src="../logo/logo.png" alt="AI in STEM Logo" class="h-16 mb-6" />
+          <p class="text-gray-300 text-lg leading-relaxed mb-6">
+            Empowering the next generation of AI innovators through accessible education, mentorship, and community building.
+          </p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="../about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+            <li><a href="../team.html" class="text-gray-300 hover:text-white transition-colors">Team</a></li>
+            <li><a href="../chapters.html" class="text-gray-300 hover:text-white transition-colors">Chapters</a></li>
+            <li><a href="../curriculum.html" class="text-gray-300 hover:text-white transition-colors">Curriculum</a></li>
+          </ul>
+        </div>
+        
+        <!-- Get Involved -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Get Involved</h3>
+          <ul class="space-y-2">
+            <li><a href="https://join.slack.com/t/ai-in-stem/shared_invite/zt-3aktnx3dy-YEFzBnJ3cq077iyFKo0Dkw" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">Join the Team</a></li>
+            <li><a href="https://hcb.hackclub.com/donations/start/ai-in-stem" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 pt-8 text-center">
+        <p class="text-sm text-gray-400">AI in STEM is a fiscally sponsored nonprofit organization under a registered 501(c)(3). Donations are tax-deductible.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+
+    // Get course ID from URL parameter
+    function getCourseId() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get('id');
+    }
+
+    // Load course data
+    async function loadCourseData() {
+      try {
+        const courseId = getCourseId();
+        
+        // Use absolute path to ensure correct loading
+        const response = await fetch('/curriculum/data/courses.json');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const courses = await response.json();
+        const course = courses.find(c => c.id === courseId);
+        
+        if (course) {
+          populateCourseData(course);
+        } else {
+          console.error('Course not found:', courseId);
+          showErrorState();
+        }
+      } catch (error) {
+        console.error('Error loading course data:', error);
+        showErrorState();
+      }
+    }
+
+    // Show error state
+    function showErrorState() {
+      document.getElementById('page-title').textContent = 'Course Not Found - AI in STEM';
+      document.getElementById('course-title').textContent = 'Course Not Found';
+      document.getElementById('course-description').textContent = 'The requested course could not be found.';
+      document.getElementById('level-badge').innerHTML = 'Error';
+      document.getElementById('detailed-description').textContent = 'This course may have been moved or removed.';
+    }
+
+    // Populate page with course data
+    function populateCourseData(course) {
+      // Update page title
+      document.getElementById('page-title').textContent = `${course.title} - AI in STEM`;
+      document.getElementById('course-title').textContent = course.title;
+      document.getElementById('course-description').textContent = course.description;
+      document.getElementById('detailed-description').textContent = course.detailedDescription;
+      
+      // Update level badge
+      const levelBadge = document.getElementById('level-badge');
+      levelBadge.textContent = `${course.level} • ${course.duration}`;
+      levelBadge.className = `level-badge level-${course.level.toLowerCase()}`;
+      
+      
+      // Populate learning objectives
+      const objectivesList = document.getElementById('learning-objectives');
+      objectivesList.innerHTML = course.learningObjectives.map(objective => `
+        <li class="flex items-start">
+          <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-gray-700">${objective}</span>
+        </li>
+      `).join('');
+      
+      // Populate course topics
+      const topicsContainer = document.getElementById('course-topics');
+      topicsContainer.innerHTML = `
+        <div class="topic-item w-full min-h-[200px] aspect-square max-w-md">
+          <div class="h-full flex items-center justify-center">
+            <p class="text-gray-500 text-lg">Article content coming soon...</p>
+          </div>
+        </div>
+      `;
+      
+      // Populate prerequisites
+      const prerequisitesList = document.getElementById('prerequisites');
+      prerequisitesList.innerHTML = course.prerequisites.map(prereq => `
+        <li class="flex items-start">
+          <svg class="w-4 h-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-sm text-gray-600">${prereq}</span>
+        </li>
+      `).join('');
+      
+      // Clear tools section
+      const toolsContainer = document.getElementById('tools');
+      toolsContainer.innerHTML = '';
+    }
+
+    // Load course data when page loads
+    document.addEventListener('DOMContentLoaded', loadCourseData);
+
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    });
+
+    closeMobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>

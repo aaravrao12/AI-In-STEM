@@ -107,6 +107,54 @@
       transition: all 0.3s ease;
       position: relative;
       overflow: hidden;
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .curriculum-card .text-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .curriculum-card .text-left {
+      margin-top: auto;
+    }
+    
+    .course-arrow {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .course-arrow:hover {
+      background: white;
+      border-color: rgba(0, 0, 0, 0.2);
+      transform: translateX(4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .course-arrow svg {
+      width: 18px;
+      height: 18px;
+      color: #374151;
+      transition: color 0.3s ease;
+    }
+    
+    .course-arrow:hover svg {
+      color: #1f2937;
     }
     
     .curriculum-card::before {
@@ -323,6 +371,13 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
         <!-- Machine Learning Card -->
         <div class="curriculum-card bg-white rounded-2xl shadow-lg p-8 relative" data-aos="fade-up">
+          <!-- Arrow Button -->
+          <a href="curriculum/course.html?id=machine-learning" class="course-arrow" aria-label="View Machine Learning Course">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+          
           <div class="text-center">
             <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -331,7 +386,7 @@
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Intro to Machine Learning</h3>
             <p class="text-green-600 font-semibold mb-4">Beginner • 1 Lesson</p>
-            <p class="text-gray-600 mb-6">Learn the fundamentals of machine learning algorithms, data preprocessing, and model evaluation techniques.</p>
+            <p class="text-gray-600 mb-6">Learn the fundamentals of machine learning algorithms, data preprocessing, and model evaluation techniques to build intelligent systems.</p>
             
             <div class="text-left space-y-3 mb-6">
               <div class="flex items-start">
@@ -364,6 +419,13 @@
 
         <!-- Neural Networks Card -->
         <div class="curriculum-card bg-white rounded-2xl shadow-lg p-8 relative" data-aos="fade-up" data-aos-delay="200">
+          <!-- Arrow Button -->
+          <a href="curriculum/course.html?id=neural-networks" class="course-arrow" aria-label="View Neural Networks Course">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+          
           <div class="text-center">
             <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -372,7 +434,7 @@
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Intro to Neural Networks</h3>
             <p class="text-orange-600 font-semibold mb-4">Intermediate • 2 Lessons</p>
-            <p class="text-gray-600 mb-6">Understand how neural networks make predictions, and how they are trained.</p>
+            <p class="text-gray-600 mb-6">Understand how neural networks make predictions and learn through training to solve complex pattern recognition problems.</p>
             
             <div class="text-left space-y-3 mb-6">
               <div class="flex items-start">
@@ -391,7 +453,7 @@
                 <svg class="w-4 h-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-gray-600">Tuning A Model</span>
+                <span class="text-sm text-gray-600">Tuning a Model</span>
               </div>
               <div class="flex items-start">
                 <svg class="w-4 h-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -405,6 +467,13 @@
 
         <!-- NLP & LLMs Card -->
         <div class="curriculum-card bg-white rounded-2xl shadow-lg p-8 relative" data-aos="fade-up" data-aos-delay="400">
+          <!-- Arrow Button -->
+          <a href="curriculum/course.html?id=nlp-llms" class="course-arrow" aria-label="View NLP & LLMs Course">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+          
           <div class="text-center">
             <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -413,7 +482,7 @@
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Intro to NLP & LLMs</h3>
             <p class="text-green-600 font-semibold mb-4">Beginner • 1 Lesson</p>
-            <p class="text-gray-600 mb-6">Explore natural language processing, transformer architectures, and large language models.</p>
+            <p class="text-gray-600 mb-6">Explore natural language processing and large language models to understand how computers process human language.</p>
             
             <div class="text-left space-y-3 mb-6">
               <div class="flex items-start">
@@ -447,43 +516,146 @@
 
       <!-- Second Row -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Data Science & Analytics Card -->
+        <!-- Computer Vision Card -->
         <div class="curriculum-card bg-white rounded-2xl shadow-lg p-8 relative" data-aos="fade-up" data-aos-delay="600">
+          <!-- Arrow Button -->
+          <a href="curriculum/course.html?id=computer-vision" class="course-arrow" aria-label="View Computer Vision Course">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+          
           <div class="text-center">
-            <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
               </svg>
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Intro to Computer Vision</h3>
-            <p class="text-yellow-600 font-semibold mb-4">Beginner • 1 Lesson</p>
-            <p class="text-gray-600 mb-6">Discover how computers interpret and perform object detection, segmentation, and labeling.</p>
+            <p class="text-green-600 font-semibold mb-4">Beginner • 1 Lesson</p>
+            <p class="text-gray-600 mb-6">Discover how computers interpret visual data and perform object detection, segmentation, and image classification tasks.</p>
             
             <div class="text-left space-y-3 mb-6">
               <div class="flex items-start">
-                <svg class="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span class="text-sm text-gray-600">Object Detection</span>
               </div>
               <div class="flex items-start">
-                <svg class="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span class="text-sm text-gray-600">Object Segmentation & Labeling</span>
               </div>
               <div class="flex items-start">
-                <svg class="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span class="text-sm text-gray-600">Using YOLO</span>
               </div>
               <div class="flex items-start">
-                <svg class="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span class="text-sm text-gray-600">NIDS-NET Segmentation Pipeline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Technology in Mechatronics Card -->
+        <div class="curriculum-card bg-white rounded-2xl shadow-lg p-8 relative" data-aos="fade-up" data-aos-delay="800">
+          <!-- Arrow Button -->
+          <a href="curriculum/course.html?id=ai-mechatronics" class="course-arrow" aria-label="View AI & Technology in Mechatronics Course">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">AI & Technology in Mechatronics</h3>
+            <p class="text-orange-600 font-semibold mb-4">Intermediate • 1 Lesson</p>
+            <p class="text-gray-600 mb-6">Dive into mechatronics systems that combine intelligent algorithms & computer systems with mechanical engineering principles.</p>
+            
+            <div class="text-left space-y-3 mb-6">
+              <div class="flex items-start">
+                <svg class="w-4 h-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-600">Adaptive AI Control</span>
+              </div>
+              <div class="flex items-start">
+                <svg class="w-4 h-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-600">Sensor Fusion</span>
+              </div>
+              <div class="flex items-start">
+                <svg class="w-4 h-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-600">Vision in Mechatronics</span>
+              </div>
+              <div class="flex items-start">
+                <svg class="w-4 h-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-600">Digital Twins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Applications in Python Card -->
+        <div class="curriculum-card bg-white rounded-2xl shadow-lg p-8 relative" data-aos="fade-up" data-aos-delay="1000">
+          <!-- Arrow Button -->
+          <a href="curriculum/course.html?id=ai-python" class="course-arrow" aria-label="View AI Applications in Python Course">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">AI Applications in Python</h3>
+            <p class="text-green-600 font-semibold mb-4">Beginner • 1 Lesson</p>
+            <p class="text-gray-600 mb-6">Learning to use beginner-friendly & powerful Python libraries to build intelligent systems that can learn and automate complex tasks.</p>
+            
+            <div class="text-left space-y-3 mb-6">
+              <div class="flex items-start">
+                <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-600">TensorFlow</span>
+              </div>
+              <div class="flex items-start">
+                <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-600">Keras</span>
+              </div>
+              <div class="flex items-start">
+                <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-600">scikit-learn</span>
+              </div>
+              <div class="flex items-start">
+                <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-600">PyTorch</span>
               </div>
             </div>
           </div>
