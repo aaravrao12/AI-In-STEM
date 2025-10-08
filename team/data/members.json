@@ -874,5 +874,32 @@
     ],
     "quote": "The first and best victory is to conquer self.",
     "quoteAuthor": "Plato"
+  },
+  "achyutan-veeraghavan": {
+    "firstName": "Achyutan",
+    "lastName": "Veeraghavan",
+    "name": "Achyutan Veeraghavan",
+    "title": "State Ambassador",
+    "roleDescription": "As a State Ambassador I represent AI in STEM at the State Level, working to expand STEM education and establish new chapters across Oregon",
+    "about": "Hello! I am Achyutan Veeraraghavan, a junior at Sunset High School and the chapter president for Portland, Oregon. I have always been interested in STEM topics, specifically math, coding, and AI/ML from a young age. I also got many opportunities to compete at the state and national levels to show my skills. I also recognize that not all students have opportunities like this, due to either their background, falling behind in school, or other personal reasons. Due to this, I want to help contribute to AI in STEM and their mission: to equalize education and learning for all in the machine learning field through clubs and workshops, so that school students can strive to be successful in college and beyond. I am currently running a club at Kinnaman Elementary School, teaching the kids about coding (specifically in Python). I am also planning to start some monthly workshops in my chapter in AI/ML starting later this school year.",
+    "imageFile": "Achyutan.jpg",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Research in AI",
+        "emoji": "🔬"
+      },
+      {
+        "title": "Internships",
+        "emoji": "💼"
+      },
+      {
+        "title": "Coding Projects Python",
+        "emoji": "🐍"
+      }
+    ],
+    "quote": "",
+    "quoteAuthor": ""
   }
 }
