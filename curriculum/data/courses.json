@@ -29,7 +29,8 @@
       "Python (basics covered)",
       "Scikit-learn",
       "Pandas"
-    ]
+    ],
+    "articles": []
   },
   {
     "id": "neural-networks",
@@ -62,7 +63,8 @@
       "Keras",
       "PyTorch",
       "NumPy"
-    ]
+    ],
+    "articles": []
   },
   {
     "id": "nlp-llms",
@@ -94,7 +96,8 @@
       "OpenAI API",
       "NLTK",
       "spaCy"
-    ]
+    ],
+    "articles": []
   },
   {
     "id": "computer-vision",
@@ -126,7 +129,8 @@
       "YOLO",
       "TensorFlow Object Detection API",
       "PIL/Pillow"
-    ]
+    ],
+    "articles": []
   },
   {
     "id": "ai-mechatronics",
@@ -159,7 +163,8 @@
       "Arduino/Raspberry Pi",
       "MATLAB/Simulink",
       "CAD Software"
-    ]
+    ],
+    "articles": []
   },
   {
     "id": "ai-python",
@@ -191,6 +196,14 @@
       "Jupyter Notebooks",
       "Google Colab",
       "Git/GitHub"
+    ],
+    "articles": [
+      {
+        "title": "Artificial Intelligence in Python: A Complete Guide for Beginners and Beyond",
+        "url": "https://mathlete-world.medium.com/artificial-intelligence-in-python-a-complete-guide-for-beginners-and-beyond-722c345c1bc6",
+        "description": "A comprehensive guide to getting started with AI development using Python libraries and frameworks.",
+        "source": "Medium"
+      }
     ]
   }
 ]

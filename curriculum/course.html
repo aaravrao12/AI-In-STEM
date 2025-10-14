@@ -164,6 +164,62 @@
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
+    
+    .team-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      will-change: transform;
+    }
+    
+    .team-card:hover {
+      transform: translateY(-10px) translateZ(0);
+      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    .team-card::before {
+      content: '';
+      position: absolute;
+      top: -75%;
+      left: -75%;
+      width: 150%;
+      height: 150%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transform: rotate(45deg);
+      transition: left 1.5s ease;
+      will-change: left;
+    }
+    
+    .team-card:hover::before {
+      left: 100%;
+    }
+    
+    .btn {
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      will-change: transform;
+    }
+    
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.6s ease;
+      z-index: -1;
+      will-change: left;
+    }
+    
+    .btn:hover::before {
+      left: 100%;
+    }
   </style>
 </head>
 <body class="bg-gray-50">
@@ -264,24 +320,23 @@
         <!-- Main Content -->
         <div class="lg:col-span-2">
           <div class="bg-white rounded-2xl shadow-lg p-8" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Course Overview</h2>
-            <p id="detailed-description" class="text-gray-600 text-lg leading-relaxed mb-8">
-              Loading detailed description...
-            </p>
-            
-            <!-- Learning Objectives -->
-            <div class="mb-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">What You'll Learn</h3>
-              <ul id="learning-objectives" class="space-y-3">
-                <!-- Populated by JavaScript -->
-              </ul>
-            </div>
-            
             <!-- Articles -->
             <div>
               <h3 class="text-2xl font-bold text-gray-900 mb-6">Articles</h3>
               <div id="course-topics" class="w-full">
-                <!-- Populated by JavaScript -->
+                <!-- Medium Article Card -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 border">
+                  <div class="text-center mb-6">
+                    <img src="../articleCards/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">
+                    <h3 class="text-2xl font-bold text-gray-900">Artificial Intelligence in Python: A Complete Guide for Beginners and Beyond</h3>
+                    <p class="text-gray-600 mt-2">A comprehensive guide to getting started with AI development using Python libraries and frameworks.</p>
+                  </div>
+                  <div class="text-center">
+                    <a href="https://mathlete-world.medium.com/artificial-intelligence-in-python-a-complete-guide-for-beginners-and-beyond-722c345c1bc6" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                      Read Article →
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -290,22 +345,9 @@
         <!-- Sidebar -->
         <div class="lg:col-span-1">
           <div class="bg-white rounded-2xl shadow-lg p-8 sticky top-8" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Course Details</h3>
-            
-            <!-- Prerequisites -->
-            <div class="mb-6">
-              <h4 class="font-semibold text-gray-900 mb-3">Prerequisites</h4>
-              <ul id="prerequisites" class="space-y-2">
-                <!-- Populated by JavaScript -->
-              </ul>
-            </div>
-            
-            <!-- Tools -->
-            <div class="mb-6">
-              <h4 class="font-semibold text-gray-900 mb-3">Tools & Technologies</h4>
-              <div id="tools" class="flex flex-wrap gap-2">
-                <!-- Populated by JavaScript -->
-              </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Curriculum Developers</h3>
+            <div id="curriculum-developers" class="space-y-3">
+              <!-- Populated by JavaScript based on course -->
             </div>
           </div>
         </div>
@@ -374,9 +416,8 @@
       try {
         const courseId = getCourseId();
         
-        // Use absolute path to ensure correct loading
-        const response = await fetch('/curriculum/data/courses.json');
-        
+        // Use relative path to ensure correct loading
+        const response = await fetch('data/courses.json');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -395,6 +436,44 @@
         showErrorState();
       }
     }
+    
+
+
+    // Update curriculum developers based on course ID
+    function updateCurriculumDevelopers(courseId) {
+      const developersContainer = document.getElementById('curriculum-developers');
+      let developers = [];
+      
+      switch(courseId) {
+        case 'machine-learning':
+          developers = ['Kevin Cui', 'Aarav Rao', 'Shanmukha Bommana'];
+          break;
+        case 'ai-python':
+          developers = ['Smyan Reddy'];
+          break;
+        case 'neural-networks':
+          developers = ['Kevin Cui', 'Aarav Rao', 'Supraj Gonur'];
+          break;
+        case 'nlp-llms':
+          developers = ['Aarav Rao', 'Kevin Cui'];
+          break;
+        case 'computer-vision':
+          developers = ['Aarav Rao', 'Kevin Cui', 'Raghunand Dayanandan'];
+          break;
+        case 'ai-mechatronics':
+          developers = ['Tejus Peri'];
+          break;
+        default:
+          developers = ['AI in STEM Team'];
+      }
+      
+      developersContainer.innerHTML = developers.map(name => `
+        <div class="flex items-center space-x-3">
+          <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+          <span class="text-gray-700 font-medium">${name}</span>
+        </div>
+      `).join('');
+    }
 
     // Show error state
     function showErrorState() {
@@ -402,7 +481,6 @@
       document.getElementById('course-title').textContent = 'Course Not Found';
       document.getElementById('course-description').textContent = 'The requested course could not be found.';
       document.getElementById('level-badge').innerHTML = 'Error';
-      document.getElementById('detailed-description').textContent = 'This course may have been moved or removed.';
     }
 
     // Populate page with course data
@@ -411,49 +489,52 @@
       document.getElementById('page-title').textContent = `${course.title} - AI in STEM`;
       document.getElementById('course-title').textContent = course.title;
       document.getElementById('course-description').textContent = course.description;
-      document.getElementById('detailed-description').textContent = course.detailedDescription;
       
       // Update level badge
       const levelBadge = document.getElementById('level-badge');
       levelBadge.textContent = `${course.level} • ${course.duration}`;
       levelBadge.className = `level-badge level-${course.level.toLowerCase()}`;
       
+      // Update curriculum developers based on course
+      updateCurriculumDevelopers(course.id);
       
-      // Populate learning objectives
-      const objectivesList = document.getElementById('learning-objectives');
-      objectivesList.innerHTML = course.learningObjectives.map(objective => `
-        <li class="flex items-start">
-          <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-          </svg>
-          <span class="text-gray-700">${objective}</span>
-        </li>
-      `).join('');
+      // Handle articles - only update if no static content exists
+      const articlesContainer = document.getElementById('course-topics');
       
-      // Populate course topics
-      const topicsContainer = document.getElementById('course-topics');
-      topicsContainer.innerHTML = `
-        <div class="topic-item w-full min-h-[200px] aspect-square max-w-md">
-          <div class="h-full flex items-center justify-center">
-            <p class="text-gray-500 text-lg">Article content coming soon...</p>
+      // Don't override static content for ai-python course
+      if (course.id === 'ai-python') {
+        return;
+      }
+      
+      // For other courses, check if they have articles
+      if (course.articles && course.articles.length > 0) {
+        articlesContainer.innerHTML = `
+          <div class="bg-white rounded-2xl shadow-lg p-8 border">
+            <div class="text-center mb-6">
+              <img src="../articleCards/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">
+              <h3 class="text-2xl font-bold text-gray-900">${course.articles[0].title}</h3>
+              <p class="text-gray-600 mt-2">${course.articles[0].description}</p>
+            </div>
+            <div class="text-center">
+              <a href="${course.articles[0].url}" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Read Article →
+              </a>
+            </div>
           </div>
-        </div>
-      `;
-      
-      // Populate prerequisites
-      const prerequisitesList = document.getElementById('prerequisites');
-      prerequisitesList.innerHTML = course.prerequisites.map(prereq => `
-        <li class="flex items-start">
-          <svg class="w-4 h-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-          </svg>
-          <span class="text-sm text-gray-600">${prereq}</span>
-        </li>
-      `).join('');
-      
-      // Clear tools section
-      const toolsContainer = document.getElementById('tools');
-      toolsContainer.innerHTML = '';
+        `;
+      } else {
+        articlesContainer.innerHTML = `
+          <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg text-center h-full flex flex-col justify-center min-h-[300px]">
+            <div class="text-gray-400 mb-4">
+              <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 017-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <p class="text-gray-500 text-lg">No articles available yet</p>
+            <p class="text-gray-400 text-sm mt-2">Check back soon for educational resources!</p>
+          </div>
+        `;
+      }
     }
 
     // Load course data when page loads
