@@ -879,8 +879,8 @@
     "firstName": "Achyutan",
     "lastName": "Veeraghavan",
     "name": "Achyutan Veeraghavan",
-    "title": "State Ambassador",
-    "roleDescription": "As a State Ambassador I represent AI in STEM at the State Level, working to expand STEM education and establish new chapters across Oregon",
+    "title": "Chapter President, State Ambassador",
+    "roleDescription": "As a Chapter President and State Ambassador, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters across Oregon.",
     "about": "Hello! I am Achyutan Veeraraghavan, a junior at Sunset High School and the chapter president for Portland, Oregon. I have always been interested in STEM topics, specifically math, coding, and AI/ML from a young age. I also got many opportunities to compete at the state and national levels to show my skills. I also recognize that not all students have opportunities like this, due to either their background, falling behind in school, or other personal reasons. Due to this, I want to help contribute to AI in STEM and their mission: to equalize education and learning for all in the machine learning field through clubs and workshops, so that school students can strive to be successful in college and beyond. I am currently running a club at Kinnaman Elementary School, teaching the kids about coding (specifically in Python). I am also planning to start some monthly workshops in my chapter in AI/ML starting later this school year.",
     "imageFile": "Achyutan.jpg",
     "linkedinUrl": "",
@@ -901,5 +901,113 @@
     ],
     "quote": "",
     "quoteAuthor": ""
+  },
+  "shreel-belbase": {
+    "firstName": "Shreel",
+    "lastName": "Belbase",
+    "name": "Shreel Belbase",
+    "title": "Chapter President, State Ambassador, Curriculum Developer",
+    "roleDescription": "As a Chapter President, State Ambassador, and Curriculum Developer, I lead local initiatives, represent AI in STEM at the state level, and create educational content to expand STEM education across Maryland.",
+    "about": "Hi, I'm Shreel! I am currently a Senior at Richard Montgomery High School. I am passionate about Engineering and Computer Science along with Math and I want to educate others about how AI, an upcoming vital tool, can be optimized in these various fields. One fun fact about me is I am fluent in 5 languages! (Excluding the computer languages!)",
+    "imageFile": "Shreel-Belbase.png",
+    "linkedinUrl": "https://www.linkedin.com/in/shreel-belbase-a673b9203",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Building Cybersecurity AI",
+        "emoji": "🔐"
+      },
+      {
+        "title": "Expanding Cybersecurity Awareness",
+        "emoji": "🛡️"
+      },
+      {
+        "title": "Research on Quantum Computing",
+        "emoji": "⚛️"
+      }
+    ],
+    "quote": "Education is the most powerful weapon which you can use to change the world.",
+    "quoteAuthor": "Nelson Mandela"
+  },
+  "harinita-senthil": {
+    "firstName": "Harinita",
+    "lastName": "Senthil",
+    "name": "Harinita Senthil",
+    "title": "Curriculum Developer",
+    "roleDescription": "As a Curriculum Developer, I create educational content to spread awareness about the role and importance of AI and how it is transforming modern careers, particularly in biotechnology and computer science.",
+    "about": "Harinita Senthil studies at Forsyth Central High School as a sophomore. She is particularly interested in how artificial intelligence integrates with STEM fields, such as through revolutionary tools like CRISPR used in biotechnology and gene editing. As a future Curriculum Developer, she hopes to make an impact by spreading education on the role and importance of AI and how it is transforming modern careers. One fun fact about her is that she is actively working on projects such as a nonprofit organization named Innovative Minds 4 Tech, where they spread AI tools and information on biotechnology and computer science all across Cumming, GA. She is also actively working on environmental projects such as the Climate Leaders Fellowship and Project ARISE which is focused on environmental policy advocating and projects for a better sustainable future.",
+    "imageFile": "Harinita-Senthil.png",
+    "linkedinUrl": "https://www.linkedin.com/in/harinita-senthil-464746373",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Biotechnology Research",
+        "emoji": "🧬"
+      },
+      {
+        "title": "Environmental Advocacy",
+        "emoji": "🌱"
+      },
+      {
+        "title": "AI Education",
+        "emoji": "🤖"
+      }
+    ],
+    "quote": "Look deep into nature, and then you will understand everything better.",
+    "quoteAuthor": "Albert Einstein"
+  },
+  "bhuvan-vemuri": {
+    "firstName": "Bhuvan",
+    "lastName": "Vemuri",
+    "name": "Bhuvan Vemuri",
+    "title": "Chapter President",
+    "roleDescription": "As a Chapter President, I lead local initiatives to help students learn and grow in AI, combining my passion for technology with community education.",
+    "about": "Hi, I'm Bhuvan and I'm a junior at Pinnacle High School. I enjoy playing soccer, basketball, and also investing. I'm excited to help you all learn and grow in AI.",
+    "imageFile": "Bhuvan-Vemuri.png",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Investing",
+        "emoji": "📈"
+      },
+      {
+        "title": "Pursuing Programming",
+        "emoji": "💻"
+      },
+      {
+        "title": "Speech and Debate",
+        "emoji": "🎤"
+      }
+    ],
+    "quote": "I am the number one most impactful artist of our generation. I am Shakespeare in the flesh. Walt Disney. Nike. Google.",
+    "quoteAuthor": "Kanye West"
+  },
+  "sridattha-kukkadapu": {
+    "firstName": "Sridattha",
+    "lastName": "Kukkadapu",
+    "name": "Sridattha Kukkadapu",
+    "title": "Chapter President, Outreach Manager, Curriculum Developer",
+    "roleDescription": "As a Chapter President, Outreach Manager, and Curriculum Developer, I use my knowledge of machine learning, AI, and Python to empower chapters and make STEM education accessible to everyone.",
+    "about": "My name is Sridattha Kukkadapu and I am a Freshman at Lambert High School. I am passionate about technology, specifically machine learning, AI, and Python. This reflects the impact that I am passionate about making at AI in STEM - being able to use my knowledge of these passions to empower chapters and make STEM education accessible to everyone. A fun fact about me is that I play fencing for a sport.",
+    "imageFile": "Sridattha-Kukkadapu.png",
+    "linkedinUrl": "https://www.linkedin.com/in/sridattha-kukkadapu-2b0338380/",
+    "githubUrl": "https://github.com/sridatthak",
+    "skills": [
+      {
+        "title": "Chess",
+        "emoji": "♟️"
+      },
+      {
+        "title": "Fencing",
+        "emoji": "🤺"
+      },
+      {
+        "title": "Debate",
+        "emoji": "💬"
+      }
+    ],
+    "quote": "I have no special talent. I am only passionately curious.",
+    "quoteAuthor": "Albert Einstein"
   }
 }
