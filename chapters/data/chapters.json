@@ -7,7 +7,7 @@
     "image": "../chapterPhotos/Davis-Library.png?v=20251004",
     "schoolImage": "../chapterPhotos/Davis-Library-Building.png",
     "address": "7501-B Independence Pkwy, Plano, TX 75025",
-    "established": "2025",
+    "established": "June 2025",
     "ageGroup": "Ages 8-15",
     "programs": [
       "Machine Learning",
@@ -32,7 +32,7 @@
     "name": "Richard Montgomery High School",
     "location": "Rockville, MD",
     "fullLocation": "Rockville, Maryland",
-    "established": "Spring 2024",
+    "established": "October 2025",
     "ageGroup": "High School",
     "image": "../chapterPhotos/Richard-Montgomery-HS.png",
     "schoolImage": "../chapterPhotos/Richard-Montgomery-HS-Building.png",
@@ -59,6 +59,7 @@
         "venue": "Richard Montgomery High School",
         "meetingDate": "10/8/2025",
         "leaders": "Aditya Pradhan, Shreel Belbase",
+        "attendance": "7 students",
         "summary": "The interest meeting was attended by seven students, primarily high schoolers in grades 9–11. The goal of the meeting was to introduce AI in STEM as a whole and explain the mission and vision of the Maryland chapter. We discussed the organization's broader goals, our local objectives, and how students can get involved in future activities and projects. We also shared upcoming plans for workshops, community engagement opportunities, and future initiatives.\n\nThe attendees were very engaged, asked thoughtful questions about how AI connects to different STEM fields, and showed genuine interest in contributing to local impact projects. The meeting went smoothly with no major challenges in presenting or answering questions. For future meetings, we plan to incorporate brief demonstrations or visuals to make the presentations even more interactive. We did not face any challenges in the presenting, question answering, or any other portions of our meeting.",
         "images": [
           "../articleMeetingPhotos/Rockville1-1.png",
@@ -75,7 +76,7 @@
     "image": "../chapterPhotos/Sunrise-Mountain-Library.png",
     "schoolImage": "../chapterPhotos/Sunrise-Mountain-Library-Building.png",
     "address": "21109 N 98th Ave, Peoria, AZ 85382",
-    "established": "2025",
+    "established": "October 2025",
     "ageGroup": "Ages 8-15",
     "programs": [
       "Machine Learning",
@@ -90,7 +91,25 @@
     ],
     "contact": {
       "email": "https://mail.google.com/mail/u/0/?fs=1&to=kardichess@gmail.com&tf=cm"
-    }
+    },
+    "meetingReports": [
+      {
+        "id": "peoria-2025-10-23",
+        "date": "Published 10/30/2025",
+        "title": "Week of 10/23/2025 Chapter Meeting Report",
+        "location": "Peoria, Arizona",
+        "venue": "Sunrise Mountain Library",
+        "meetingDate": "10/23/2025",
+        "leaders": "Karthick Ponkali",
+        "attendance": "8 students",
+        "summary": "During the chapter kickoff meeting, we went through the intro to machine learning curriculum, setting up students for future curriculum on more advanced topics. Everything went smoothly, and we're excited to dive into more detailed courses, such as neural networks and computer vision, with hands-on activities in future meetings!",
+        "images": [
+          "../articleMeetingPhotos/peoria1-1.jpeg",
+          "../articleMeetingPhotos/Peoria1-2.jpeg",
+          "../articleMeetingPhotos/Peoria1-3.jpeg"
+        ]
+      }
+    ]
   },
   {
     "id": "kinnaman-elementary",
@@ -100,7 +119,7 @@
     "image": "../chapterPhotos/Kinnaman.png",
     "schoolImage": "../chapterPhotos/Kinnaman-Building.png",
     "address": "4205 SW 193rd Ave, Aloha, OR 97078",
-    "established": "2025",
+    "established": "September 2025",
     "ageGroup": "Ages 5-11",
     "programs": [
       "Machine Learning",

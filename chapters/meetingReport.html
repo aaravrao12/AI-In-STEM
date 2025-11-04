@@ -427,8 +427,8 @@
       if (report.images || report.image) {
         const images = report.images || [report.image];
         const imagesHTML = images.map((img, idx) => `
-          <div class="flex justify-center mb-8 ${idx === images.length - 1 ? 'mb-0' : ''}" data-aos="fade-up" data-aos-delay="${(idx + 2) * 100}">
-            <img src="${img}" alt="${report.title} - Image ${idx + 1}" class="w-2/3 rounded-2xl shadow-lg object-cover" loading="lazy" />
+          <div class="flex justify-center">
+            <img src="${img}" alt="${report.title} - Image ${idx + 1}" class="w-full rounded-2xl shadow-lg object-cover" loading="lazy" />
           </div>
         `).join('');
         
@@ -453,6 +453,10 @@
                 <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Chapter Leaders</h3>
                 <p class="text-gray-900 text-lg font-medium">${report.leaders || ''}</p>
               </div>
+              <div>
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Attendance</h3>
+                <p class="text-gray-900 text-lg font-medium">${report.attendance || ''}</p>
+              </div>
             </div>
             
             <div>
@@ -462,13 +466,15 @@
           </div>
           
           <!-- Meeting Images -->
-          <div class="bg-white rounded-3xl shadow-xl p-10 mb-12" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-white rounded-3xl shadow-xl p-10 mb-12">
             <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Meeting Photos</h3>
-            ${imagesHTML}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              ${imagesHTML}
+            </div>
           </div>
           
           <!-- Back Button -->
-          <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-center">
             <a id="back-to-chapter" href="chapter.html?id=${chapter.id}" class="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-2xl font-bold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
