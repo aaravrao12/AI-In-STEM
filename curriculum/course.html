@@ -327,7 +327,7 @@
                 <!-- Medium Article Card -->
                 <div class="bg-white rounded-2xl shadow-lg p-8 border">
                   <div class="text-center mb-6">
-                    <img src="../articleCards/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">
+                    <img src="../articleMeetingPhotos/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">
                     <h3 class="text-2xl font-bold text-gray-900">Artificial Intelligence in Python: A Complete Guide for Beginners and Beyond</h3>
                     <p class="text-gray-600 mt-2">A comprehensive guide to getting started with AI development using Python libraries and frameworks.</p>
                   </div>
@@ -511,12 +511,11 @@
         articlesContainer.innerHTML = `
           <div class="bg-white rounded-2xl shadow-lg p-8 border">
             <div class="text-center mb-6">
-              <img src="../articleCards/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">
               <h3 class="text-2xl font-bold text-gray-900">${course.articles[0].title}</h3>
               <p class="text-gray-600 mt-2">${course.articles[0].description}</p>
             </div>
             <div class="text-center">
-              <a href="${course.articles[0].url}" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <a href="article.html?id=${course.articles[0].id}" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
                 Read Article →
               </a>
             </div>
