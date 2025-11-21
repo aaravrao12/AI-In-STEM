@@ -25,7 +25,23 @@
     ],
     "contact": {
       "email": "https://mail.google.com/mail/u/0/?fs=1&to=kevinkcui1@gmail.com&tf=cm"
-    }
+    },
+    "meetingReports": [
+      {
+        "id": "plano-2025-08-24",
+        "date": "Published 8/30/2025",
+        "title": "Week of 8/24/2025 Chapter Meeting Report",
+        "location": "Plano, Texas",
+        "venue": "Davis Library",
+        "meetingDate": "8/24/2025",
+        "leaders": "Kevin Cui, Aarav Rao",
+        "attendance": "7 students",
+        "summary": "Our first AI in STEM chapter meeting at the Davis Library was a huge success! We had an energetic group of young STEM learners ready to explore coding. We started with the basics of Python, focusing on data types. It was a bit tricky at first, especially for the elementary schoolers, but with visuals on the board and interactive exercises, things began to make sense. Following this, we moved on to variables, basic math operations (+, -, *, /), and near the end of class, printing text to the console.\n\nWe are very proud of the progress everyone made in just one session, and are excited to see everyone again to continue building those coding skills together!",
+        "images": [
+          "../about.png"
+        ]
+      }
+    ]
   },
   {
     "id": "richard-montgomery-hs",
