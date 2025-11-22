@@ -1009,5 +1009,61 @@
     ],
     "quote": "I have no special talent. I am only passionately curious.",
     "quoteAuthor": "Albert Einstein"
+  },
+  "aaryan-vishnupurikar": {
+    "firstName": "Aaryan",
+    "lastName": "Vishnupurikar",
+    "name": "Aaryan Vishnupurikar",
+    "title": "Chapter President & Outreach Manager",
+    "roleDescription": "As Chapter President, I lead local initiatives and help students discover their future careers in AI. As Outreach Manager, I work to expand our reach and connect with more communities.",
+    "about": "Hi there! My name is Aaryan, and I'm an eighth grader at Windemere Ranch Middle School. AI in STEM helps me grow my network, so I can lead people to their future careers based on AI. I also spend a lot of my time practicing violin!",
+    "imageFile": "Aaryan-Vishnupurikar.png",
+    "location": "San Ramon, CA",
+    "linkedinUrl": "https://www.linkedin.com/in/iamaaryanv/",
+    "githubUrl": "https://github.com/aaryanv-midnightcrown",
+    "skills": [
+      {
+        "title": "Violin",
+        "emoji": "🎻"
+      },
+      {
+        "title": "Founding Team of OneUp",
+        "emoji": "💡"
+      },
+      {
+        "title": "STEM and Chess Club",
+        "emoji": "♟️"
+      }
+    ],
+    "quote": "Do or do not. There is no try.",
+    "quoteAuthor": "Yoda"
+  },
+  "shashank-kesineni": {
+    "firstName": "Shashank",
+    "lastName": "Kesineni",
+    "name": "Shashank Kesineni",
+    "title": "Chapter President & Outreach Manager",
+    "roleDescription": "As Chapter President, I lead local initiatives to inspire students to explore AI. As Outreach Manager, I work to expand our reach and connect with more communities interested in AI education.",
+    "about": "My name is Shashank Kesineni and I am a sophomore at Rock Ridge High School and the Academies of Loudoun (AET) with a focus in computer science. I am passionate about AI and how it can be used to solve real-world problems, especially in sustainability and education. As a Chapter President for AI in STEM, I hope to inspire other students to explore the creative and ethical potential of AI.",
+    "imageFile": "Shashank-Kesineni.png",
+    "location": "Ashburn, Virginia",
+    "linkedinUrl": "https://www.linkedin.com/in/shashank-kesineni-9bb53b31b",
+    "githubUrl": "https://github.com/ShashankKesineni",
+    "skills": [
+      {
+        "title": "AI Research",
+        "emoji": "🤖"
+      },
+      {
+        "title": "Soccer",
+        "emoji": "⚽"
+      },
+      {
+        "title": "Debate",
+        "emoji": "💬"
+      }
+    ],
+    "quote": "The future depends on what you do today.",
+    "quoteAuthor": "Mahatma Gandhi"
   }
 }
