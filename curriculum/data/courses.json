@@ -213,5 +213,39 @@
         "source": "Medium"
       }
     ]
+  },
+  {
+    "id": "robot-operating-systems",
+    "title": "Robot Operating Systems",
+    "level": "Intermediate",
+    "duration": "1 Lesson",
+    "description": "Discover the architecture supporting robot operating systems, visualization methods and how ROS integrates into a variety of projects.",
+    "detailedDescription": "Learn the fundamentals of Robot Operating System (ROS), the industry-standard middleware for robotics development. This course covers ROS architecture, communication patterns, simulation tools, and integration with computer vision systems.",
+    "color": "orange",
+    "icon": "robot",
+    "topics": [
+      "Nodes & Topics",
+      "Messages & Services",
+      "Gazebo",
+      "Computer Vision Integration"
+    ],
+    "learningObjectives": [
+      "Understand ROS architecture and communication patterns",
+      "Build and launch ROS nodes",
+      "Simulate robots using Gazebo",
+      "Integrate computer vision with ROS"
+    ],
+    "prerequisites": [
+      "Basic Python or C++ programming",
+      "Understanding of Linux command line",
+      "Intro to Computer Vision (recommended)"
+    ],
+    "tools": [
+      "ROS (Robot Operating System)",
+      "Gazebo Simulator",
+      "RViz",
+      "OpenCV with ROS"
+    ],
+    "articles": []
   }
 ]
