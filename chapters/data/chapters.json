@@ -136,12 +136,9 @@
     "schoolImage": "../chapterPhotos/Kinnaman-Building.png",
     "address": "4205 SW 193rd Ave, Aloha, OR 97078",
     "established": "September 2025",
-    "ageGroup": "Ages 5-11",
+    "ageGroup": "Ages 7-11",
     "programs": [
-      "Machine Learning",
-      "Neural Networks", 
-      "NLP & LLMs",
-      "Computer Vision",
+      "Intro to Python",
       "AI Applications in Python"
     ],
     "leaders": [
@@ -149,7 +146,121 @@
     ],
     "contact": {
       "email": "https://mail.google.com/mail/u/0/?fs=1&to=achyutanveera@gmail.com&tf=cm"
-    }
+    },
+    "meetingReports": [
+      {
+        "id": "kinnaman-2025-10-01",
+        "date": "Published 10/2/2025",
+        "title": "Week of 10/1/2025 Chapter Meeting Report",
+        "location": "Aloha, Oregon",
+        "venue": "Kinnaman Elementary School",
+        "meetingDate": "10/14/2025",
+        "leaders": "Achyutan Veeraraghavan",
+        "attendance": "10 students",
+        "summary": "Hey Coyotes! Last meeting, we went through a review mostly for data types and variables, since we had a few new members join. After that, everyone was quizzed briefly on print statements, data types, and variables, and everyone started to create their accounts on Dataquest! From our next meeting onwards, we will be using Dataquest for our online learning and work besides the lesson slideshow. Next week, we will also dive a bit into conditionals, like for/while loops, and if/elif/else statements. It was great to see the students improve gradually, and it was also great to see a few new faces as well. See you all next week, and go Coyotes!",
+        "images": [
+          "../articleMeetingPhotos/Kinnaman3-1.png"
+        ]
+      },
+      {
+        "id": "kinnaman-2025-10-07",
+        "date": "Published 10/8/2025",
+        "title": "Week of 10/7/2025 Chapter Meeting Report",
+        "location": "Aloha, Oregon",
+        "venue": "Kinnaman Elementary School",
+        "meetingDate": "10/7/2025",
+        "leaders": "Achyutan Veeraraghavan",
+        "attendance": "9 students",
+        "summary": "Hey Coyotes! In our second meeting of the Coding Coyotes club this year, we went over a review of basic print statements. Then, we used those to dive into basic data types, arithmetic, and comparison operators, and we used print statements to work with those! After that, we started an introduction to variables, and how they can be used to represent any data type. For each of these concepts, students worked with a couple of practice problems and they did very well! At the very end of the lesson, students were shown Dataquest, the learning platform they will get to use starting next week, where we will work more with variables along with a short introduction to conditionals (if/elif/else statements and for/while loops). Students will also start work on Dataquest to review topics covered in the first few weeks. It will be very interactive and hopefully it will be very fun for the students! See you next week, and go Coyotes!",
+        "images": [
+          "../articleMeetingPhotos/Kinnaman2-1.png"
+        ]
+      },
+      {
+        "id": "kinnaman-2025-10-14",
+        "date": "Published 10/16/2025",
+        "title": "Week of 10/14/2025 Chapter Meeting Report",
+        "location": "Aloha, Oregon",
+        "venue": "Kinnaman Elementary School",
+        "meetingDate": "10/14/2025",
+        "leaders": "Achyutan Veeraraghavan",
+        "attendance": "10 students",
+        "summary": "Hey Coyotes! Last meeting, we went through a review mostly for data types and variables, since we had a few new members join. After that, everyone was quizzed briefly on print statements, data types, and variables, and everyone started to create their accounts on Dataquest! From our next meeting onwards, we will be using Dataquest for our online learning and work besides the lesson slideshow. Next week, we will also dive a bit into conditionals, like for/while loops, and if/elif/else statements. It was great to see the students improve gradually, and it was also great to see a few new faces as well. See you all next week, and go Coyotes!",
+        "images": [
+          "../articleMeetingPhotos/Kinnaman3-1.png"
+        ]
+      },
+      {
+        "id": "kinnaman-2025-10-22",
+        "date": "Published 10/23/2025",
+        "title": "Week of 10/22/2025 Chapter Meeting Report",
+        "location": "Aloha, Oregon",
+        "venue": "Kinnaman Elementary School",
+        "meetingDate": "10/22/2025",
+        "leaders": "Achyutan Veeraraghavan",
+        "attendance": "8 students",
+        "summary": "Hey Coyotes! We went over and reviewed conditionals again this week, since some students were having trouble with it. Students were also able to start using Dataquest and we were able to get through the first lesson (basic print statements and math operators) and students were assigned to complete that if they didn't complete it during the meeting. We might review conditionals next week too in order to completely solidify them. I am also really looking forward to many successful experiences with Dataquest! See you next week, and go Coyotes!",
+        "images": [
+          "../articleMeetingPhotos/Kinnaman4-1.png"
+        ]
+      },
+      {
+        "id": "kinnaman-2025-10-28",
+        "date": "Published 10/30/2025",
+        "title": "Week of 10/28/2025 Chapter Meeting Report",
+        "location": "Aloha, Oregon",
+        "venue": "Kinnaman Elementary School",
+        "meetingDate": "10/28/2025",
+        "leaders": "Achyutan Veeraraghavan",
+        "attendance": "9 students",
+        "summary": "Hey Coyotes! We went over and reviewed conditionals yet again this week, as well as everything else we have previously learned from the start, so that students could get a full grasp of what is going on. Hopefully, next week, we can move on to something new, which includes Python's other built-in functions. Students were assigned to complete the Dataquest lesson (1 & 2) if they didn't complete it during the club meeting. Once again, I am really looking forward to many successful experiences with Dataquest! See you next week, and go Coyotes!",
+        "images": [
+          "../articleMeetingPhotos/Kinnaman5-1.png"
+        ]
+      },
+      {
+        "id": "kinnaman-2025-11-04",
+        "date": "Published 11/7/2025",
+        "title": "Week of 11/4/2025 Chapter Meeting Report",
+        "location": "Aloha, Oregon",
+        "venue": "Kinnaman Elementary School",
+        "meetingDate": "11/4/2025",
+        "leaders": "Achyutan Veeraraghavan",
+        "attendance": "9 students",
+        "summary": "Hi Coyotes! This meeting was again focused on reviewing conditionals, since there were still some students having trouble understanding some of the material. By the end of the lesson though, students were able to get a hang of it and we were able to move on to a brief introduction of Python's built in functions! For the last few minutes, students started working on Dataquest with some difficulty, due to login issues that have persisted since the last couple weeks. I'll work behind the scenes to get this issue resolved soon. See you next week, and go Coyotes!",
+        "images": [
+          "../articleMeetingPhotos/Kinnaman6-1.png"
+        ]
+      },
+      {
+        "id": "kinnaman-2025-11-12",
+        "date": "Published 11/16/2025",
+        "title": "Week of 11/12/2025 Chapter Meeting Report",
+        "location": "Aloha, Oregon",
+        "venue": "Kinnaman Elementary School",
+        "meetingDate": "11/12/2025",
+        "leaders": "Achyutan Veeraraghavan",
+        "attendance": "7 students",
+        "summary": "Hi Coyotes! We went through a full run through of built in functions in Python, focusing on the str, int, float, and bool functions that change an object's data type. Students were able to grasp this very quickly after already learning about data types. However, the bad news is that students were not able to log into Dataquest due to persisting proxy, login, and reCaptcha issues, and students were not able to access all the material anyways, so we will not be able to use Dataquest any longer. I know it's sad, but I will try to find another way to make this club more interactive. See you all next week, and Go Coyotes!",
+        "images": [
+          "../articleMeetingPhotos/Kinnaman7-1.png"
+        ]
+      },
+      {
+        "id": "kinnaman-2025-11-18",
+        "date": "Published 11/21/2025",
+        "title": "Week of 11/18/2025 Chapter Meeting Report",
+        "location": "Aloha, Oregon",
+        "venue": "Kinnaman Elementary School",
+        "meetingDate": "11/18/2025",
+        "leaders": "Achyutan Veeraraghavan",
+        "attendance": "9 students",
+        "summary": "Hey Coyotes! Last meeting on November 18th, students went through a quick review of Python's built-in functions and we also started getting into user functions as well! Students were able to learn about the syntax, how they can be used, and how important they are to Python code! They are one of the most important code functions, and it is really important that the students know this, since these will take up most of their code in the future! Students were getting the hang of it really well in practice after the teaching, and when we come back from Thanksgiving Break, we are going to be diving deeper into these! I hope everyone has a great fall break. See you in December, and go Coyotes!",
+        "images": [
+          "../articleMeetingPhotos/Kinnaman8-1.png"
+        ]
+      }
+    ]
   },
   {
     "id": "sharon-forks-library",
