@@ -466,6 +466,9 @@
         case 'robot-operating-systems':
           developers = ['Kevin Cui'];
           break;
+        case 'ai-sustainability':
+          developers = ['Aarav Rao', 'Kevin Cui'];
+          break;
         default:
           developers = ['AI in STEM Team'];
       }
@@ -495,7 +498,8 @@
       
       // Update level badge
       const levelBadge = document.getElementById('level-badge');
-      levelBadge.textContent = `${course.level} • ${course.duration}`;
+      const lessonLabel = course.duration === 1 ? 'Lesson' : 'Lessons';
+      levelBadge.textContent = `${course.level} • ${course.duration} ${lessonLabel}`;
       levelBadge.className = `level-badge level-${course.level.toLowerCase()}`;
       
       // Update curriculum developers based on course

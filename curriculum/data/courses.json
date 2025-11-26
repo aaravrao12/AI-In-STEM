@@ -247,5 +247,43 @@
       "OpenCV with ROS"
     ],
     "articles": []
+  },
+  {
+    "id": "ai-sustainability",
+    "title": "AI in Sustainability and the Environment",
+    "level": "Intermediate",
+    "duration": "2 Lessons",
+    "description": "AI's usage in solving real environmental challenges through means of modeling climate behaviors, improving clean-energy systems, and much more!",
+    "detailedDescription": "Explore how artificial intelligence is being used to address critical environmental challenges. This course covers AI applications in climate modeling, renewable energy optimization, biodiversity monitoring, and sustainable agriculture. Learn how machine learning and data science are helping to create a more sustainable future.",
+    "color": "orange",
+    "icon": "leaf",
+    "topics": [
+      "Climate Modeling",
+      "Renewable Energy Optimization",
+      "Wildlife and Biodiversity Monitoring",
+      "Smart Agriculture"
+    ],
+    "learningObjectives": [
+      "Understand AI applications in environmental science",
+      "Learn climate modeling techniques using machine learning",
+      "Explore renewable energy optimization with AI",
+      "Discover how AI aids conservation efforts"
+    ],
+    "prerequisites": [
+      "Intro to Machine Learning",
+      "Basic understanding of environmental science",
+      "Python programming basics"
+    ],
+    "tools": [
+      "Python",
+      "TensorFlow/PyTorch",
+      "Climate Data APIs",
+      "Remote Sensing Tools"
+    ],
+    "developers": [
+      "Aarav Rao",
+      "Kevin Cui"
+    ],
+    "articles": []
   }
 ]
