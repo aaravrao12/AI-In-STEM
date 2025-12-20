@@ -15,7 +15,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="icon" href="../logo/favicon.ico" />
+  <link rel="icon" href="../assets/images/logo/favicon.ico" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
     
@@ -230,27 +230,35 @@
     <div class="flex items-center space-x-4">
       <div class="flex-shrink-0">
         <a href="../index.html" aria-label="Go to AI in STEM homepage" class="transition transform hover:scale-105 focus:scale-105">
-          <img src="../logo/logo.png" alt="AI in STEM Logo" class="h-16 sm:h-20 w-auto object-contain" />
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo" class="h-16 sm:h-20 w-auto object-contain" />
         </a>
       </div>
 
       <!-- Back to Curriculum Button -->
       <div class="hidden lg:block">
-        <a href="../curriculum.html" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+        <a href="all-courses.html" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
           ← Back to Curriculum
         </a>
       </div>
     </div>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex space-x-8 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
+    <nav class="hidden lg:flex items-center space-x-3 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
       <a href="../index.html" class="nav-link hover:text-blue-400 transition-colors">Home</a>
+      <span class="text-gray-500">|</span>
       <a href="../about.html" class="nav-link hover:text-blue-400 transition-colors">About</a>
-      <a href="../team.html" class="nav-link hover:text-blue-400 transition-colors">Team</a>
-      <a href="../chapters.html" class="nav-link hover:text-blue-400 transition-colors">Chapters</a>
-      <a href="../curriculum.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-team.html" class="nav-link hover:text-blue-400 transition-colors">Team</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-chapters.html" class="nav-link hover:text-blue-400 transition-colors">Chapters</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-courses.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
+      <span class="text-gray-500">|</span>
       <a href="../about.html#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
-      <a href="../team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
+      <span class="text-gray-500">|</span>
+      <a href="updates.html" class="nav-link hover:text-blue-400 transition-colors">Updates</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
     </nav>
 
     <!-- Mobile menu button -->
@@ -267,7 +275,7 @@
       <!-- Header -->
       <div class="flex items-center justify-between mb-8">
         <div class="flex items-center space-x-3">
-          <img src="../logo/logo.png" alt="AI in STEM" class="h-8 w-auto">
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM" class="h-8 w-auto">
           <span class="text-white font-semibold text-lg">AI in STEM</span>
         </div>
         <button id="closeMobileMenu" class="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-gray-800/50 transition-colors focus:bg-gray-800/50" aria-label="Close mobile menu">
@@ -282,11 +290,11 @@
         <div class="space-y-4">
           <a href="../index.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Home</a>
           <a href="../about.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">About</a>
-          <a href="../team.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Team</a>
-          <a href="../chapters.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Chapters</a>
-          <a href="../curriculum.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Curriculum</a>
+          <a href="all-team.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Team</a>
+          <a href="all-chapters.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Chapters</a>
+          <a href="all-courses.html" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Curriculum</a>
           <a href="../about.html#partners" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Partners</a>
-          <a href="../team.html#join-team" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Join Team</a>
+          <a href="all-team.html#join-team" class="block text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-colors">Join Team</a>
         </div>
       </nav>
     </div>
@@ -327,7 +335,7 @@
                 <!-- Medium Article Card -->
                 <div class="bg-white rounded-2xl shadow-lg p-8 border">
                   <div class="text-center mb-6">
-                    <img src="../articleMeetingPhotos/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">
+                    <img src="../assets/images/meeting-photos/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">
                     <h3 class="text-2xl font-bold text-gray-900">Artificial Intelligence in Python: A Complete Guide for Beginners and Beyond</h3>
                     <p class="text-gray-600 mt-2">A comprehensive guide to getting started with AI development using Python libraries and frameworks.</p>
                   </div>
@@ -362,7 +370,7 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         <!-- Logo and Mission -->
         <div class="md:col-span-2">
-          <img src="../logo/logo.png" alt="AI in STEM Logo" class="h-16 mb-6" />
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo" class="h-16 mb-6" />
           <p class="text-gray-300 text-lg leading-relaxed mb-6">
             Empowering the next generation of AI innovators through accessible education, mentorship, and community building.
           </p>
@@ -372,10 +380,13 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
+            <li><a href="../index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
             <li><a href="../about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
-            <li><a href="../team.html" class="text-gray-300 hover:text-white transition-colors">Team</a></li>
-            <li><a href="../chapters.html" class="text-gray-300 hover:text-white transition-colors">Chapters</a></li>
-            <li><a href="../curriculum.html" class="text-gray-300 hover:text-white transition-colors">Curriculum</a></li>
+            <li><a href="all-team.html" class="text-gray-300 hover:text-white transition-colors">Team</a></li>
+            <li><a href="all-chapters.html" class="text-gray-300 hover:text-white transition-colors">Chapters</a></li>
+            <li><a href="all-courses.html" class="text-gray-300 hover:text-white transition-colors">Curriculum</a></li>
+            <li><a href="../about.html#partners" class="text-gray-300 hover:text-white transition-colors">Partners</a></li>
+            <li><a href="updates.html" class="text-gray-300 hover:text-white transition-colors">Updates</a></li>
           </ul>
         </div>
         
@@ -417,7 +428,7 @@
         const courseId = getCourseId();
         
         // Use relative path to ensure correct loading
-        const response = await fetch('data/courses.json');
+        const response = await fetch('../data/courses.json');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -498,8 +509,7 @@
       
       // Update level badge
       const levelBadge = document.getElementById('level-badge');
-      const lessonLabel = course.duration === 1 ? 'Lesson' : 'Lessons';
-      levelBadge.textContent = `${course.level} • ${course.duration} ${lessonLabel}`;
+      levelBadge.textContent = `${course.level} • ${course.duration}`;
       levelBadge.className = `level-badge level-${course.level.toLowerCase()}`;
       
       // Update curriculum developers based on course
@@ -515,14 +525,19 @@
       
       // For other courses, check if they have articles
       if (course.articles && course.articles.length > 0) {
+        const article = course.articles[0];
+        const articleLink = article.url ? article.url : `article.html?id=${article.id}`;
+        const linkTarget = article.url ? ' target="_blank" rel="noopener noreferrer"' : '';
+        const mediumLogo = article.url && article.url.includes('medium.com') ? `<img src="../assets/images/meeting-photos/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">` : '';
         articlesContainer.innerHTML = `
           <div class="bg-white rounded-2xl shadow-lg p-8 border">
             <div class="text-center mb-6">
-              <h3 class="text-2xl font-bold text-gray-900">${course.articles[0].title}</h3>
-              <p class="text-gray-600 mt-2">${course.articles[0].description}</p>
+              ${mediumLogo}
+              <h3 class="text-2xl font-bold text-gray-900">${article.title}</h3>
+              <p class="text-gray-600 mt-2">${article.description}</p>
             </div>
             <div class="text-center">
-              <a href="article.html?id=${course.articles[0].id}" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <a href="${articleLink}"${linkTarget} class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
                 Read Article →
               </a>
             </div>

@@ -4,8 +4,8 @@
     "name": "Davis Library",
     "location": "Plano, Texas",
     "fullLocation": "Plano, Texas, USA",
-    "image": "../chapterPhotos/Davis-Library.png?v=20251004",
-    "schoolImage": "../chapterPhotos/Davis-Library-Building.png",
+    "image": "../assets/images/chapter-photos/Davis-Library.png?v=20251004",
+    "schoolImage": "../assets/images/chapter-photos/Davis-Library-Building.png",
     "address": "7501-B Independence Pkwy, Plano, TX 75025",
     "established": "June 2025",
     "ageGroup": "Ages 8-15",
@@ -50,8 +50,8 @@
     "fullLocation": "Rockville, Maryland",
     "established": "October 2025",
     "ageGroup": "High School",
-    "image": "../chapterPhotos/Richard-Montgomery-HS.png",
-    "schoolImage": "../chapterPhotos/Richard-Montgomery-HS-Building.png",
+    "image": "../assets/images/chapter-photos/Richard-Montgomery-HS.png",
+    "schoolImage": "../assets/images/chapter-photos/Richard-Montgomery-HS-Building.png",
     "address": "250 Richard Montgomery Dr, Rockville, MD 20852",
     "programs": [
       "Intro to Machine Learning",
@@ -78,8 +78,24 @@
         "attendance": "7 students",
         "summary": "The interest meeting was attended by seven students, primarily high schoolers in grades 9–11. The goal of the meeting was to introduce AI in STEM as a whole and explain the mission and vision of the Maryland chapter. We discussed the organization's broader goals, our local objectives, and how students can get involved in future activities and projects. We also shared upcoming plans for workshops, community engagement opportunities, and future initiatives.\n\nThe attendees were very engaged, asked thoughtful questions about how AI connects to different STEM fields, and showed genuine interest in contributing to local impact projects. The meeting went smoothly with no major challenges in presenting or answering questions. For future meetings, we plan to incorporate brief demonstrations or visuals to make the presentations even more interactive. We did not face any challenges in the presenting, question answering, or any other portions of our meeting.",
         "images": [
-          "../articleMeetingPhotos/Rockville1-1.png",
-          "../articleMeetingPhotos/Rockville1-2.png"
+          "../assets/images/meeting-photos/Rockville1-1.png",
+          "../assets/images/meeting-photos/Rockville1-2.png"
+        ]
+      },
+      {
+        "id": "rmhs-2025-11-12",
+        "date": "Published 11/16/2025",
+        "title": "Week of 11/12/2025 Chapter Meeting Report",
+        "location": "Rockville, Maryland",
+        "venue": "Richard Montgomery High School",
+        "meetingDate": "11/12/2025",
+        "leaders": "Aditya Pradhan, Shreel Belbase",
+        "attendance": "9 students",
+        "summary": "The second meeting of the year was attended by 9 students (grades 10-12). This session was on AI & Technology in Engineering: how AI is applied across different engineering fields, taught through real-world case studies. We discussed examples such as autonomous flight navigation, predictive maintenance, industrial optimization of energy/materials, and many other intriguing topics!\n\nStudents asked pretty thoughtful questions, about things like implementation, ethical considerations, and how these technologies might affect the engineering job market. Several students shared examples they saw in other classes or online, which helped strengthen the discussion.\n\nThe meeting ran smoothly with no major issues, which is amazing! For future meetings, we plan to include more interactive demonstrations to help students better visualize engineering concepts. Other than increasing interactivity, there were no significant challenges with this meeting's structure or delivery.",
+        "images": [
+          "../assets/images/meeting-photos/Rockville2-1.png",
+          "../assets/images/meeting-photos/Rockville2-2.png",
+          "../assets/images/meeting-photos/Rockville2-3.png"
         ]
       }
     ]
@@ -89,8 +105,8 @@
     "name": "Sunrise Mountain Library",
     "location": "Peoria, Arizona",
     "fullLocation": "Peoria, Arizona, USA",
-    "image": "../chapterPhotos/Sunrise-Mountain-Library.png",
-    "schoolImage": "../chapterPhotos/Sunrise-Mountain-Library-Building.png",
+    "image": "../assets/images/chapter-photos/Sunrise-Mountain-Library.png",
+    "schoolImage": "../assets/images/chapter-photos/Sunrise-Mountain-Library-Building.png",
     "address": "21109 N 98th Ave, Peoria, AZ 85382",
     "established": "October 2025",
     "ageGroup": "Ages 8-15",
@@ -120,9 +136,9 @@
         "attendance": "8 students",
         "summary": "During the chapter kickoff meeting, we went through the intro to machine learning curriculum, setting up students for future curriculum on more advanced topics. Everything went smoothly, and we're excited to dive into more detailed courses, such as neural networks and computer vision, with hands-on activities in future meetings!",
         "images": [
-          "../articleMeetingPhotos/peoria1-1.jpeg",
-          "../articleMeetingPhotos/Peoria1-2.jpeg",
-          "../articleMeetingPhotos/Peoria1-3.jpeg"
+          "../assets/images/meeting-photos/peoria1-1.jpeg",
+          "../assets/images/meeting-photos/Peoria1-2.jpeg",
+          "../assets/images/meeting-photos/Peoria1-3.jpeg"
         ]
       }
     ]
@@ -132,8 +148,8 @@
     "name": "Kinnaman Elementary School",
     "location": "Aloha, Oregon",
     "fullLocation": "Aloha, Oregon, USA",
-    "image": "../chapterPhotos/Kinnaman.png",
-    "schoolImage": "../chapterPhotos/Kinnaman-Building.png",
+    "image": "../assets/images/chapter-photos/Kinnaman.png",
+    "schoolImage": "../assets/images/chapter-photos/Kinnaman-Building.png",
     "address": "4205 SW 193rd Ave, Aloha, OR 97078",
     "established": "September 2025",
     "ageGroup": "Ages 7-11",
@@ -159,7 +175,7 @@
         "attendance": "10 students",
         "summary": "Hey Coyotes! Last meeting, we went through a review mostly for data types and variables, since we had a few new members join. After that, everyone was quizzed briefly on print statements, data types, and variables, and everyone started to create their accounts on Dataquest! From our next meeting onwards, we will be using Dataquest for our online learning and work besides the lesson slideshow. Next week, we will also dive a bit into conditionals, like for/while loops, and if/elif/else statements. It was great to see the students improve gradually, and it was also great to see a few new faces as well. See you all next week, and go Coyotes!",
         "images": [
-          "../articleMeetingPhotos/Kinnaman3-1.png"
+          "../assets/images/meeting-photos/Kinnaman3-1.png"
         ]
       },
       {
@@ -173,7 +189,7 @@
         "attendance": "9 students",
         "summary": "Hey Coyotes! In our second meeting of the Coding Coyotes club this year, we went over a review of basic print statements. Then, we used those to dive into basic data types, arithmetic, and comparison operators, and we used print statements to work with those! After that, we started an introduction to variables, and how they can be used to represent any data type. For each of these concepts, students worked with a couple of practice problems and they did very well! At the very end of the lesson, students were shown Dataquest, the learning platform they will get to use starting next week, where we will work more with variables along with a short introduction to conditionals (if/elif/else statements and for/while loops). Students will also start work on Dataquest to review topics covered in the first few weeks. It will be very interactive and hopefully it will be very fun for the students! See you next week, and go Coyotes!",
         "images": [
-          "../articleMeetingPhotos/Kinnaman2-1.png"
+          "../assets/images/meeting-photos/Kinnaman2-1.png"
         ]
       },
       {
@@ -187,7 +203,7 @@
         "attendance": "10 students",
         "summary": "Hey Coyotes! Last meeting, we went through a review mostly for data types and variables, since we had a few new members join. After that, everyone was quizzed briefly on print statements, data types, and variables, and everyone started to create their accounts on Dataquest! From our next meeting onwards, we will be using Dataquest for our online learning and work besides the lesson slideshow. Next week, we will also dive a bit into conditionals, like for/while loops, and if/elif/else statements. It was great to see the students improve gradually, and it was also great to see a few new faces as well. See you all next week, and go Coyotes!",
         "images": [
-          "../articleMeetingPhotos/Kinnaman3-1.png"
+          "../assets/images/meeting-photos/Kinnaman3-1.png"
         ]
       },
       {
@@ -201,7 +217,7 @@
         "attendance": "8 students",
         "summary": "Hey Coyotes! We went over and reviewed conditionals again this week, since some students were having trouble with it. Students were also able to start using Dataquest and we were able to get through the first lesson (basic print statements and math operators) and students were assigned to complete that if they didn't complete it during the meeting. We might review conditionals next week too in order to completely solidify them. I am also really looking forward to many successful experiences with Dataquest! See you next week, and go Coyotes!",
         "images": [
-          "../articleMeetingPhotos/Kinnaman4-1.png"
+          "../assets/images/meeting-photos/Kinnaman4-1.png"
         ]
       },
       {
@@ -215,7 +231,7 @@
         "attendance": "9 students",
         "summary": "Hey Coyotes! We went over and reviewed conditionals yet again this week, as well as everything else we have previously learned from the start, so that students could get a full grasp of what is going on. Hopefully, next week, we can move on to something new, which includes Python's other built-in functions. Students were assigned to complete the Dataquest lesson (1 & 2) if they didn't complete it during the club meeting. Once again, I am really looking forward to many successful experiences with Dataquest! See you next week, and go Coyotes!",
         "images": [
-          "../articleMeetingPhotos/Kinnaman5-1.png"
+          "../assets/images/meeting-photos/Kinnaman5-1.png"
         ]
       },
       {
@@ -229,7 +245,7 @@
         "attendance": "9 students",
         "summary": "Hi Coyotes! This meeting was again focused on reviewing conditionals, since there were still some students having trouble understanding some of the material. By the end of the lesson though, students were able to get a hang of it and we were able to move on to a brief introduction of Python's built in functions! For the last few minutes, students started working on Dataquest with some difficulty, due to login issues that have persisted since the last couple weeks. I'll work behind the scenes to get this issue resolved soon. See you next week, and go Coyotes!",
         "images": [
-          "../articleMeetingPhotos/Kinnaman6-1.png"
+          "../assets/images/meeting-photos/Kinnaman6-1.png"
         ]
       },
       {
@@ -243,7 +259,7 @@
         "attendance": "7 students",
         "summary": "Hi Coyotes! We went through a full run through of built in functions in Python, focusing on the str, int, float, and bool functions that change an object's data type. Students were able to grasp this very quickly after already learning about data types. However, the bad news is that students were not able to log into Dataquest due to persisting proxy, login, and reCaptcha issues, and students were not able to access all the material anyways, so we will not be able to use Dataquest any longer. I know it's sad, but I will try to find another way to make this club more interactive. See you all next week, and Go Coyotes!",
         "images": [
-          "../articleMeetingPhotos/Kinnaman7-1.png"
+          "../assets/images/meeting-photos/Kinnaman7-1.png"
         ]
       },
       {
@@ -257,7 +273,7 @@
         "attendance": "9 students",
         "summary": "Hey Coyotes! Last meeting on November 18th, students went through a quick review of Python's built-in functions and we also started getting into user functions as well! Students were able to learn about the syntax, how they can be used, and how important they are to Python code! They are one of the most important code functions, and it is really important that the students know this, since these will take up most of their code in the future! Students were getting the hang of it really well in practice after the teaching, and when we come back from Thanksgiving Break, we are going to be diving deeper into these! I hope everyone has a great fall break. See you in December, and go Coyotes!",
         "images": [
-          "../articleMeetingPhotos/Kinnaman8-1.png"
+          "../assets/images/meeting-photos/Kinnaman8-1.png"
         ]
       }
     ]
@@ -267,8 +283,8 @@
     "name": "Sharon Forks Library",
     "location": "Cumming, Georgia",
     "fullLocation": "Cumming, Georgia, USA",
-    "image": "../chapterPhotos/Sharon-Forks.png",
-    "schoolImage": "../chapterPhotos/Sharon-Forks-Building.png",
+    "image": "../assets/images/chapter-photos/Sharon-Forks.png",
+    "schoolImage": "../assets/images/chapter-photos/Sharon-Forks-Building.png",
     "address": "2820 Old Atlanta Rd, Cumming, GA 30041",
     "established": "September 2025",
     "ageGroup": "Ages 10-15",

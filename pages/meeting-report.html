@@ -15,7 +15,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="icon" href="../logo/favicon.ico" />
+  <link rel="icon" href="../assets/images/logo/favicon.ico" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
     
@@ -125,7 +125,7 @@
     <div class="flex items-center space-x-4">
       <div class="flex-shrink-0">
         <a href="../index.html" aria-label="Go to AI in STEM homepage" class="transition transform hover:scale-105 focus:scale-105">
-          <img src="../logo/logo.png" alt="AI in STEM Logo - Empowering Youth Through Technology" class="h-16 sm:h-20 w-auto object-contain" />
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo - Empowering Youth Through Technology" class="h-16 sm:h-20 w-auto object-contain" />
         </a>
       </div>
 
@@ -138,14 +138,22 @@
     </div>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex space-x-8 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
+    <nav class="hidden lg:flex items-center space-x-3 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
       <a href="../index.html" class="nav-link hover:text-blue-400 transition-colors">Home</a>
+      <span class="text-gray-500">|</span>
       <a href="../about.html" class="nav-link hover:text-blue-400 transition-colors">About</a>
-      <a href="../team.html" class="nav-link hover:text-blue-400 transition-colors">Team</a>
-      <a href="../chapters.html" class="nav-link hover:text-blue-400 transition-colors" aria-current="page">Chapters</a>
-      <a href="../curriculum.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-team.html" class="nav-link hover:text-blue-400 transition-colors">Team</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-chapters.html" class="nav-link hover:text-blue-400 transition-colors" aria-current="page">Chapters</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-courses.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
+      <span class="text-gray-500">|</span>
       <a href="../about.html#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
-      <a href="../team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
+      <span class="text-gray-500">|</span>
+      <a href="updates.html" class="nav-link hover:text-blue-400 transition-colors">Updates</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
     </nav>
 
     <!-- Mobile menu button -->
@@ -165,7 +173,7 @@
       <!-- Menu Header -->
       <div class="flex items-center justify-between p-6 border-b border-gray-700/30">
         <div class="flex items-center space-x-3">
-          <img src="../logo/logo.png" alt="AI in STEM" class="h-8 w-auto">
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM" class="h-8 w-auto">
           <span class="text-white font-semibold text-lg" id="mobile-menu-title">AI in STEM</span>
         </div>
         <button id="closeMobileMenu" class="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-gray-800/50 transition-colors focus:bg-gray-800/50" aria-label="Close mobile menu">
@@ -192,21 +200,21 @@
             About
           </a>
           
-          <a href="../team.html" class="mobile-nav-link text-white font-medium">
+          <a href="all-team.html" class="mobile-nav-link text-white font-medium">
             <svg class="w-5 h-5 mr-3 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
             </svg>
             Team
           </a>
           
-          <a href="../chapters.html" class="mobile-nav-link text-white font-medium bg-blue-600/20 rounded-lg" aria-current="page">
+          <a href="all-chapters.html" class="mobile-nav-link text-white font-medium bg-blue-600/20 rounded-lg" aria-current="page">
             <svg class="w-5 h-5 mr-3 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
             </svg>
             Chapters
           </a>
           
-          <a href="../curriculum.html" class="mobile-nav-link text-white font-medium">
+          <a href="all-courses.html" class="mobile-nav-link text-white font-medium">
             <svg class="w-5 h-5 mr-3 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
@@ -223,7 +231,7 @@
         
         <!-- Call to Action -->
         <div class="mt-12 pt-8 border-t border-gray-700/30">
-          <a href="../team.html#join-team" 
+          <a href="all-team.html#join-team" 
              class="flex items-center justify-center w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg focus:scale-105">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -316,7 +324,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         <div class="md:col-span-2">
-          <img src="../logo/logo.png" alt="AI in STEM Logo" class="h-16 mb-6" />
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo" class="h-16 mb-6" />
           <p class="text-gray-300 text-lg leading-relaxed mb-6">
             Empowering the next generation of AI innovators through accessible education, mentorship, and community building.
           </p>
@@ -325,17 +333,20 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
+            <li><a href="../index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
             <li><a href="../about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
-            <li><a href="../team.html" class="text-gray-300 hover:text-white transition-colors">Team</a></li>
-            <li><a href="../chapters.html" class="text-gray-300 hover:text-white transition-colors">Chapters</a></li>
-            <li><a href="../curriculum.html" class="text-gray-300 hover:text-white transition-colors">Curriculum</a></li>
+            <li><a href="all-team.html" class="text-gray-300 hover:text-white transition-colors">Team</a></li>
+            <li><a href="all-chapters.html" class="text-gray-300 hover:text-white transition-colors">Chapters</a></li>
+            <li><a href="all-courses.html" class="text-gray-300 hover:text-white transition-colors">Curriculum</a></li>
+            <li><a href="../about.html#partners" class="text-gray-300 hover:text-white transition-colors">Partners</a></li>
+            <li><a href="updates.html" class="text-gray-300 hover:text-white transition-colors">Updates</a></li>
           </ul>
         </div>
         
         <div>
           <h3 class="text-lg font-semibold mb-4">Get Involved</h3>
           <ul class="space-y-2">
-            <li><a href="../team.html#join-team" class="text-gray-300 hover:text-white transition-colors">Join the Team</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScPEmjF6rsIEaIYBXhQ23nERm5Cm3tOXv4ZYrT8OyQAxTx2Vg/viewform" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">Join the Team</a></li>
             <li><a href="https://hcb.hackclub.com/donations/start/ai-in-stem" target="_blank" class="text-gray-300 hover:text-white transition-colors">Donate</a></li>
           </ul>
         </div>
@@ -385,7 +396,7 @@
     // Load meeting report data
     async function loadReportData() {
       try {
-        const response = await fetch('data/chapters.json');
+        const response = await fetch('../data/chapters.json');
         const chapters = await response.json();
         
         // Find the chapter and report by searching all chapters
@@ -475,7 +486,7 @@
           
           <!-- Back Button -->
           <div class="text-center">
-            <a id="back-to-chapter" href="chapter.html?id=${chapter.id}" class="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-2xl font-bold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <a id="back-to-chapter" href="chapter-detail.html?id=${chapter.id}" class="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-2xl font-bold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
               </svg>

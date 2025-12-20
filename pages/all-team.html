@@ -25,7 +25,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="icon" href="logo/favicon.ico" />
+  <link rel="icon" href="../assets/images/logo/favicon.ico" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
     
@@ -62,11 +62,12 @@
     .hero-content {
       position: relative;
       z-index: 10;
-      background: linear-gradient(135deg, rgba(31, 41, 55, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
-      border: 4px solid #052178;
-      border-radius: 1rem;
+      backdrop-filter: blur(10px);
+      background: rgba(15, 23, 42, 0.8);
+      border: 2px solid rgba(59, 130, 246, 0.3);
+      border-radius: 1.5rem;
       padding: 2rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     }
     
     @media (max-width: 768px) {
@@ -337,8 +338,8 @@
     <!-- Logo and Donation Button Container -->
     <div class="flex items-center space-x-4">
       <div class="flex-shrink-0">
-        <a href="index.html" aria-label="Go to AI in STEM homepage" class="transition transform hover:scale-105 focus:scale-105">
-          <img src="logo/logo.png" alt="AI in STEM Logo - Empowering Youth Through Technology" class="h-16 sm:h-20 w-auto object-contain" />
+        <a href="../index.html" aria-label="Go to AI in STEM homepage" class="transition transform hover:scale-105 focus:scale-105">
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo - Empowering Youth Through Technology" class="h-16 sm:h-20 w-auto object-contain" />
         </a>
       </div>
 
@@ -351,14 +352,22 @@
     </div>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex space-x-8 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
-      <a href="index.html" class="nav-link hover:text-blue-400 transition-colors">Home</a>
-      <a href="about.html" class="nav-link hover:text-blue-400 transition-colors">About</a>
-      <a href="team.html" class="nav-link hover:text-blue-400 transition-colors" aria-current="page">Team</a>
-      <a href="chapters.html" class="nav-link hover:text-blue-400 transition-colors">Chapters</a>
-      <a href="curriculum.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
-      <a href="about.html#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
-      <a href="team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
+    <nav class="hidden lg:flex items-center space-x-3 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
+      <a href="../index.html" class="nav-link hover:text-blue-400 transition-colors">Home</a>
+      <span class="text-gray-500">|</span>
+      <a href="../about.html" class="nav-link hover:text-blue-400 transition-colors">About</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-team.html" class="nav-link hover:text-blue-400 transition-colors" aria-current="page">Team</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-chapters.html" class="nav-link hover:text-blue-400 transition-colors">Chapters</a>
+      <span class="text-gray-500">|</span>
+      <a href="all-courses.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
+      <span class="text-gray-500">|</span>
+      <a href="../about.html#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
+      <span class="text-gray-500">|</span>
+      <a href="updates.html" class="nav-link hover:text-blue-400 transition-colors">Updates</a>
+      <span class="text-gray-500">|</span>
+      <a href="#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
     </nav>
 
     <!-- Mobile menu button -->
@@ -376,7 +385,7 @@
       <!-- Menu Header -->
       <div class="flex items-center justify-between p-6 border-b border-gray-700/30">
         <div class="flex items-center space-x-3">
-          <img src="logo/logo.png" alt="AI in Stem" class="h-8 w-auto">
+          <img src="../assets/images/logo/logo.png" alt="AI in Stem" class="h-8 w-auto">
           <span class="text-white font-semibold text-lg">AI in Stem</span>
         </div>
         <button id="closeMobileMenu" class="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-gray-800/50 transition-colors">
@@ -389,35 +398,35 @@
       <!-- Navigation Links -->
       <nav class="flex-1 px-6 py-8">
         <div class="space-y-2">
-          <a href="index.html" class="mobile-nav-link text-white font-medium">
+          <a href="../index.html" class="mobile-nav-link text-white font-medium">
             <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
             </svg>
             Home
           </a>
           
-          <a href="about.html" class="mobile-nav-link text-white font-medium">
+          <a href="../about.html" class="mobile-nav-link text-white font-medium">
             <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             About
           </a>
           
-          <a href="team.html" class="mobile-nav-link text-white font-medium">
+          <a href="all-team.html" class="mobile-nav-link text-white font-medium">
             <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
             </svg>
             Team
           </a>
           
-          <a href="chapters.html" class="mobile-nav-link text-white font-medium">
+          <a href="all-chapters.html" class="mobile-nav-link text-white font-medium">
             <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
             </svg>
             Chapters
           </a>
           
-          <a href="curriculum.html" class="mobile-nav-link text-white font-medium">
+          <a href="all-courses.html" class="mobile-nav-link text-white font-medium">
             <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
@@ -459,10 +468,7 @@
   </div>
 
   <!-- Hero Section -->
-  <section class="hero-section relative py-6 sm:py-8 lg:py-12 px-4 sm:px-6 text-white flex items-center justify-center">
-    <!-- Logo Background -->
-    <div class="hero-background"></div>
-    
+  <section class="hero-section relative py-8 sm:py-12 lg:py-16 px-4 sm:px-6 text-white flex items-center justify-center" role="banner">
     <!-- Content -->
     <div class="hero-content max-w-4xl mx-auto animate__animated animate__fadeIn text-center">
       <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight text-center">Meet the <span class="gradient-text">AI in STEM</span> Team</h1>
@@ -476,11 +482,11 @@
       <div id="page-1" class="team-page">
         <div class="grid gap-8 sm:gap-10 lg:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
       <!-- Member 1 -->
-      <a href="team/member.html?id=kevin-cui" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=kevin-cui" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Kevin-Cui.jpg" alt="Kevin Cui" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy">
+            <img src="../assets/images/team-photos/Kevin-Cui.jpg" alt="Kevin Cui" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy">
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Kevin Cui</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Co-Founder & State Ambassador</p>
@@ -492,11 +498,11 @@
       </a>
 
       <!-- Member 2 -->
-      <a href="team/member.html?id=aarav-rao" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=aarav-rao" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Aarav-Rao.png" alt="Aarav Rao" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Aarav-Rao.png" alt="Aarav Rao" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Aarav Rao</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Co-Founder & State Ambassador</p>
@@ -508,11 +514,11 @@
       </a>
 
       <!-- Member 3 -->
-      <a href="team/member.html?id=yagiz-soylemez" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=yagiz-soylemez" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Yagiz-Soylemez.png" alt="Yağız Söylemez" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Yagiz-Soylemez.png" alt="Yağız Söylemez" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Yağız Söylemez</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -524,11 +530,11 @@
       </a>
 
       <!-- Member 4 -->
-      <a href="team/member.html?id=shanmukha-bommana" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=shanmukha-bommana" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Shanmukha-Bommana.png" alt="Shanmukha Bommana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Shanmukha-Bommana.png" alt="Shanmukha Bommana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shanmukha Bommana</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Curriculum Developer</p>
@@ -540,11 +546,11 @@
       </a>
 
       <!-- Member 5 -->
-      <a href="team/member.html?id=tejus-peri" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=tejus-peri" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Tejus-Peri2.png" alt="Tejus Peri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Tejus-Peri2.png" alt="Tejus Peri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Tejus Peri</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">State Ambassador, Chapter President & Curriculum Developer</p>
@@ -556,11 +562,11 @@
       </a>
 
       <!-- Member 6 -->
-      <a href="team/member.html?id=smyan-reddy" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=smyan-reddy" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Smyan-Reddy.png" alt="Smyan Reddy" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Smyan-Reddy.png" alt="Smyan Reddy" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Smyan Reddy</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">State Ambassador & Chapter President</p>
@@ -572,11 +578,11 @@
       </a>
 
       <!-- Member 7 -->
-      <a href="team/member.html?id=samdeesh-thukral" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=samdeesh-thukral" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Samdeesh-Thukral.png" alt="Samdeesh Thukral" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Samdeesh-Thukral.png" alt="Samdeesh Thukral" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Samdeesh Thukral</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Outreach Manager & Curriculum Developer</p>
@@ -588,11 +594,11 @@
       </a>
 
       <!-- Member 8 -->
-      <a href="team/member.html?id=sai-vikhyath-belda" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=sai-vikhyath-belda" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Vicky-Belda.png" alt="Sai Vikhyath Belda" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Vicky-Belda.png" alt="Sai Vikhyath Belda" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Sai Vikhyath Belda</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Outreach Manager</p>
@@ -604,11 +610,11 @@
       </a>
 
       <!-- Member 9 -->
-      <a href="team/member.html?id=aditya-pradhan" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=aditya-pradhan" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Aditya-Pradhan.jpg" alt="Aditya Pradhan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Aditya-Pradhan.jpg" alt="Aditya Pradhan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Aditya Pradhan</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, State Ambassador & Outreach Manager</p>
@@ -620,11 +626,11 @@
       </a>
 
       <!-- Member 10 -->
-      <a href="team/member.html?id=supraj-gonur" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=supraj-gonur" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Supraj-Gonur.png" alt="Supraj Gonur" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Supraj-Gonur.png" alt="Supraj Gonur" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Supraj Gonur</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Curriculum Developer</p>
@@ -636,11 +642,11 @@
       </a>
 
       <!-- Member 11 -->
-      <a href="team/member.html?id=leyang-zeng" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=leyang-zeng" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Leyang-Zeng.jpg" alt="Leyang Zeng" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Leyang-Zeng.jpg" alt="Leyang Zeng" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Leyang Zeng</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Curriculum Developer</p>
@@ -652,11 +658,11 @@
       </a>
 
       <!-- Member 12 -->
-      <a href="team/member.html?id=ashvik-talluru" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=ashvik-talluru" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Ashvik-Talluru.png" alt="Ashvik Talluru" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Ashvik-Talluru.png" alt="Ashvik Talluru" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Ashvik Talluru</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Outreach Manager & Curriculum Developer</p>
@@ -668,11 +674,11 @@
       </a>
 
       <!-- Member 13 -->
-      <a href="team/member.html?id=shashank-golajana" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=shashank-golajana" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Shashank-Golajana.webp" alt="Shashank Golajana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Shashank-Golajana.webp" alt="Shashank Golajana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shashank Golajana</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & State Ambassador</p>
@@ -684,11 +690,11 @@
       </a>
 
       <!-- Member 13 -->
-      <a href="team/member.html?id=karthick-ponkali" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=karthick-ponkali" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Karthick-Ponkali.jpeg" alt="Karthick Ponkali" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Karthick-Ponkali.jpeg" alt="Karthick Ponkali" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Karthick Ponkali</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -700,11 +706,11 @@
       </a>
 
       <!-- Member 14 -->
-      <a href="team/member.html?id=kenny-sutinatikul" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=kenny-sutinatikul" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Kenny-Sutinatikul.jpg" alt="Kenny Sutinatikul" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Kenny-Sutinatikul.jpg" alt="Kenny Sutinatikul" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Kenny Sutinatikul</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -716,11 +722,11 @@
       </a>
 
       <!-- Member 15 -->
-      <a href="team/member.html?id=shreyas-choudhury" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=shreyas-choudhury" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Shreyas-Choudhury.png" alt="Shreyas Choudhury" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Shreyas-Choudhury.png" alt="Shreyas Choudhury" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shreyas Choudhury</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -732,11 +738,11 @@
       </a>
 
       <!-- Member 16 -->
-      <a href="team/member.html?id=karthikeya-yeruva" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=karthikeya-yeruva" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Karthikeya-Yeruva.png" alt="Karthikeya Yeruva" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Karthikeya-Yeruva.png" alt="Karthikeya Yeruva" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Karthikeya Yeruva</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & State Ambassador</p>
@@ -748,11 +754,11 @@
       </a>
 
       <!-- Member 17 -->
-      <a href="team/member.html?id=tanmay-joshi" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=tanmay-joshi" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Tanmay-Joshi.png" alt="Tanmay Joshi" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Tanmay-Joshi.png" alt="Tanmay Joshi" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Tanmay Joshi</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -764,11 +770,11 @@
       </a>
 
       <!-- Member 18 -->
-      <a href="team/member.html?id=sai-rohan-pasumarthi" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=sai-rohan-pasumarthi" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Sai-Rohan-Pasumarthi.jpg" alt="Sai Rohan Pasumarthi" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Sai-Rohan-Pasumarthi.jpg" alt="Sai Rohan Pasumarthi" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Sai Rohan Pasumarthi</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -780,11 +786,11 @@
       </a>
 
       <!-- Member 19 -->
-      <a href="team/member.html?id=siddhant-mahajan" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=siddhant-mahajan" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Siddhant-Mahajan.png" alt="Siddhant Mahajan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Siddhant-Mahajan.png" alt="Siddhant Mahajan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Siddhant Mahajan</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -796,11 +802,11 @@
       </a>
 
       <!-- Member 20 -->
-      <a href="team/member.html?id=harshal-sharma" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=harshal-sharma" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Harshal-Sharma.png" alt="Harshal Sharma" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Harshal-Sharma.png" alt="Harshal Sharma" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Harshal Sharma</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -824,11 +830,11 @@
       <div id="page-2" class="team-page hidden">
         <div class="grid gap-8 sm:gap-10 lg:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
           <!-- Member 22 -->
-          <a href="team/member.html?id=lakshith-tana" class="block" data-aos="fade-up" data-aos-delay="200">
+          <a href="member-detail.html?id=lakshith-tana" class="block" data-aos="fade-up" data-aos-delay="200">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Lakshith-Tana.jpeg" alt="Lakshith Tana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Lakshith-Tana.jpeg" alt="Lakshith Tana" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Lakshith Tana</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -840,11 +846,11 @@
           </a>
 
           <!-- Member 23 -->
-          <a href="team/member.html?id=tanveer-dash" class="block" data-aos="fade-up" data-aos-delay="200">
+          <a href="member-detail.html?id=tanveer-dash" class="block" data-aos="fade-up" data-aos-delay="200">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Tanveer-Dash.jpeg" alt="Tanveer Dash" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Tanveer-Dash.jpeg" alt="Tanveer Dash" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Tanveer Dash</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -856,11 +862,11 @@
           </a>
 
           <!-- Member 24 -->
-          <a href="team/member.html?id=akshith-chepuri" class="block" data-aos="fade-up" data-aos-delay="400">
+          <a href="member-detail.html?id=akshith-chepuri" class="block" data-aos="fade-up" data-aos-delay="400">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Akshith-Chepuri.png" alt="Akshith Chepuri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Akshith-Chepuri.png" alt="Akshith Chepuri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Akshith Chepuri</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & State Ambassador</p>
@@ -872,11 +878,11 @@
           </a>
 
           <!-- Member 25 -->
-          <a href="team/member.html?id=sai-swaroop-das" class="block" data-aos="fade-up" data-aos-delay="600">
+          <a href="member-detail.html?id=sai-swaroop-das" class="block" data-aos="fade-up" data-aos-delay="600">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Sai-Swaroop-Das.png" alt="Sai Swaroop Das" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Sai-Swaroop-Das.png" alt="Sai Swaroop Das" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Sai Swaroop Das</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -888,11 +894,11 @@
           </a>
 
           <!-- Member 26 -->
-          <a href="team/member.html?id=saahas-nalabhotu" class="block" data-aos="fade-up" data-aos-delay="800">
+          <a href="member-detail.html?id=saahas-nalabhotu" class="block" data-aos="fade-up" data-aos-delay="800">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Saahas-Nalabhotu.jpeg" alt="Saahas Nalabhotu" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Saahas-Nalabhotu.jpeg" alt="Saahas Nalabhotu" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Saahas Nalabhotu</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, State Ambassador & Curriculum Developer</p>
@@ -904,11 +910,11 @@
           </a>
 
           <!-- Member 27 -->
-          <a href="team/member.html?id=kireeti-gottipati" class="block" data-aos="fade-up" data-aos-delay="1000">
+          <a href="member-detail.html?id=kireeti-gottipati" class="block" data-aos="fade-up" data-aos-delay="1000">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Kireeti-Gottipati.jpeg" alt="Kireeti Gottipati" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Kireeti-Gottipati.jpeg" alt="Kireeti Gottipati" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Kireeti Gottipati</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Outreach Manager</p>
@@ -920,11 +926,11 @@
           </a>
 
           <!-- Member 28 -->
-          <a href="team/member.html?id=bhuvan-potlapalli" class="block" data-aos="fade-up" data-aos-delay="1200">
+          <a href="member-detail.html?id=bhuvan-potlapalli" class="block" data-aos="fade-up" data-aos-delay="1200">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Bhuvan-Potlapalli.webp" alt="Bhuvan Potlapalli" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Bhuvan-Potlapalli.webp" alt="Bhuvan Potlapalli" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Bhuvan Potlapalli</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -936,11 +942,11 @@
           </a>
 
           <!-- Member 29 -->
-          <a href="team/member.html?id=ram-suhrut-seelamankalugari" class="block" data-aos="fade-up" data-aos-delay="1400">
+          <a href="member-detail.html?id=ram-suhrut-seelamankalugari" class="block" data-aos="fade-up" data-aos-delay="1400">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Ram-Suhrut.png" alt="Ram Suhrut Seelamankalugari" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Ram-Suhrut.png" alt="Ram Suhrut Seelamankalugari" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Ram Suhrut Seelamankalugari</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -952,11 +958,11 @@
           </a>
 
           <!-- Member 30 -->
-          <a href="team/member.html?id=surya-sreenivasan" class="block" data-aos="fade-up" data-aos-delay="1600">
+          <a href="member-detail.html?id=surya-sreenivasan" class="block" data-aos="fade-up" data-aos-delay="1600">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Surya-Sreenivasan.png" alt="Surya Sreenivasan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Surya-Sreenivasan.png" alt="Surya Sreenivasan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Surya Sreenivasan</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Curriculum Developer</p>
@@ -968,11 +974,11 @@
           </a>
 
           <!-- Member 31 -->
-          <a href="team/member.html?id=raghunand-dayanandan" class="block" data-aos="fade-up" data-aos-delay="1800">
+          <a href="member-detail.html?id=raghunand-dayanandan" class="block" data-aos="fade-up" data-aos-delay="1800">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Raghunand-Dayanandan.png" alt="Raghunand Dayanandan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Raghunand-Dayanandan.png" alt="Raghunand Dayanandan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Raghunand Dayanandan</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President & Curriculum Developer</p>
@@ -984,11 +990,11 @@
           </a>
 
           <!-- Member 32 -->
-          <a href="team/member.html?id=akhil-boddu" class="block" data-aos="fade-up" data-aos-delay="2000">
+          <a href="member-detail.html?id=akhil-boddu" class="block" data-aos="fade-up" data-aos-delay="2000">
             <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
               <div class="relative mb-6 sm:mb-8">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-                <img src="volunteerPhotos/Akhil-Boddu.jpeg" alt="Akhil Boddu" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+                <img src="../assets/images/team-photos/Akhil-Boddu.jpeg" alt="Akhil Boddu" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
               </div>
               <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Akhil Boddu</h3>
               <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, Outreach Manager & Curriculum Developer</p>
@@ -999,11 +1005,11 @@
             </div>
           </a>
           <!-- Member 33 -->
-      <a href="team/member.html?id=achyutan-veeraghavan" class="block" data-aos="fade-up" data-aos-delay="200">
+      <a href="member-detail.html?id=achyutan-veeraghavan" class="block" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/achyutan.jpg" alt="Achyutan Veeraghavan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/achyutan.jpg" alt="Achyutan Veeraghavan" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Achyutan Veeraghavan</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, State Ambassador</p>
@@ -1014,11 +1020,11 @@
         </div>
       </a>
           <!-- Member 34 -->
-      <a href="team/member.html?id=shreel-belbase" class="block" data-aos="fade-up" data-aos-delay="300">
+      <a href="member-detail.html?id=shreel-belbase" class="block" data-aos="fade-up" data-aos-delay="300">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Shreel-Belbase.png" alt="Shreel Belbase" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Shreel-Belbase.png" alt="Shreel Belbase" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shreel Belbase</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, State Ambassador, Curriculum Developer</p>
@@ -1029,11 +1035,11 @@
         </div>
       </a>
           <!-- Member 35 -->
-      <a href="team/member.html?id=harinita-senthil" class="block" data-aos="fade-up" data-aos-delay="400">
+      <a href="member-detail.html?id=harinita-senthil" class="block" data-aos="fade-up" data-aos-delay="400">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Harinita-Senthil.png" alt="Harinita Senthil" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Harinita-Senthil.png" alt="Harinita Senthil" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Harinita Senthil</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Curriculum Developer</p>
@@ -1044,11 +1050,11 @@
         </div>
       </a>
           <!-- Member 36 -->
-      <a href="team/member.html?id=bhuvan-vemuri" class="block" data-aos="fade-up" data-aos-delay="500">
+      <a href="member-detail.html?id=bhuvan-vemuri" class="block" data-aos="fade-up" data-aos-delay="500">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Bhuvan-Vemuri.png" alt="Bhuvan Vemuri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Bhuvan-Vemuri.png" alt="Bhuvan Vemuri" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Bhuvan Vemuri</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President</p>
@@ -1059,11 +1065,11 @@
         </div>
       </a>
           <!-- Member 37 -->
-      <a href="team/member.html?id=sridattha-kukkadapu" class="block" data-aos="fade-up" data-aos-delay="600">
+      <a href="member-detail.html?id=sridattha-kukkadapu" class="block" data-aos="fade-up" data-aos-delay="600">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Sridattha-Kukkadapu.png" alt="Sridattha Kukkadapu" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Sridattha-Kukkadapu.png" alt="Sridattha Kukkadapu" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Sridattha Kukkadapu</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, Outreach Manager, Curriculum Developer</p>
@@ -1074,11 +1080,11 @@
         </div>
       </a>
           <!-- Member 38 -->
-      <a href="team/member.html?id=aaryan-vishnupurikar" class="block" data-aos="fade-up" data-aos-delay="700">
+      <a href="member-detail.html?id=aaryan-vishnupurikar" class="block" data-aos="fade-up" data-aos-delay="700">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Aaryan-Vishnupurikar.png" alt="Aaryan Vishnupurikar" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Aaryan-Vishnupurikar.png" alt="Aaryan Vishnupurikar" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Aaryan Vishnupurikar</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, Outreach Manager</p>
@@ -1089,11 +1095,11 @@
         </div>
       </a>
           <!-- Member 39 -->
-      <a href="team/member.html?id=shashank-kesineni" class="block" data-aos="fade-up" data-aos-delay="800">
+      <a href="member-detail.html?id=shashank-kesineni" class="block" data-aos="fade-up" data-aos-delay="800">
         <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
           <div class="relative mb-6 sm:mb-8">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
-            <img src="volunteerPhotos/Shashank-Kesineni.png" alt="Shashank Kesineni" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+            <img src="../assets/images/team-photos/Shashank-Kesineni.png" alt="Shashank Kesineni" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shashank Kesineni</h3>
           <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, Outreach Manager</p>
@@ -1175,7 +1181,7 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         <!-- Logo and Mission -->
         <div class="md:col-span-2">
-          <img src="logo/logo.png" alt="AI in STEM Logo" class="h-16 mb-6" />
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo" class="h-16 mb-6" />
           <p class="text-gray-300 text-lg leading-relaxed mb-6">
             Empowering the next generation of AI innovators through accessible education, mentorship, and community building.
           </p>
@@ -1202,12 +1208,13 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
-            <li><a href="team.html" class="text-gray-300 hover:text-white transition-colors">Team</a></li>
-            <li><a href="team.html#join-team" class="text-gray-300 hover:text-white transition-colors">Join Team</a></li>
-            <li><a href="chapters.html" class="text-gray-300 hover:text-white transition-colors">Chapters</a></li>
-            <li><a href="curriculum.html" class="text-gray-300 hover:text-white transition-colors">Curriculum</a></li>
-            <li><a href="#partners" class="text-gray-300 hover:text-white transition-colors">Partners</a></li>
+            <li><a href="../index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+            <li><a href="../about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+            <li><a href="all-team.html" class="text-gray-300 hover:text-white transition-colors">Team</a></li>
+            <li><a href="all-chapters.html" class="text-gray-300 hover:text-white transition-colors">Chapters</a></li>
+            <li><a href="all-courses.html" class="text-gray-300 hover:text-white transition-colors">Curriculum</a></li>
+            <li><a href="../about.html#partners" class="text-gray-300 hover:text-white transition-colors">Partners</a></li>
+            <li><a href="updates.html" class="text-gray-300 hover:text-white transition-colors">Updates</a></li>
           </ul>
         </div>
         

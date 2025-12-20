@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="icon" href="../logo/favicon.ico" />
+  <link rel="icon" href="../assets/images/logo/favicon.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
@@ -29,7 +29,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('../logo/logo.png');
+      background-image: url('../assets/images/logo/logo.png');
       background-size: 60%;
       background-position: center;
       background-repeat: no-repeat;
@@ -410,7 +410,7 @@
     <div class="error-container">
       <h1 class="text-4xl font-bold text-gray-800 mb-4">Member Not Found</h1>
       <p class="text-gray-600 mb-6">The team member you're looking for doesn't exist.</p>
-      <a href="../team.html" class="btn bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+      <a href="all-team.html" class="btn bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
         Back to Team
       </a>
     </div>
@@ -419,7 +419,7 @@
   <!-- Main Content -->
   <div id="main-content" class="hidden">
     <!-- Back Arrow -->
-    <a href="../team.html" class="back-arrow bg-white p-3 rounded-full shadow-lg hover:shadow-xl">
+    <a href="all-team.html" class="back-arrow bg-white p-3 rounded-full shadow-lg hover:shadow-xl">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
       </svg>
@@ -430,19 +430,27 @@
       <!-- Logo -->
       <div class="flex-shrink-0">
         <a href="../index.html" aria-label="Go to AI in STEM homepage" class="transition transform hover:scale-105 focus:scale-105">
-          <img src="../logo/logo.png" alt="AI in STEM Logo - Empowering Youth Through Technology" class="h-16 sm:h-20 w-auto object-contain" />
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo - Empowering Youth Through Technology" class="h-16 sm:h-20 w-auto object-contain" />
         </a>
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex space-x-8 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
+      <nav class="hidden lg:flex items-center space-x-3 text-white text-lg font-medium" role="navigation" aria-label="Main navigation">
         <a href="../index.html" class="nav-link hover:text-blue-400 transition-colors">Home</a>
+        <span class="text-gray-500">|</span>
         <a href="../about.html" class="nav-link hover:text-blue-400 transition-colors">About Us</a>
-        <a href="../team.html" class="nav-link hover:text-blue-400 transition-colors" aria-current="page">Our Team</a>
-        <a href="../chapters.html" class="nav-link hover:text-blue-400 transition-colors">Chapters</a>
-        <a href="../curriculum.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
+        <span class="text-gray-500">|</span>
+        <a href="all-team.html" class="nav-link hover:text-blue-400 transition-colors" aria-current="page">Our Team</a>
+        <span class="text-gray-500">|</span>
+        <a href="all-chapters.html" class="nav-link hover:text-blue-400 transition-colors">Chapters</a>
+        <span class="text-gray-500">|</span>
+        <a href="all-courses.html" class="nav-link hover:text-blue-400 transition-colors">Curriculum</a>
+        <span class="text-gray-500">|</span>
         <a href="../about.html#partners" class="nav-link hover:text-blue-400 transition-colors">Partners</a>
-        <a href="../team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Our Team</a>
+        <span class="text-gray-500">|</span>
+        <a href="updates.html" class="nav-link hover:text-blue-400 transition-colors">Updates</a>
+        <span class="text-gray-500">|</span>
+        <a href="all-team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
       </nav>
 
       <!-- Mobile menu button -->
@@ -460,7 +468,7 @@
         <!-- Menu Header -->
         <div class="flex items-center justify-between p-6 border-b border-gray-700/30">
           <div class="flex items-center space-x-3">
-            <img src="../logo/logo.png" alt="AI in Stem" class="h-8 w-auto">
+            <img src="../assets/images/logo/logo.png" alt="AI in Stem" class="h-8 w-auto">
             <span class="text-white font-semibold text-lg">AI in Stem</span>
           </div>
           <button id="closeMobileMenu" class="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-gray-800/50 transition-colors">
@@ -487,7 +495,7 @@
               About
             </a>
             
-            <a href="../team.html" class="mobile-nav-link text-white font-medium">
+            <a href="all-team.html" class="mobile-nav-link text-white font-medium">
               <svg class="mobile-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
               </svg>
@@ -511,12 +519,12 @@
           
           <!-- Call to Action -->
           <div class="mt-12 pt-8 border-t border-gray-700/30">
-            <a href="../team.html#join-team"
+            <a href="all-team.html#join-team"
                class="flex items-center justify-center w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
               </svg>
-              Join Our Team
+              Join Team
             </a>
           </div>
         </nav>
@@ -603,31 +611,60 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-16">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center mb-10">
-          <img src="../logo/logo.png" alt="AI in Stem Logo" class="h-16 mb-6 md:mb-0" />
-          <div class="flex space-x-6">
-            <a href="https://www.instagram.com/ai.in.stem/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110" aria-label="Follow us on Instagram">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/company/ai-in-stem/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with us on LinkedIn">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-            </a>
-            <a href="https://mail.google.com/mail/u/0/?fs=1&to=ai.instemlearning@gmail.com&tf=cm" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110" aria-label="Send us an email">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-            </a>
+    <footer class="bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 text-white py-16" role="contentinfo">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <!-- Logo and Mission -->
+          <div class="md:col-span-2">
+            <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo" class="h-16 mb-6" />
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+              Empowering the next generation of AI innovators through accessible education, mentorship, and community building.
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://www.instagram.com/ai.in.stem/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110" aria-label="Follow us on Instagram">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/ai-in-stem/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with us on LinkedIn">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <a href="https://mail.google.com/mail/u/0/?fs=1&to=ai.instemlearning@gmail.com&tf=cm" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110" aria-label="Send us an email">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+              <li><a href="../about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="all-team.html" class="text-gray-300 hover:text-white transition-colors">Team</a></li>
+              <li><a href="all-chapters.html" class="text-gray-300 hover:text-white transition-colors">Chapters</a></li>
+              <li><a href="all-courses.html" class="text-gray-300 hover:text-white transition-colors">Curriculum</a></li>
+              <li><a href="../about.html#partners" class="text-gray-300 hover:text-white transition-colors">Partners</a></li>
+              <li><a href="updates.html" class="text-gray-300 hover:text-white transition-colors">Updates</a></li>
+            </ul>
+          </div>
+          
+          <!-- Get Involved -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Get Involved</h3>
+            <ul class="space-y-2">
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScPEmjF6rsIEaIYBXhQ23nERm5Cm3tOXv4ZYrT8OyQAxTx2Vg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">Join the Team</a></li>
+              <li><a href="https://hcb.hackclub.com/donations/start/ai-in-stem" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">Donate</a></li>
+            </ul>
           </div>
         </div>
-        <div class="border-t border-gray-800 pt-8 text-center">
-          <p class="text-lg">&copy; 2025 AI in Stem. All rights reserved.</p>
-          <p class="text-sm text-gray-500 mt-2">AI in Stem is a 501(c)(3) nonprofit organization. Donations are tax-deductible.</p>
+        
+        <div class="border-t border-gray-700 pt-8 text-center">
+          <p class="text-sm text-gray-400">AI in STEM is a fiscally sponsored nonprofit organization under a registered 501(c)(3). Donations are tax-deductible.</p>
         </div>
       </div>
     </footer>
@@ -653,7 +690,7 @@
 
         // Try multiple cache-busting strategies
         const cacheBuster = Date.now() + Math.random();
-        const response = await fetch('./data/members.json?v=' + cacheBuster, {
+        const response = await fetch('../data/members.json?v=' + cacheBuster, {
           cache: 'no-cache',
           headers: {
             'Cache-Control': 'no-cache',
@@ -698,7 +735,7 @@
       document.getElementById('page-title').textContent = `${member.name} - AI in Stem Team`;
 
       // Populate basic info
-      document.getElementById('member-image').src = `../volunteerPhotos/${member.imageFile}`;
+      document.getElementById('member-image').src = `../assets/images/team-photos/${member.imageFile}`;
       document.getElementById('member-image').alt = member.name;
       document.getElementById('member-first-name').textContent = member.firstName;
       document.getElementById('member-last-name').textContent = member.lastName;
