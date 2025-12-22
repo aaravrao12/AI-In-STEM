@@ -47,7 +47,7 @@
     "id": "richard-montgomery-hs",
     "name": "Richard Montgomery High School",
     "location": "Rockville, MD",
-    "fullLocation": "Rockville, Maryland",
+    "fullLocation": "Rockville, Maryland, USA",
     "established": "October 2025",
     "ageGroup": "High School",
     "image": "../assets/images/chapter-photos/Richard-Montgomery-HS.png",
@@ -306,6 +306,28 @@
     ],
     "contact": {
       "email": "ai.instemlearning@gmail.com"
+    }
+  },
+  {
+    "id": "westfield-hs",
+    "name": "Westfield High School",
+    "location": "Westfield, New Jersey",
+    "fullLocation": "Westfield, New Jersey, USA",
+    "image": "../assets/images/chapter-photos/Westfield-HS.png",
+    "schoolImage": "../assets/images/chapter-photos/Westfield-HS-Building.png",
+    "address": "550 Dorian Rd, Westfield, NJ 07090",
+    "established": "December 2025",
+    "ageGroup": "High School",
+    "programs": [
+      "Intro to Machine Learning",
+      "Intro to Python",
+      "AI Applications in Python"
+    ],
+    "leaders": [
+      "Justin Lee"
+    ],
+    "contact": {
+      "email": "https://mail.google.com/mail/u/0/?fs=1&to=xiaole.lee2009@gmail.com&tf=cm"
     }
   }
 ]

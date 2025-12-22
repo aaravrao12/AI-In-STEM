@@ -1092,7 +1092,8 @@
       }
     ],
     "quote": "If you think you understand quantum mechanics, you don't understand quantum mechanics.",
-    "quoteAuthor": "Richard Feynman"
+    "quoteAuthor": "Richard Feynman",
+    "chapters": ["westfield-hs"]
   },
   "bavine-opiyo": {
     "firstName": "Bavine",
