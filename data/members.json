@@ -1065,5 +1065,61 @@
     ],
     "quote": "The future depends on what you do today.",
     "quoteAuthor": "Mahatma Gandhi"
+  },
+  "justin-lee": {
+    "firstName": "Justin",
+    "lastName": "Lee",
+    "name": "Justin Lee",
+    "title": "Chapter President & State Ambassador",
+    "roleDescription": "As Chapter President and State Ambassador, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters across New Jersey.",
+    "about": "Hey, I'm a junior at Westfield High School with a passion for mathematics, physics, and computer science. I'm committed to democratizing education through my volunteering, and spreading my passion for STEM. Through AI in STEM, I'm able to bring my passions together to build a network and empower students in STEM.",
+    "imageFile": "Justin-Lee.png",
+    "location": "Westfield, NJ",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "USAMO Math",
+        "emoji": "🧮"
+      },
+      {
+        "title": "Software Engineering",
+        "emoji": "💻"
+      },
+      {
+        "title": "Physics",
+        "emoji": "⚛️"
+      }
+    ],
+    "quote": "If you think you understand quantum mechanics, you don't understand quantum mechanics.",
+    "quoteAuthor": "Richard Feynman"
+  },
+  "bavine-opiyo": {
+    "firstName": "Bavine",
+    "lastName": "Opiyo",
+    "name": "Bavine Opiyo",
+    "title": "Chapter President & State Ambassador",
+    "roleDescription": "As Chapter President and State Ambassador, I lead local initiatives and represent AI in STEM at the state level, working to expand STEM education and establish new chapters across Kenya.",
+    "about": "My name is Bavine Opiyo, and I attend Jomo Kenyatta University. I'm passionate about neuroscience and artificial intelligence in the brain sciences. I love doing innovation and being creative.",
+    "imageFile": "Bavine-Opiyo.png",
+    "location": "Nairobi, Kenya",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Innovation & Creativity",
+        "emoji": "💡"
+      },
+      {
+        "title": "AI in Healthcare",
+        "emoji": "🏥"
+      },
+      {
+        "title": "Volunteering",
+        "emoji": "🤝"
+      }
+    ],
+    "quote": "The best way to find yourself is to lose yourself in the service of others.",
+    "quoteAuthor": "Mahatma Gandhi"
   }
 }
