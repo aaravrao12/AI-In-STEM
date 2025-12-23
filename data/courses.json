@@ -64,7 +64,14 @@
       "PyTorch",
       "NumPy"
     ],
-    "articles": []
+    "articles": [
+      {
+        "title": "A Clear Introduction to Neural Networks",
+        "url": "https://medium.com/@ai.instemlearning/a-clear-introduction-to-neural-networks-292c2c3bfd4e",
+        "source": "Medium",
+        "description": "Neural networks have become fundamental to many modern AI systems, meaning it is essential to understand the structural principles that form the core ideas of a neural network. This article explains how neural networks learn from data, how models are trained, and much more."
+      }
+    ]
   },
   {
     "id": "nlp-llms",
