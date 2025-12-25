@@ -489,6 +489,9 @@
         case 'ai-sustainability':
           developers = ['Aarav Rao', 'Kevin Cui'];
           break;
+        case 'ai-business':
+          developers = ['Saahas Nalabhotu'];
+          break;
         default:
           developers = ['AI in STEM Team'];
       }
@@ -538,10 +541,12 @@
         const articleLink = article.url ? article.url : `article.html?id=${article.id}`;
         const linkTarget = article.url ? ' target="_blank" rel="noopener noreferrer"' : '';
         const mediumLogo = article.url && article.url.includes('medium.com') ? `<img src="../assets/images/meeting-photos/Medium-Logo.png" alt="Medium" class="h-16 mx-auto mb-4" style="width: auto;">` : '';
+        const coverImage = article.image ? `<div class="mb-6 rounded-xl overflow-hidden"><img src="../assets/images/updates-photos/${article.image}" alt="${article.title}" class="w-full h-auto object-contain"></div>` : '';
         articlesContainer.innerHTML = `
           <div class="bg-white rounded-2xl shadow-lg p-8 border">
             <div class="text-center mb-6">
               ${mediumLogo}
+              ${coverImage}
               <h3 class="text-2xl font-bold text-gray-900">${article.title}</h3>
               <p class="text-gray-600 mt-2">${article.description}</p>
             </div>

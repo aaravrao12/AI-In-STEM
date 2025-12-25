@@ -30,7 +30,15 @@
       "Scikit-learn",
       "Pandas"
     ],
-    "articles": []
+    "articles": [
+      {
+        "title": "An Intro to Machine Learning, the Keystone of AI",
+        "url": "https://medium.com/@ai.instemlearning/an-intro-to-machine-learning-the-keystone-of-ai-79a42a30cbbf",
+        "source": "Medium",
+        "image": "machine-learning.png",
+        "description": "This article introduces machine learning from the ground up, explaining the different types of models and how they learn, core algorithms, and how data is prepared and evaluated in before & after model training/testing."
+      }
+    ]
   },
   {
     "id": "neural-networks",
@@ -69,6 +77,7 @@
         "title": "A Clear Introduction to Neural Networks",
         "url": "https://medium.com/@ai.instemlearning/a-clear-introduction-to-neural-networks-292c2c3bfd4e",
         "source": "Medium",
+        "image": "neural-networks.png",
         "description": "Neural networks have become fundamental to many modern AI systems, meaning it is essential to understand the structural principles that form the core ideas of a neural network. This article explains how neural networks learn from data, how models are trained, and much more."
       }
     ]
@@ -177,6 +186,7 @@
         "title": "Understanding AI in Mechatronics: From Sensors to Intelligent Machines",
         "description": "A comprehensive guide to how mechatronics combines engineering and AI to create intelligent systems, from sensor technology and neural networks to industrial robots and emerging innovations like digital twins and edge computing.",
         "url": "https://medium.com/@ai.instemlearning/how-artificial-intelligence-is-transforming-mechatronics-bcfc50dcead5",
+        "image": "mechatronics.png",
         "content": "<strong>Mechatronics</strong> is the combination of mechanical, electrical, and computer engineering to create intelligent systems that can <strong>sense, decide, and act</strong>. It is the science behind many modern technologies such as <strong>robots, drones, and self-driving cars</strong>.\n\nBy bringing together the <strong>physical design</strong> of machines with <strong>digital decision-making</strong>, Mechatronics allows technology to move and think in smarter ways. <strong>Artificial Intelligence (AI)</strong> has made this field even more powerful by helping machines <strong>learn from experience</strong>, <strong>adapt</strong> to new situations, and perform complex tasks more efficiently.\n\n<h2>Sensors: The Eyes and Ears of Mechatronic Systems</h2>\n\nAt the center of every Mechatronic system are <strong>sensors</strong>, which are devices that gather information from the environment. <strong>Cameras</strong> and laser sensors (called <strong>LiDAR</strong>) help robots \"see.\" <strong>Force sensors</strong> measure touch, pressure, or weight, and <strong>temperature sensors</strong> track heat levels.\n\nThe raw data from these sensors is first cleaned and improved through a process called <strong>signal processing</strong>, which removes unnecessary noise or interference. Then, a step called <strong>data acquisition</strong> changes this information into <strong>digital signals</strong> that computers can understand.\n\nIn many systems, different sensors work together through a method called <strong>sensor fusion</strong>, which combines several kinds of data to get more accurate results.\n\n<h2>AI and Decision-Making</h2>\n\nAI helps make sense of this sensor data. Using special computer programs called <strong>neural networks</strong>, machines can <strong>recognize objects</strong>, <strong>detect obstacles</strong>, and understand patterns in what they see or sense. This allows robots, cars, or drones to move safely and make decisions without human control.\n\nOnce a machine understands its surroundings, it needs to know how to act. This is controlled by something called a <strong>control system</strong>. Traditional control systems, such as <strong>PID controllers</strong>, follow fixed rules to keep a machine stable, like keeping a robot arm balanced or a car moving straight.\n\nAI makes these systems more flexible by allowing them to <strong>learn from experience</strong> and <strong>predict</strong> what will happen next. This helps machines adjust their movements smoothly and handle changes in their environment.\n\n<h2>Types of Intelligent Robots</h2>\n\nThere are several main types of robots that use these ideas. <strong>Industrial robots</strong>, such as robotic arms in factories, are used for welding or assembling parts with high speed and accuracy. <strong>Mobile robots</strong>, including drones and self-driving cars, can move and plan paths on their own. <strong>Collaborative robots (cobots)</strong> work safely next to humans, helping in places like warehouses and laboratories.\n\n<strong>Computer vision</strong>, which is a branch of AI, allows robots to interpret visual information just like humans use sight. <strong>Object detection</strong> helps a robot recognize what is around it, while <strong>pose estimation</strong> allows it to figure out where an object is and how it is positioned.\n\nThis ability is important for tasks that require precision, such as picking up small parts or navigating safely around people.\n\n<h2>Predictive Maintenance and Emerging Technologies</h2>\n\nAI also helps maintain machines through something known as <strong>predictive maintenance</strong>. Instead of waiting for a breakdown, sensors can monitor a machine's vibration, temperature, and speed to predict when a problem might happen. This prevents sudden failures and saves time and money.\n\nNew technologies continue to improve Mechatronics. <strong>Edge AI</strong> and <strong>TinyML</strong> allow small devices, like drones or sensors, to process information directly on the spot instead of sending it to a larger computer. <strong>Digital twins</strong> are virtual models of real machines that help engineers test and improve systems without needing to stop them in real life.\n\n<strong>Generative AI</strong> can even help design mechanical parts by quickly suggesting shapes and materials that make machines stronger and more efficient.\n\n<h2>The Future of Intelligent Machines</h2>\n\nAI and Mechatronics together are building the future of intelligent machines. From automated factories to advanced healthcare robots, this field is full of opportunities for creativity and innovation.\n\nBy combining engineering with smart computing, Mechatronics is teaching machines to understand the world and work alongside humans to solve real problems.",
         "publishedDate": "10/31/2025"
       }
@@ -218,7 +228,8 @@
         "title": "Artificial Intelligence in Python: A Complete Guide for Beginners and Beyond",
         "url": "https://mathlete-world.medium.com/artificial-intelligence-in-python-a-complete-guide-for-beginners-and-beyond-722c345c1bc6",
         "description": "A comprehensive guide to getting started with AI development using Python libraries and frameworks.",
-        "source": "Medium"
+        "source": "Medium",
+        "image": "ai-applications.png"
       }
     ]
   },
@@ -293,5 +304,48 @@
       "Kevin Cui"
     ],
     "articles": []
+  },
+  {
+    "id": "ai-business",
+    "title": "AI & Technology in Business",
+    "level": "Beginner",
+    "duration": "1 Lesson",
+    "description": "Explore how artificial intelligence is transforming business operations across retail, finance, marketing, and more.",
+    "detailedDescription": "Artificial intelligence has moved from a futuristic concept to a practical business tool used across nearly every industry. From retail and finance to logistics and human resources, companies are using AI to make faster decisions, reduce costs, and improve customer experiences. This course explains how AI is changing business operations today, why companies rely on it, and what the future of AI in the workplace looks like.",
+    "color": "green",
+    "icon": "briefcase",
+    "topics": [
+      "AI in Retail & Marketing",
+      "AI in Banking & Finance",
+      "AI in Customer Service & HR",
+      "AI Ethics & Future of Business"
+    ],
+    "learningObjectives": [
+      "Understand how AI transforms business operations",
+      "Learn AI applications across various industries",
+      "Explore ethical considerations in business AI",
+      "Discover future trends of AI in the workplace"
+    ],
+    "prerequisites": [
+      "Basic understanding of AI concepts",
+      "No programming experience required"
+    ],
+    "tools": [
+      "Business Analytics Platforms",
+      "AI-powered CRM Systems",
+      "Data Visualization Tools"
+    ],
+    "developers": [
+      "Saahas Nalabhotu"
+    ],
+    "articles": [
+      {
+        "title": "Artificial Intelligence's Everlasting Impact on Aspects of Business",
+        "url": "https://medium.com/@ai.instemlearning/artificial-intelligences-everlasting-impact-on-aspects-of-business-82b3bd7669f2",
+        "source": "Medium",
+        "image": "business.png",
+        "description": "AI allows businesses to work faster, smarter, and more efficiently. This article explores how AI is transforming retail, finance, marketing, customer service, manufacturing, and HR—from fraud detection and personalized recommendations to predictive maintenance and ethical considerations."
+      }
+    ]
   }
 ]

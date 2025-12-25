@@ -1122,5 +1122,33 @@
     ],
     "quote": "The best way to find yourself is to lose yourself in the service of others.",
     "quoteAuthor": "Mahatma Gandhi"
+  },
+  "robert-qi": {
+    "firstName": "Robert",
+    "lastName": "Qi",
+    "name": "Robert Qi",
+    "title": "Chapter President & Curriculum Developer",
+    "roleDescription": "As Chapter President and Curriculum Developer, I lead local initiatives and create educational content to help make STEM education accessible to all students.",
+    "about": "I am Robert Qi, a senior at Westfield High School in NJ. I'm passionate about computer science and machine learning, particularly artificial intelligence. AI in STEM will allow me to turn my interests into real world impacts by creating chapters across the nation and creating a free online course to help all children interested in STEM no matter their economic situation.",
+    "imageFile": "Robert-Qi.png",
+    "location": "Westfield, NJ",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Computer Science",
+        "emoji": "💻"
+      },
+      {
+        "title": "Machine Learning",
+        "emoji": "🧠"
+      },
+      {
+        "title": "Robotics",
+        "emoji": "🤖"
+      }
+    ],
+    "quote": "We are the cosmos made conscious and life is the means by which the universe understands itself.",
+    "quoteAuthor": "Brian Cox"
   }
 }
