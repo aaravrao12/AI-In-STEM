@@ -1322,8 +1322,14 @@
     const nextPageBtn = document.getElementById('next-page-btn');
     const prevPageBtn = document.getElementById('prev-page-btn');
 
-    // Show page 1 by default
+    // Determine which page to show by default (supports ?page=2 or #page-2)
+    const urlParams = new URLSearchParams(window.location.search);
     let currentPage = 1;
+    if (urlParams.get('page') === '2' || window.location.hash === '#page-2' || window.location.hash === '#page2') {
+      currentPage = 2;
+      page1.classList.add('hidden');
+      page2.classList.remove('hidden');
+    }
 
     // Next page button
     if (nextPageBtn) {
@@ -1363,6 +1369,11 @@
           AOS.refresh();
         }
       });
+    }
+
+    // If a page was selected via query/hash, ensure AOS is refreshed
+    if (currentPage === 2 && typeof AOS !== 'undefined') {
+      AOS.refresh();
     }
   </script>
 </body>
