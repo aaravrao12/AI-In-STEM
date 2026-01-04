@@ -113,7 +113,15 @@
       "NLTK",
       "spaCy"
     ],
-    "articles": []
+    "articles": [
+      {
+        "title": "Understanding Natural Language Processing and Large Language Models",
+        "url": "https://medium.com/@ai.instemlearning/understanding-natural-language-processing-and-large-language-models-17e7ade81c70",
+        "source": "Medium",
+        "image": "LLMs.png",
+        "description": "This article explores the foundations of Natural Language Processing (NLP) and Large Language Models (LLMs). It explains why language is difficult for machines, how text is prepared for learning, how modern language models are trained, and how their performance is evaluated in practice."
+      }
+    ]
   },
   {
     "id": "computer-vision",
@@ -146,7 +154,15 @@
       "TensorFlow Object Detection API",
       "PIL/Pillow"
     ],
-    "articles": []
+    "articles": [
+      {
+        "title": "How Computers Learned to See (and Why That Matters More Than You Think)",
+        "url": "https://medium.com/@ai.instemlearning/how-computers-learned-to-see-and-why-that-matters-more-than-you-think-fd3c268a16fa",
+        "source": "Medium",
+        "image": "computer-vision.png",
+        "description": "This article explores the foundations of computer vision and how machines learned to interpret images. It covers deep learning approaches, object detection, image segmentation, YOLO, and the complete vision pipeline that powers self-driving cars, medical imaging, and robotics."
+      }
+    ]
   },
   {
     "id": "ai-mechatronics",
@@ -265,7 +281,15 @@
       "RViz",
       "OpenCV with ROS"
     ],
-    "articles": []
+    "articles": [
+      {
+        "title": "How Robot Operating Systems Quietly Power the Machines Around Us",
+        "url": "https://medium.com/@ai.instemlearning/how-robot-operating-systems-quietly-power-the-machines-around-us-12a976ac1a91",
+        "source": "Medium",
+        "image": "ROS.png",
+        "description": "This article explores how ROS (Robot Operating System) coordinates the many components of modern robots. It covers nodes, topics, services, simulation with Gazebo, computer vision integration, and why ROS has become the foundation for robotics worldwide."
+      }
+    ]
   },
   {
     "id": "ai-sustainability",
@@ -303,7 +327,15 @@
       "Aarav Rao",
       "Kevin Cui"
     ],
-    "articles": []
+    "articles": [
+      {
+        "title": "The Quiet Tech Revolution Helping the Planet Survive",
+        "url": "https://medium.com/@ai.instemlearning/the-quiet-tech-revolution-helping-the-planet-survive-86026aad6674",
+        "source": "Medium",
+        "image": "environment.png",
+        "description": "This article explores how AI is transforming environmental protection through climate modeling, renewable energy management, wildlife conservation, precision agriculture, and the circular economy. It demonstrates how artificial intelligence gives humanity the ability to understand Earth's systems in real time and act before damage becomes irreversible."
+      }
+    ]
   },
   {
     "id": "ai-business",

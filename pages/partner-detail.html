@@ -19,40 +19,134 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="icon" href="../assets/images/logo/favicon.ico" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+    
+    :root {
+      --primary-blue: #2563eb;
+      --primary-purple: #7c3aed;
+      --accent-blue: #3b82f6;
+      --accent-purple: #8b5cf6;
+      --dark-blue: #1e40af;
+      --dark-purple: #6d28d9;
+      --text-primary: #1f2937;
+      --text-secondary: #6b7280;
+      --bg-light: #f8fafc;
+    }
     
     body {
       font-family: 'Inter', sans-serif;
       scroll-behavior: smooth;
+      line-height: 1.6;
+      color: var(--text-primary);
     }
     
-    .hero-section {
+    .nav-link {
       position: relative;
-      background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 25%, #581c87 75%, #7c2d12 100%);
-      overflow: hidden;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
     }
-    
-    .hero-section::before {
+
+    .nav-link::after {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
+      width: 0;
+      height: 2px;
       bottom: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/><circle cx="900" cy="800" r="80" fill="url(%23a)"/></svg>') no-repeat center center;
-      background-size: cover;
-      opacity: 0.3;
+      left: 50%;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after {
+      width: 80%;
+    }
+
+    .nav-link:hover {
+      background: rgba(59, 130, 246, 0.1);
+      transform: translateY(-2px);
+    }
+
+    /* Enhanced Mobile Menu */
+    #menuOverlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(4px);
+      z-index: 40;
+      display: none;
+    }
+    #menuOverlay.active {
+      display: block;
+    }
+    
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      backdrop-filter: blur(20px);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    .mobile-nav-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      margin: 0.5rem 0;
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      background: transparent;
+    }
+
+    .mobile-nav-link:hover {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+      border-color: rgba(59, 130, 246, 0.3);
+      transform: translateX(10px);
+    }
+
+    .mobile-nav-link::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 0;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+      border-radius: 0 2px 2px 0;
+      transition: height 0.3s ease;
+    }
+
+    .mobile-nav-link:hover::before {
+      height: 60%;
+    }
+
+    .mobile-nav-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-nav-link:hover .mobile-nav-icon {
+      opacity: 1;
     }
 
     /* Partner hero wallpaper (top of partner detail page) */
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
-
     .partner-hero {
       position: relative;
       width: 100%;
       min-height: 260px;
-      /* match vertical spacing used by other detail pages */
-      padding: 6rem 1rem; /* equivalent to py-24 */
+      padding: 6rem 1rem;
+      margin-top: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -60,7 +154,6 @@
       overflow: hidden;
     }
     
-    /* Use an absolutely positioned image and cover to fill the hero (preferred for full-bleed wallpapers) */
     .partner-hero .hero-bg {
       position: absolute;
       inset: 0;
@@ -80,7 +173,6 @@
       z-index: 5;
     }
 
-    /* Remove boxed background that the global .hero-content applies */
     .partner-hero .hero-content {
       position: relative;
       z-index: 10;
@@ -110,70 +202,6 @@
       .partner-hero #hero-partner-location { font-size: 1rem; opacity:0.9; }
     }
 
-    .hero-content {
-      position: relative;
-      z-index: 10;
-      backdrop-filter: blur(10px);
-      background: rgba(15, 23, 42, 0.8);
-      border: 2px solid rgba(59, 130, 246, 0.3);
-      border-radius: 1.5rem;
-      padding: 2rem;
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-    }
-    .mobile-menu {
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in-out;
-      background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-      backdrop-filter: blur(20px);
-    }
-    
-    .mobile-menu.open {
-      transform: translateX(0);
-    }
-    
-    .mobile-nav-link {
-      display: flex;
-      align-items: center;
-      padding: 1rem 0;
-      border-radius: 12px;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .mobile-nav-link:hover {
-      background: rgba(59, 130, 246, 0.1);
-      transform: translateX(8px);
-    }
-    
-    .mobile-nav-link::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 4px;
-      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-      transform: scaleY(0);
-      transition: transform 0.3s ease;
-    }
-    
-    .mobile-nav-link:hover::before {
-      transform: scaleY(1);
-    }
-    
-    .back-arrow {
-      position: fixed;
-      top: 7rem;
-      left: 2rem;
-      z-index: 40;
-      transition: all 0.3s ease;
-    }
-    
-    .back-arrow:hover {
-      transform: translateX(-5px);
-    }
-    
     .partner-card {
       transition: all 0.3s ease;
     }
@@ -182,11 +210,21 @@
       transform: translateY(-5px);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     }
+
+    /* Focus styles for accessibility */
+    *:focus {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 2px;
+    }
+
+    /* Enhanced scroll behavior */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
   </style>
 </head>
 <body class="bg-gray-50">
-
-  <!-- Back Arrow removed as requested -->
 
   <!-- Enhanced Navbar -->
   <header class="sticky top-0 flex items-center justify-between px-4 sm:px-6 py-4 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-opacity-95 shadow-xl z-50 backdrop-blur-md border-b border-blue-500/20">
@@ -194,7 +232,7 @@
     <div class="flex items-center space-x-4">
       <div class="flex-shrink-0">
         <a href="../index.html" aria-label="Go to AI in STEM homepage" class="transition transform hover:scale-105 focus:scale-105">
-          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo" class="h-16 sm:h-20 w-auto object-contain" />
+          <img src="../assets/images/logo/logo.png" alt="AI in STEM Logo - Empowering Youth Through Technology" class="h-16 sm:h-20 w-auto object-contain" />
         </a>
       </div>
 
@@ -222,7 +260,7 @@
       <span class="text-gray-500">|</span>
       <a href="updates.html" class="nav-link hover:text-blue-400 transition-colors">Updates</a>
       <span class="text-gray-500">|</span>
-      <a href="all-team.html#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
+      <a href="#join-team" class="nav-link hover:text-blue-400 transition-colors">Join Team</a>
     </nav>
 
     <!-- Mobile menu button -->
