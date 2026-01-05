@@ -30,6 +30,9 @@
       "Jupyter Notebooks",
       "VS Code"
     ],
+    "developers": [
+      "Raghunand Dayanandan"
+    ],
     "articles": [
       {
         "title": "A Practical Introduction to Python Programming",
@@ -70,6 +73,11 @@
       "Python (basics covered)",
       "Scikit-learn",
       "Pandas"
+    ],
+    "developers": [
+      "Kevin Cui",
+      "Aarav Rao",
+      "Shanmukha Bommana"
     ],
     "articles": [
       {
@@ -113,6 +121,11 @@
       "PyTorch",
       "NumPy"
     ],
+    "developers": [
+      "Kevin Cui",
+      "Aarav Rao",
+      "Supraj Gonur"
+    ],
     "articles": [
       {
         "title": "A Clear Introduction to Neural Networks",
@@ -153,6 +166,10 @@
       "OpenAI API",
       "NLTK",
       "spaCy"
+    ],
+    "developers": [
+      "Aarav Rao",
+      "Kevin Cui"
     ],
     "articles": [
       {
@@ -195,6 +212,11 @@
       "TensorFlow Object Detection API",
       "PIL/Pillow"
     ],
+    "developers": [
+      "Aarav Rao",
+      "Kevin Cui",
+      "Raghunand Dayanandan"
+    ],
     "articles": [
       {
         "title": "How Computers Learned to See (and Why That Matters More Than You Think)",
@@ -236,6 +258,9 @@
       "Arduino/Raspberry Pi",
       "MATLAB/Simulink",
       "CAD Software"
+    ],
+    "developers": [
+      "Tejus Peri"
     ],
     "articles": [
       {
@@ -280,6 +305,9 @@
       "Google Colab",
       "Git/GitHub"
     ],
+    "developers": [
+      "Smyan Reddy"
+    ],
     "articles": [
       {
         "title": "Artificial Intelligence in Python: A Complete Guide for Beginners and Beyond",
@@ -321,6 +349,9 @@
       "Gazebo Simulator",
       "RViz",
       "OpenCV with ROS"
+    ],
+    "developers": [
+      "Kevin Cui"
     ],
     "articles": [
       {

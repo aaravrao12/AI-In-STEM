@@ -12,7 +12,7 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="page-title">Team Member - AI in Stem</title>
+  <title id="page-title">Team Member's Profile: AI in STEM</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -616,10 +616,10 @@
             <!-- Impact content will be populated dynamically -->
           </p>
           
-          <!-- Chapter Cards Container -->
-          <div id="impact-chapters-container" class="hidden">
-            <div id="chapter-cards-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <!-- Chapter cards will be dynamically loaded here -->
+          <!-- Unified Impact Cards Grid - All cards (chapters & curriculum) go here -->
+          <div id="impact-cards-container" class="hidden">
+            <div id="impact-cards-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Chapter and curriculum cards will be dynamically loaded here side by side -->
             </div>
           </div>
         </div>
@@ -748,7 +748,7 @@
 
     function populateMemberData(member) {
       // Set page title
-      document.getElementById('page-title').textContent = `${member.name} - AI in Stem Team`;
+      document.getElementById('page-title').textContent = `${member.name}'s Profile: AI in STEM`;
 
       // Populate basic info
       document.getElementById('member-image').src = `../assets/images/team-photos/${member.imageFile}`;
@@ -765,10 +765,11 @@
       document.getElementById('member-quote').textContent = member.quote;
       document.getElementById('quote-author').textContent = member.quoteAuthor;
 
-      // Load chapters if member has any
-      if (member.chapters && member.chapters.length > 0) {
-        loadMemberChapters(member.chapters);
-      }
+      // Automatically load chapters where this member is a leader (no manual linking needed)
+      loadMemberChapters(member.name);
+      
+      // Automatically load curriculum where this member is a developer (no manual linking needed)
+      loadMemberCurriculum(member.name);
 
       // Populate social media icons
       const socialContainer = document.getElementById('social-icons');
@@ -860,17 +861,22 @@
       </svg>
     `;
 
-    // Load chapters associated with the member
-    async function loadMemberChapters(chapterIds) {
+    // Automatically find and load chapters where this member is a leader
+    async function loadMemberChapters(memberName) {
       try {
         const response = await fetch('../data/chapters.json');
         const chapters = await response.json();
         
-        const memberChapters = chapters.filter(chapter => chapterIds.includes(chapter.id));
+        // Find all chapters where this member is listed as a leader
+        const memberChapters = chapters.filter(chapter => 
+          chapter.leaders && chapter.leaders.some(leader => 
+            leader.toLowerCase() === memberName.toLowerCase()
+          )
+        );
         
         if (memberChapters.length > 0) {
-          const container = document.getElementById('impact-chapters-container');
-          const grid = document.getElementById('chapter-cards-grid');
+          const container = document.getElementById('impact-cards-container');
+          const grid = document.getElementById('impact-cards-grid');
           
           container.classList.remove('hidden');
           
@@ -884,23 +890,124 @@
       }
     }
 
+    // Get appropriate text size class based on title length
+    function getChapterTitleClass(title) {
+      if (title.length <= 22) return 'text-lg';
+      if (title.length <= 28) return 'text-base';
+      return 'text-sm';
+    }
+
     function createChapterCard(chapter) {
       const card = document.createElement('a');
       card.href = `chapter-detail.html?id=${chapter.id}`;
       card.className = 'block group';
       
+      const titleClass = getChapterTitleClass(chapter.name);
+      
       card.innerHTML = `
-        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-5 flex items-center space-x-4 border border-gray-100 hover:border-blue-200 transform hover:scale-[1.02]">
-          <div class="flex-shrink-0">
-            <img src="${chapter.image}" alt="${chapter.name}" class="w-16 h-16 rounded-lg object-cover bg-white shadow-sm" />
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 h-28 flex items-center border border-gray-100 hover:border-blue-200 transform hover:scale-[1.02] overflow-hidden">
+          <!-- Logo Container - Fixed size with object-contain for non-square logos -->
+          <div class="w-28 h-28 flex-shrink-0 flex items-center justify-center bg-gray-50 p-2">
+            <img src="${chapter.image}" alt="${chapter.name}" class="max-w-full max-h-full object-contain" />
           </div>
-          <div class="flex-1 min-w-0">
-            <h4 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors truncate">${chapter.name}</h4>
-            <p class="text-sm text-blue-600 font-medium">${chapter.location}</p>
-            <p class="text-xs text-gray-500 mt-1">Est. ${chapter.established}</p>
+          <!-- Content Container -->
+          <div class="flex-1 min-w-0 px-4 py-3">
+            <h4 class="${titleClass} font-semibold text-gray-900 group-hover:text-blue-600 transition-colors leading-tight line-clamp-2">${chapter.name}</h4>
+            <p class="text-sm text-blue-600 font-medium mt-1">${chapter.location}</p>
+            <p class="text-xs text-gray-500 mt-0.5">Est. ${chapter.established}</p>
           </div>
-          <div class="flex-shrink-0">
+          <!-- Arrow -->
+          <div class="flex-shrink-0 pr-4">
             <div class="bg-blue-100 group-hover:bg-blue-600 text-blue-600 group-hover:text-white w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      return card;
+    }
+
+    // Automatically find and load curriculum where this member is a developer
+    async function loadMemberCurriculum(memberName) {
+      try {
+        const response = await fetch('../data/courses.json');
+        const courses = await response.json();
+        
+        // Find all courses where this member is listed as a developer
+        const memberCourses = courses.filter(course => 
+          course.developers && course.developers.some(dev => 
+            dev.toLowerCase() === memberName.toLowerCase()
+          )
+        );
+        
+        if (memberCourses.length > 0) {
+          const container = document.getElementById('impact-cards-container');
+          const grid = document.getElementById('impact-cards-grid');
+          
+          container.classList.remove('hidden');
+          
+          memberCourses.forEach(course => {
+            const card = createCurriculumCard(course);
+            grid.appendChild(card);
+          });
+        }
+      } catch (error) {
+        console.error('Error loading curriculum:', error);
+      }
+    }
+
+    // Get appropriate text size class based on curriculum title length
+    function getCurriculumTitleClass(title) {
+      if (title.length <= 28) return 'text-lg';
+      if (title.length <= 36) return 'text-base';
+      return 'text-sm';
+    }
+
+    // Get level color based on difficulty
+    function getLevelColor(level) {
+      switch(level.toLowerCase()) {
+        case 'beginner': return 'text-green-600';
+        case 'intermediate': return 'text-orange-500';
+        case 'advanced': return 'text-red-600';
+        default: return 'text-blue-600';
+      }
+    }
+
+    // Get course image - try articles first, then fall back to icon-based naming
+    function getCourseImage(course) {
+      if (course.articles && course.articles.length > 0 && course.articles[0].image) {
+        return `../assets/images/updates-photos/${course.articles[0].image}`;
+      }
+      // Fallback: try to construct from course id
+      return `../assets/images/updates-photos/${course.id}.png`;
+    }
+
+    function createCurriculumCard(course) {
+      const card = document.createElement('a');
+      card.href = `course-detail.html?id=${course.id}`;
+      card.className = 'block group';
+      
+      const titleClass = getCurriculumTitleClass(course.title);
+      const levelColor = getLevelColor(course.level);
+      const imageUrl = getCourseImage(course);
+      
+      card.innerHTML = `
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 h-28 flex items-center border border-gray-100 hover:border-purple-200 transform hover:scale-[1.02] overflow-hidden">
+          <!-- Logo Container - Fixed size with object-cover for curriculum images -->
+          <div class="w-28 h-28 flex-shrink-0 flex items-center justify-center bg-gray-50 p-2">
+            <img src="${imageUrl}" alt="${course.title}" class="max-w-full max-h-full object-contain" />
+          </div>
+          <!-- Content Container - 2 lines for title, 1 for difficulty -->
+          <div class="flex-1 min-w-0 px-4 py-3 flex flex-col justify-center">
+            <h4 class="${titleClass} font-semibold text-gray-900 group-hover:text-purple-600 transition-colors leading-tight line-clamp-2">${course.title}</h4>
+            <p class="text-sm ${levelColor} font-medium mt-1">${course.level}</p>
+          </div>
+          <!-- Arrow -->
+          <div class="flex-shrink-0 pr-4">
+            <div class="bg-purple-100 group-hover:bg-purple-600 text-purple-600 group-hover:text-white w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
               </svg>

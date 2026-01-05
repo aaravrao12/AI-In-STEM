@@ -458,41 +458,17 @@
     
 
 
-    // Update curriculum developers based on course ID
-    function updateCurriculumDevelopers(courseId) {
+    // Update curriculum developers dynamically from course data
+    function updateCurriculumDevelopers(course) {
       const developersContainer = document.getElementById('curriculum-developers');
       let developers = [];
       
-      switch(courseId) {
-        case 'machine-learning':
-          developers = ['Kevin Cui', 'Aarav Rao', 'Shanmukha Bommana'];
-          break;
-        case 'ai-python':
-          developers = ['Smyan Reddy'];
-          break;
-        case 'neural-networks':
-          developers = ['Kevin Cui', 'Aarav Rao', 'Supraj Gonur'];
-          break;
-        case 'nlp-llms':
-          developers = ['Aarav Rao', 'Kevin Cui'];
-          break;
-        case 'computer-vision':
-          developers = ['Aarav Rao', 'Kevin Cui', 'Raghunand Dayanandan'];
-          break;
-        case 'ai-mechatronics':
-          developers = ['Tejus Peri'];
-          break;
-        case 'robot-operating-systems':
-          developers = ['Kevin Cui'];
-          break;
-        case 'ai-sustainability':
-          developers = ['Aarav Rao', 'Kevin Cui'];
-          break;
-        case 'ai-business':
-          developers = ['Saahas Nalabhotu'];
-          break;
-        default:
-          developers = ['AI in STEM Team'];
+      // Read developers from course data if available
+      if (course.developers && course.developers.length > 0) {
+        developers = course.developers;
+      } else {
+        // Fallback to default if no developers specified
+        developers = ['AI in STEM Team'];
       }
       
       developersContainer.innerHTML = developers.map(name => `
@@ -523,8 +499,8 @@
       levelBadge.textContent = `${course.level} • ${course.duration}`;
       levelBadge.className = `level-badge level-${course.level.toLowerCase()}`;
       
-      // Update curriculum developers based on course
-      updateCurriculumDevelopers(course.id);
+      // Update curriculum developers dynamically from course data
+      updateCurriculumDevelopers(course);
       
       // Handle articles - only update if no static content exists
       const articlesContainer = document.getElementById('course-topics');
