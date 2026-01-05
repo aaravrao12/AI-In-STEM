@@ -1,5 +1,46 @@
 [
   {
+    "id": "intro-python",
+    "title": "Intro to Python Programming",
+    "level": "Beginner",
+    "duration": "2 Lessons",
+    "description": "Learn the foundations of programming with Python, including variables, conditionals, loops, and more, through interactive examples!",
+    "detailedDescription": "This comprehensive introduction to Python programming will teach you the fundamentals of coding. You'll learn about variables and data types, control flow with if statements and loops, working with lists and dictionaries, and writing your own functions. Perfect for beginners with no programming experience.",
+    "color": "green",
+    "icon": "code",
+    "topics": [
+      "Variables & Data Types",
+      "If Statements & Loops",
+      "Lists & Dictionaries",
+      "Functions"
+    ],
+    "learningObjectives": [
+      "Understand variables and data types in Python",
+      "Learn to use conditionals and loops for control flow",
+      "Work with lists and dictionaries for data organization",
+      "Write and call your own functions"
+    ],
+    "prerequisites": [
+      "No programming experience required",
+      "Basic computer skills"
+    ],
+    "tools": [
+      "Python",
+      "Google Colab",
+      "Jupyter Notebooks",
+      "VS Code"
+    ],
+    "articles": [
+      {
+        "title": "A Practical Introduction to Python Programming",
+        "url": "https://medium.com/@ai.instemlearning/a-practical-introduction-to-python-programming-e19a29c7a225",
+        "source": "Medium",
+        "image": "python.png",
+        "description": "Learn the fundamentals of Python programming through practical examples and hands-on exercises covering variables, data types, control flow, and functions."
+      }
+    ]
+  },
+  {
     "id": "machine-learning",
     "title": "Intro to Machine Learning",
     "level": "Beginner",
