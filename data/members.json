@@ -1150,5 +1150,66 @@
     ],
     "quote": "We are the cosmos made conscious and life is the means by which the universe understands itself.",
     "quoteAuthor": "Brian Cox"
+  },
+  "shanmuka-gottimukkala": {
+    "firstName": "Shanmuka",
+    "lastName": "Gottimukkala",
+    "name": "Shanmuka Gottimukkala",
+    "title": "Chapter President, Outreach Manager & Curriculum Developer",
+    "roleDescription": "As a Chapter President, Outreach Manager, and Curriculum Developer, I lead local initiatives, oversee community engagement efforts, and create comprehensive educational resources to support STEM education initiatives while building partnerships to expand AI in STEM's reach and impact.",
+    "about": "My name is Shanmuka Gottimukkala, and I am a sophomore at Milton High School with a strong passion for computer science, artificial intelligence, and problem solving with the combination of technology and psychology. I am especially interested in using AI to make advanced STEM tools more accessible and impactful for students who may not otherwise have exposure to them. Through AI in STEM, I hope to contribute to efforts that expand hands on learning, research opportunities, and real world application of technology for students globally. Fun fact: I enjoy creative projects like 3D modeling and visual design in my free time.",
+    "imageFile": "Shanmuka-Gottimukkala.png",
+    "location": "Milton, Georgia",
+    "email": "only.shan@outlook.com",
+    "linkedinUrl": "https://www.linkedin.com/in/shanmuka-gottimukkala",
+    "githubUrl": "https://github.com/codingwithcodeofficial",
+    "skills": [
+      {
+        "title": "AI Research",
+        "emoji": "🤖"
+      },
+      {
+        "title": "Psychology",
+        "emoji": "🧠"
+      },
+      {
+        "title": "Video Editing",
+        "emoji": "🎬"
+      }
+    ],
+    "quote": "The best way to predict the future is to create it.",
+    "quoteAuthor": "Abraham Lincoln",
+    "chapterLocation": "Milton, Georgia, USA",
+    "chapterCurriculum": "Official AI in STEM curriculums, teaching the impact of AI and how it can be utilized in day to day life to expedite tasks.",
+    "chapterMeetingLocation": "Virtual meetings (Possible expansion into Milton High School)"
+  },
+  "priyanka-handique": {
+    "firstName": "Priyanka",
+    "lastName": "Handique",
+    "name": "Priyanka Handique",
+    "title": "Chapter President, State Ambassador & Outreach Manager",
+    "roleDescription": "As a Chapter President, State Ambassador, and Outreach Manager, I lead local initiatives, represent AI in STEM at the state level, and oversee community engagement efforts to expand STEM education and make AI accessible to all students.",
+    "about": "Priyanka Handique is a curious and passionate high school student and AI enthusiast, driven to make STEM and health technology accessible for everyone. She actively explores new ideas, participates in online STEM initiatives, and mentors peers, inspiring others to discover the possibilities of artificial intelligence. Through AI in STEM, she aims to spark curiosity, empower learners, and create meaningful impact in education and technology. Outside of tech, she loves experimenting with new tools and turning her ideas into real, actionable solutions.",
+    "imageFile": "Priyanka-Handique.png",
+    "location": "Assam, India",
+    "email": "priyankahandique039@gmail.com",
+    "linkedinUrl": "https://www.linkedin.com/in/priyanka-handique-6bb13b37a",
+    "githubUrl": "",
+    "skills": [
+      {
+        "title": "Health Technology",
+        "emoji": "🏥"
+      },
+      {
+        "title": "Youth Leadership",
+        "emoji": "👑"
+      },
+      {
+        "title": "STEM Education",
+        "emoji": "📚"
+      }
+    ],
+    "quote": "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.",
+    "quoteAuthor": "A. P. J. Abdul Kalam"
   }
 }

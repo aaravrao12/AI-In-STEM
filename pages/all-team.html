@@ -128,27 +128,7 @@
     
     .btn {
       transition: transform 0.3s ease;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
       will-change: transform;
-    }
-    
-    .btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.6s ease;
-      z-index: -1;
-      will-change: left;
-    }
-    
-    .btn:hover::before {
-      left: 100%;
     }
     
     .wave-divider {
@@ -292,29 +272,11 @@
 
     .pagination-btn {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
-      overflow: hidden;
       will-change: transform;
     }
 
-    .pagination-btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.6s ease;
-      will-change: left;
-    }
-
-    .pagination-btn:hover::before {
-      left: 100%;
-    }
-
     .pagination-btn:hover {
-      transform: translateY(-2px) translateZ(0);
+      transform: translateY(-2px) translateZ(0) scale(1.05);
       box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
     }
 
@@ -475,8 +437,18 @@
   </section>
 
   <!-- Team Grid -->
-  <section class="w-full px-4 sm:px-6 py-12 sm:py-16 lg:py-24" style="background: linear-gradient(180deg, #1C5685 0%, #1C2285 50%, #4B1C85 100%);">
+  <section class="w-full px-4 sm:px-6 py-8 sm:py-10 lg:py-12" style="background: linear-gradient(180deg, #1C5685 0%, #1C2285 50%, #4B1C85 100%);">
     <div class="max-w-6xl mx-auto">
+      <!-- Pagination Controls - Above Team Cards -->
+      <div id="pagination-controls" class="flex justify-center gap-4 mb-8">
+        <button id="prev-page-btn" class="pagination-btn btn bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg hidden">
+          ← Previous Page
+        </button>
+        <button id="next-page-btn" class="pagination-btn btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+          Next Page →
+        </button>
+      </div>
+
       <!-- Page 1 - First 21 members (7 rows × 3 columns) -->
       <div id="page-1" class="team-page">
         <div class="grid gap-8 sm:gap-10 lg:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
@@ -816,13 +788,6 @@
         </div>
       </a>
         </div>
-        
-        <!-- Pagination Controls for Page 1 -->
-        <div class="flex justify-center mt-12 mb-8">
-          <button id="next-page-btn" class="pagination-btn btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
-            Next Page →
-          </button>
-        </div>
       </div>
 
       <!-- Page 2 - Remaining members -->
@@ -1156,12 +1121,42 @@
       </a>
 
         </div>
-        
-        <!-- Pagination Controls for Page 2 -->
-        <div class="flex justify-center mt-12 mb-8">
-          <button id="prev-page-btn" class="pagination-btn btn bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
-            ← Previous Page
-          </button>
+      </div>
+
+      <!-- Page 3 - New members -->
+      <div id="page-3" class="team-page hidden">
+        <div class="grid gap-8 sm:gap-10 lg:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
+          <!-- Member 43 -->
+          <a href="member-detail.html?id=shanmuka-gottimukkala" class="block" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
+              <div class="relative mb-6 sm:mb-8">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
+                <img src="../assets/images/team-photos/Shanmuka-Gottimukkala.png" alt="Shanmuka Gottimukkala" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+              </div>
+              <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Shanmuka Gottimukkala</h3>
+              <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, Outreach Manager & Curriculum Developer</p>
+              <div class="mt-auto flex items-center justify-between">
+                <span class="text-gray-600 text-sm">Milton, GA</span>
+                <span class="btn bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-full text-sm font-medium">View Profile</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Member 44 -->
+          <a href="member-detail.html?id=priyanka-handique" class="block" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-card bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 text-left h-full flex flex-col">
+              <div class="relative mb-6 sm:mb-8">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 transform scale-110"></div>
+                <img src="../assets/images/team-photos/Priyanka-Handique.png" alt="Priyanka Handique" class="w-28 h-28 sm:w-32 lg:w-36 sm:h-32 lg:h-36 rounded-full mx-auto object-cover shadow-md relative z-10" loading="lazy" />
+              </div>
+              <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-center">Priyanka Handique</h3>
+              <p class="text-blue-600 mb-4 font-medium text-center">Chapter President, State Ambassador & Outreach Manager</p>
+              <div class="mt-auto flex items-center justify-between">
+                <span class="text-gray-600 text-sm">Assam, India</span>
+                <span class="btn bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-full text-sm font-medium">View Profile</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -1319,34 +1314,63 @@
     // Pagination functionality
     const page1 = document.getElementById('page-1');
     const page2 = document.getElementById('page-2');
+    const page3 = document.getElementById('page-3');
     const nextPageBtn = document.getElementById('next-page-btn');
     const prevPageBtn = document.getElementById('prev-page-btn');
+    const totalPages = 3;
 
-    // Determine which page to show by default (supports ?page=2 or #page-2)
+    // Function to show a specific page
+    function showPage(pageNum) {
+      // Hide all pages
+      page1.classList.add('hidden');
+      page2.classList.add('hidden');
+      page3.classList.add('hidden');
+      
+      // Show the requested page
+      if (pageNum === 1) {
+        page1.classList.remove('hidden');
+      } else if (pageNum === 2) {
+        page2.classList.remove('hidden');
+      } else if (pageNum === 3) {
+        page3.classList.remove('hidden');
+      }
+      
+      // Update button visibility
+      if (pageNum === 1) {
+        prevPageBtn.classList.add('hidden');
+        nextPageBtn.classList.remove('hidden');
+      } else if (pageNum === totalPages) {
+        prevPageBtn.classList.remove('hidden');
+        nextPageBtn.classList.add('hidden');
+      } else {
+        prevPageBtn.classList.remove('hidden');
+        nextPageBtn.classList.remove('hidden');
+      }
+      
+      currentPage = pageNum;
+      
+      // Refresh AOS animations for the new page
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    }
+
+    // Determine which page to show by default (supports ?page=2, ?page=3, #page-2, #page-3)
     const urlParams = new URLSearchParams(window.location.search);
     let currentPage = 1;
-    if (urlParams.get('page') === '2' || window.location.hash === '#page-2' || window.location.hash === '#page2') {
+    const pageParam = urlParams.get('page');
+    if (pageParam === '2' || window.location.hash === '#page-2' || window.location.hash === '#page2') {
       currentPage = 2;
-      page1.classList.add('hidden');
-      page2.classList.remove('hidden');
+    } else if (pageParam === '3' || window.location.hash === '#page-3' || window.location.hash === '#page3') {
+      currentPage = 3;
     }
+    showPage(currentPage);
 
     // Next page button
     if (nextPageBtn) {
       nextPageBtn.addEventListener('click', () => {
-        page1.classList.add('hidden');
-        page2.classList.remove('hidden');
-        currentPage = 2;
-        
-        // Smooth scroll to top of team section
-        document.querySelector('section[style*="linear-gradient"]').scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-        
-        // Refresh AOS animations for the new page
-        if (typeof AOS !== 'undefined') {
-          AOS.refresh();
+        if (currentPage < totalPages) {
+          showPage(currentPage + 1);
         }
       });
     }
@@ -1354,26 +1378,10 @@
     // Previous page button
     if (prevPageBtn) {
       prevPageBtn.addEventListener('click', () => {
-        page2.classList.add('hidden');
-        page1.classList.remove('hidden');
-        currentPage = 1;
-        
-        // Smooth scroll to top of team section
-        document.querySelector('section[style*="linear-gradient"]').scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-        
-        // Refresh AOS animations for the new page
-        if (typeof AOS !== 'undefined') {
-          AOS.refresh();
+        if (currentPage > 1) {
+          showPage(currentPage - 1);
         }
       });
-    }
-
-    // If a page was selected via query/hash, ensure AOS is refreshed
-    if (currentPage === 2 && typeof AOS !== 'undefined') {
-      AOS.refresh();
     }
   </script>
 </body>
